@@ -4,8 +4,9 @@
     "outDir": "out-tsc/@ecommerce-platform/api-gateway-e2e",
     "esModuleInterop": true,
     "noUnusedLocals": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "types": ["jest", "node"]
   },
-  "include": ["jest.config.ts", "src/**/*.ts"],
+  "include": ["jest.config.ts", "jest.config.cts", "src/**/*.ts"],
   "references": []
 }

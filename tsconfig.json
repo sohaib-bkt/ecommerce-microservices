@@ -8,6 +8,30 @@
     },
     {
       "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./apps/account-service-e2e"
+    },
+    {
+      "path": "./apps/account-service"
+    },
+    {
+      "path": "./apps/product-service-e2e"
+    },
+    {
+      "path": "./apps/product-service"
+    },
+    {
+      "path": "./apps/order-service-e2e"
+    },
+    {
+      "path": "./apps/order-service"
+    },
+    {
+      "path": "./apps/payment-service-e2e"
+    },
+    {
+      "path": "./apps/payment-service"
     }
   ]
 }

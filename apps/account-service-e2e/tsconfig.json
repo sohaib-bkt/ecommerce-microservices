@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "out-tsc/@ecommerce-platform/account-service-e2e",
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": false,
+    "types": ["jest", "node"]
+  },
+  "include": ["jest.config.ts", "jest.config.cts", "src/**/*.ts"],
+  "references": []
+}

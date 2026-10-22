@@ -52,12 +52,21 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/api-gateway-e2e/**/*"]
+      "exclude": [
+        "apps/api-gateway-e2e/**/*",
+        "apps/account-service-e2e/**/*",
+        "apps/product-service-e2e/**/*",
+        "apps/order-service-e2e/**/*",
+        "apps/payment-service-e2e/**/*"
+      ]
     }
   ],
   "targetDefaults": {
     "test": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "options": {
+        "maxWorkers": 2
+      }
     }
   }
 }

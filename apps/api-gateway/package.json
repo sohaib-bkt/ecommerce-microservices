@@ -47,7 +47,8 @@
         ],
         "options": {
           "buildTarget": "@ecommerce-platform/api-gateway:build",
-          "runBuildTargetDependencies": false
+          "runBuildTargetDependencies": false,
+          "port": 0
         },
         "configurations": {
           "development": {
