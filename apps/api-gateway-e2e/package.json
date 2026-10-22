@@ -1,0 +1,26 @@
+{
+  "name": "@ecommerce-platform/api-gateway-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@ecommerce-platform/api-gateway"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "dependsOn": [
+          "@ecommerce-platform/api-gateway:build",
+          "@ecommerce-platform/api-gateway:serve"
+        ],
+        "options": {
+          "jestConfig": "apps/api-gateway-e2e/jest.config.cts",
+          "passWithNoTests": true
+        }
+      }
+    }
+  }
+}
