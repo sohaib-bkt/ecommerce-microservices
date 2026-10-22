@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package ecommerce.common.v1;
+
+// Money is a currency-denominated amount. Amounts are stored in the minor
+// unit (e.g. cents) to avoid floating point rounding errors.
+message Money {
+  // ISO 4217 currency code, e.g. "USD".
+  string currency = 1;
+  // Amount in the minor unit of the currency, e.g. 1999 for $19.99.
+  int64 amount = 2;
+}
+
+// Address is a postal address used for shipping and billing.
+message Address {
+  string line1 = 1;
+  string line2 = 2;
+  string city = 3;
+  string region = 4;
+  string postal_code = 5;
+  string country = 6;
+}
+
+// PageRequest describes the pagination window for a list call.
+message PageRequest {
+  int32 page = 1;
+  int32 page_size = 2;
+}
+
+// PageResponse is metadata attached to a paginated list response.
+message PageResponse {
+  int32 total_items = 1;
+  int32 total_pages = 2;
+  int32 current_page = 3;
+}
+
+// Timestamp is a point in time, expressed as milliseconds since the Unix epoch.
+message Timestamp {
+  int64 epoch_millis = 1;
+}

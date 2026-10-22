@@ -1,0 +1,62 @@
+{
+  "name": "@ecommerce-platform/contracts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/contracts/src",
+  "projectType": "library",
+  "tags": ["type:contracts"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{workspaceRoot}/libs/contracts/dist"],
+      "options": {
+        "outputPath": "libs/contracts/dist",
+        "main": "src/index.ts",
+        "tsConfig": "libs/contracts/tsconfig.lib.json",
+        "assets": [
+          {
+            "input": "libs/contracts/proto",
+            "glob": "**/*.proto",
+            "output": "proto"
+          }
+        ],
+        "rootDir": "libs/contracts/src"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/contracts/jest.config.cts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/contracts/**/*.ts", "libs/contracts/**/*.js"]
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/contracts",
+        "command": "tsc --build tsconfig.json --emitDeclarationOnly"
+      }
+    },
+    "proto:generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/generate-protos.mjs"
+      }
+    },
+    "proto:check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/generate-protos.mjs --check"
+      }
+    }
+  }
+}

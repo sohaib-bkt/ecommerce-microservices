@@ -32,6 +32,9 @@
     },
     {
       "path": "./apps/payment-service"
+    },
+    {
+      "path": "./libs/contracts"
     }
   ]
 }

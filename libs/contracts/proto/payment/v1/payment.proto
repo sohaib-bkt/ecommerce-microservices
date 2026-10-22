@@ -1,0 +1,91 @@
+syntax = "proto3";
+
+package ecommerce.payment.v1;
+
+import "common/v1/common.proto";
+
+// PaymentStatus is the lifecycle state of a payment.
+enum PaymentStatus {
+  PAYMENT_STATUS_UNSPECIFIED = 0;
+  PAYMENT_STATUS_PENDING = 1;
+  PAYMENT_STATUS_AUTHORIZED = 2;
+  PAYMENT_STATUS_CAPTURED = 3;
+  PAYMENT_STATUS_FAILED = 4;
+  PAYMENT_STATUS_REFUNDED = 5;
+}
+
+// PaymentMethodType identifies how the customer paid.
+enum PaymentMethodType {
+  PAYMENT_METHOD_TYPE_UNSPECIFIED = 0;
+  PAYMENT_METHOD_TYPE_CARD = 1;
+  PAYMENT_METHOD_TYPE_BANK_TRANSFER = 2;
+  PAYMENT_METHOD_TYPE_WALLET = 3;
+}
+
+// Payment is a customer charge owned by the payment service.
+message Payment {
+  string id = 1;
+  string order_id = 2;
+  string account_id = 3;
+  PaymentStatus status = 4;
+  PaymentMethodType method_type = 5;
+  ecommerce.common.v1.Money amount = 6;
+  string currency = 7;
+  string provider_reference = 8;
+  string failure_reason = 9;
+  ecommerce.common.v1.Timestamp created_at = 10;
+  ecommerce.common.v1.Timestamp updated_at = 11;
+}
+
+// GetPaymentRequest identifies the payment to retrieve.
+message GetPaymentRequest {
+  string id = 1;
+}
+
+// GetPaymentResponse carries the requested payment.
+message GetPaymentResponse {
+  Payment payment = 1;
+}
+
+// CreatePaymentRequest starts a payment for an order.
+message CreatePaymentRequest {
+  string order_id = 1;
+  string account_id = 2;
+  ecommerce.common.v1.Money amount = 3;
+  PaymentMethodType method_type = 4;
+}
+
+// CreatePaymentResponse carries the newly created payment.
+message CreatePaymentResponse {
+  Payment payment = 1;
+}
+
+// CapturePaymentRequest captures a previously authorized payment.
+message CapturePaymentRequest {
+  string id = 1;
+}
+
+// CapturePaymentResponse carries the captured payment.
+message CapturePaymentResponse {
+  Payment payment = 1;
+}
+
+// RefundPaymentRequest refunds a captured payment.
+message RefundPaymentRequest {
+  string id = 1;
+  ecommerce.common.v1.Money amount = 2;
+  string reason = 3;
+}
+
+// RefundPaymentResponse carries the refunded payment.
+message RefundPaymentResponse {
+  Payment payment = 1;
+}
+
+// PaymentService manages the payment lifecycle.
+service PaymentService {
+  rpc GetPayment(GetPaymentRequest) returns (GetPaymentResponse);
+  rpc CreatePayment(CreatePaymentRequest) returns (CreatePaymentResponse);
+  rpc CapturePayment(CapturePaymentRequest) returns (CapturePaymentResponse);
+  rpc RefundPayment(RefundPaymentRequest) returns (RefundPaymentResponse);
+}

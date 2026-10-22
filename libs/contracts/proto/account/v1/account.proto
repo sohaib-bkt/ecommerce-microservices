@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package ecommerce.account.v1;
+
+import "common/v1/common.proto";
+
+// AccountStatus is the lifecycle state of a customer account.
+enum AccountStatus {
+  ACCOUNT_STATUS_UNSPECIFIED = 0;
+  ACCOUNT_STATUS_ACTIVE = 1;
+  ACCOUNT_STATUS_SUSPENDED = 2;
+  ACCOUNT_STATUS_CLOSED = 3;
+}
+
+// Account is a customer identity owned by the account service.
+message Account {
+  string id = 1;
+  string email = 2;
+  string display_name = 3;
+  AccountStatus status = 4;
+  ecommerce.common.v1.Address shipping_address = 5;
+  ecommerce.common.v1.Timestamp created_at = 6;
+  ecommerce.common.v1.Timestamp updated_at = 7;
+}
+
+// GetAccountRequest identifies the account to retrieve.
+message GetAccountRequest {
+  string id = 1;
+}
+
+// GetAccountResponse carries the requested account.
+message GetAccountResponse {
+  Account account = 1;
+}
+
+// ListAccountsRequest requests a page of accounts.
+message ListAccountsRequest {
+  ecommerce.common.v1.PageRequest page = 1;
+  AccountStatus status = 2;
+}
+
+// ListAccountsResponse carries a page of accounts.
+message ListAccountsResponse {
+  repeated Account accounts = 1;
+  ecommerce.common.v1.PageResponse page = 2;
+}
+
+// CreateAccountRequest registers a new customer account.
+message CreateAccountRequest {
+  string email = 1;
+  string display_name = 2;
+  ecommerce.common.v1.Address shipping_address = 3;
+}
+
+// CreateAccountResponse carries the newly created account.
+message CreateAccountResponse {
+  Account account = 1;
+}
+
+// UpdateAccountRequest mutates an existing account. Only provided fields are changed.
+message UpdateAccountRequest {
+  string id = 1;
+  string display_name = 2;
+  ecommerce.common.v1.Address shipping_address = 3;
+  AccountStatus status = 4;
+}
+
+// UpdateAccountResponse carries the updated account.
+message UpdateAccountResponse {
+  Account account = 1;
+}
+
+// AccountService manages customer accounts.
+service AccountService {
+  rpc GetAccount(GetAccountRequest) returns (GetAccountResponse);
+  rpc ListAccounts(ListAccountsRequest) returns (ListAccountsResponse);
+  rpc CreateAccount(CreateAccountRequest) returns (CreateAccountResponse);
+  rpc UpdateAccount(UpdateAccountRequest) returns (UpdateAccountResponse);
+}

@@ -1,0 +1,107 @@
+syntax = "proto3";
+
+package ecommerce.order.v1;
+
+import "common/v1/common.proto";
+
+// OrderStatus is the lifecycle state of an order.
+enum OrderStatus {
+  ORDER_STATUS_UNSPECIFIED = 0;
+  ORDER_STATUS_PENDING = 1;
+  ORDER_STATUS_CONFIRMED = 2;
+  ORDER_STATUS_PAID = 3;
+  ORDER_STATUS_SHIPPED = 4;
+  ORDER_STATUS_DELIVERED = 5;
+  ORDER_STATUS_CANCELLED = 6;
+  ORDER_STATUS_REFUNDED = 7;
+}
+
+// OrderItem is a single line item within an order.
+message OrderItem {
+  string product_id = 1;
+  string sku = 2;
+  string name = 3;
+  int32 quantity = 4;
+  ecommerce.common.v1.Money unit_price = 5;
+}
+
+// Order is a customer purchase owned by the order service.
+message Order {
+  string id = 1;
+  string account_id = 2;
+  OrderStatus status = 3;
+  repeated OrderItem items = 4;
+  ecommerce.common.v1.Money total = 5;
+  string currency = 6;
+  ecommerce.common.v1.Address shipping_address = 7;
+  string payment_id = 8;
+  ecommerce.common.v1.Timestamp created_at = 9;
+  ecommerce.common.v1.Timestamp updated_at = 10;
+}
+
+// GetOrderRequest identifies the order to retrieve.
+message GetOrderRequest {
+  string id = 1;
+}
+
+// GetOrderResponse carries the requested order.
+message GetOrderResponse {
+  Order order = 1;
+}
+
+// ListOrdersRequest requests a page of orders.
+message ListOrdersRequest {
+  ecommerce.common.v1.PageRequest page = 1;
+  string account_id = 2;
+  OrderStatus status = 3;
+}
+
+// ListOrdersResponse carries a page of orders.
+message ListOrdersResponse {
+  repeated Order orders = 1;
+  ecommerce.common.v1.PageResponse page = 2;
+}
+
+// CreateOrderRequest places a new order.
+message CreateOrderRequest {
+  string account_id = 1;
+  repeated OrderItem items = 2;
+  ecommerce.common.v1.Address shipping_address = 3;
+}
+
+// CreateOrderResponse carries the newly created order.
+message CreateOrderResponse {
+  Order order = 1;
+}
+
+// UpdateOrderStatusRequest advances an order to a new status.
+message UpdateOrderStatusRequest {
+  string id = 1;
+  OrderStatus status = 2;
+  string reason = 3;
+}
+
+// UpdateOrderStatusResponse carries the updated order.
+message UpdateOrderStatusResponse {
+  Order order = 1;
+}
+
+// CancelOrderRequest cancels an order and releases its reserved stock.
+message CancelOrderRequest {
+  string id = 1;
+  string reason = 2;
+}
+
+// CancelOrderResponse carries the cancelled order.
+message CancelOrderResponse {
+  Order order = 1;
+}
+
+// OrderService manages the order lifecycle.
+service OrderService {
+  rpc GetOrder(GetOrderRequest) returns (GetOrderResponse);
+  rpc ListOrders(ListOrdersRequest) returns (ListOrdersResponse);
+  rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse);
+  rpc UpdateOrderStatus(UpdateOrderStatusRequest) returns (UpdateOrderStatusResponse);
+  rpc CancelOrder(CancelOrderRequest) returns (CancelOrderResponse);
+}
