@@ -45,3 +45,7 @@ Thumbs.db
 .claude/settings.local.json
 
 test-output
+
+# local environment variables
+.env
+.env.local
