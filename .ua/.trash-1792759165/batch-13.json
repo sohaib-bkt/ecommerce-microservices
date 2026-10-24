@@ -1,0 +1,984 @@
+{
+  "nodes": [
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.product.ts",
+      "type": "file",
+      "name": "index.ecommerce.product.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.product.ts",
+      "summary": "Barrel re-exporting generated product protobuf types under the v1 namespace.",
+      "tags": "barrel,generated,protobuf",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.product.v1.ts",
+      "type": "file",
+      "name": "index.ecommerce.product.v1.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.product.v1.ts",
+      "summary": "Generated protobuf TypeScript module exposing product service messages and service definition.",
+      "tags": "generated,protobuf,types",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.ts",
+      "type": "file",
+      "name": "index.ecommerce.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.ts",
+      "summary": "Top-level barrel aggregating common, account, order, payment, and product generated modules.",
+      "tags": "barrel,generated,protobuf",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "libs/contracts/src/generated/index.ts",
+      "summary": "Root barrel re-exporting all generated ecommerce protobuf modules.",
+      "tags": "barrel,entry-point,generated",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "type": "file",
+      "name": "order.ts",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "summary": "Generated protobuf TypeScript code defining Order and related request/response messages plus serialization helpers.",
+      "tags": "generated,protobuf,data-model",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusFromJSON",
+      "type": "function",
+      "name": "orderStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "lineRange": [
+        24,
+        55
+      ],
+      "summary": "Generated helper for Order protobuf message: orderStatusFromJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusToJSON",
+      "type": "function",
+      "name": "orderStatusToJSON",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "lineRange": [
+        57,
+        79
+      ],
+      "summary": "Generated helper for Order protobuf message: orderStatusToJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/order/v1/order.ts:createBaseOrder",
+      "type": "function",
+      "name": "createBaseOrder",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "lineRange": [
+        305,
+        318
+      ],
+      "summary": "Generated helper for Order protobuf message: createBaseOrder.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "type": "file",
+      "name": "payment.ts",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "summary": "Generated protobuf TypeScript code defining Payment messages and serialization helpers.",
+      "tags": "generated,protobuf,data-model",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusFromJSON",
+      "type": "function",
+      "name": "paymentStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [
+        22,
+        47
+      ],
+      "summary": "Generated helper for Payment protobuf message: paymentStatusFromJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusToJSON",
+      "type": "function",
+      "name": "paymentStatusToJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [
+        49,
+        67
+      ],
+      "summary": "Generated helper for Payment protobuf message: paymentStatusToJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeFromJSON",
+      "type": "function",
+      "name": "paymentMethodTypeFromJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [
+        78,
+        97
+      ],
+      "summary": "Generated helper for Payment protobuf message: paymentMethodTypeFromJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeToJSON",
+      "type": "function",
+      "name": "paymentMethodTypeToJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [
+        99,
+        113
+      ],
+      "summary": "Generated helper for Payment protobuf message: paymentMethodTypeToJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:createBasePayment",
+      "type": "function",
+      "name": "createBasePayment",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [
+        175,
+        189
+      ],
+      "summary": "Generated helper for Payment protobuf message: createBasePayment.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "type": "file",
+      "name": "product.ts",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "summary": "Generated protobuf TypeScript code defining Product messages and serialization helpers.",
+      "tags": "generated,protobuf,data-model",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusFromJSON",
+      "type": "function",
+      "name": "productStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "lineRange": [
+        20,
+        39
+      ],
+      "summary": "Generated helper for Product protobuf message: productStatusFromJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusToJSON",
+      "type": "function",
+      "name": "productStatusToJSON",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "lineRange": [
+        41,
+        55
+      ],
+      "summary": "Generated helper for Product protobuf message: productStatusToJSON.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/product/v1/product.ts:createBaseProduct",
+      "type": "function",
+      "name": "createBaseProduct",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "lineRange": [
+        154,
+        168
+      ],
+      "summary": "Generated helper for Product protobuf message: createBaseProduct.",
+      "tags": [
+        "generated",
+        "protobuf",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "libs/contracts/src/index.ts",
+      "summary": "Package entry point re-exporting generated protobuf types and all contract/event/schema utilities.",
+      "tags": "entry-point,barrel,exports",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/contracts.ts",
+      "type": "file",
+      "name": "contracts.ts",
+      "filePath": "libs/contracts/src/lib/contracts.ts",
+      "summary": "Resolves proto file paths and loads protobuf definitions for the contracts library.",
+      "tags": "utility,protobuf,contracts",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/contracts.ts:resolveProtoDir",
+      "type": "function",
+      "name": "resolveProtoDir",
+      "filePath": "libs/contracts/src/lib/contracts.ts",
+      "lineRange": [
+        22,
+        37
+      ],
+      "summary": "Resolves the directory containing proto files.",
+      "tags": [
+        "utility",
+        "protobuf"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/contracts.ts:loadProtoDefinitions",
+      "type": "function",
+      "name": "loadProtoDefinitions",
+      "filePath": "libs/contracts/src/lib/contracts.ts",
+      "lineRange": [
+        45,
+        65
+      ],
+      "summary": "Loads protobuf definitions from disk.",
+      "tags": [
+        "utility",
+        "protobuf"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/account.events.ts",
+      "type": "file",
+      "name": "account.events.ts",
+      "filePath": "libs/contracts/src/lib/events/account.events.ts",
+      "summary": "Account event schemas, status constants, and typed event definitions.",
+      "tags": "schema-definition,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/envelope.ts",
+      "type": "file",
+      "name": "envelope.ts",
+      "filePath": "libs/contracts/src/lib/events/envelope.ts",
+      "summary": "Shared event envelope schema and common Money/Address types used by all events.",
+      "tags": "schema-definition,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/order.events.ts",
+      "type": "file",
+      "name": "order.events.ts",
+      "filePath": "libs/contracts/src/lib/events/order.events.ts",
+      "summary": "Order event schemas, status constants, and typed event definitions.",
+      "tags": "schema-definition,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/payment.events.ts",
+      "type": "file",
+      "name": "payment.events.ts",
+      "filePath": "libs/contracts/src/lib/events/payment.events.ts",
+      "summary": "Payment event schemas, status constants, and typed event definitions.",
+      "tags": "schema-definition,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/product.events.ts",
+      "type": "file",
+      "name": "product.events.ts",
+      "filePath": "libs/contracts/src/lib/events/product.events.ts",
+      "summary": "Product event schemas, status constants, and typed event definitions.",
+      "tags": "schema-definition,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/registry.spec.ts",
+      "type": "file",
+      "name": "registry.spec.ts",
+      "filePath": "libs/contracts/src/lib/events/registry.spec.ts",
+      "summary": "Tests for the event registry's schema lookup and type guards.",
+      "tags": "test,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/registry.ts",
+      "type": "file",
+      "name": "registry.ts",
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "summary": "Central registry mapping event types to their validation schemas with lookup helpers.",
+      "tags": "service,events,validation",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/events/registry.ts:getEventSchema",
+      "type": "function",
+      "name": "getEventSchema",
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "lineRange": [
+        76,
+        84
+      ],
+      "summary": "Returns the schema for a given event type.",
+      "tags": [
+        "utility",
+        "events"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/events/registry.ts:isEventType",
+      "type": "function",
+      "name": "isEventType",
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "lineRange": [
+        87,
+        89
+      ],
+      "summary": "Checks whether a string is a known event type.",
+      "tags": [
+        "utility",
+        "events"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/generated.spec.ts",
+      "type": "file",
+      "name": "generated.spec.ts",
+      "filePath": "libs/contracts/src/lib/generated.spec.ts",
+      "summary": "Tests validating generated protobuf contract modules.",
+      "tags": "test,generated,contracts",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/validation/schema.spec.ts",
+      "type": "file",
+      "name": "schema.spec.ts",
+      "filePath": "libs/contracts/src/lib/validation/schema.spec.ts",
+      "summary": "Tests for schema validation helpers and error reporting.",
+      "tags": "test,validation,schema",
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/validation/schema.ts",
+      "type": "file",
+      "name": "schema.ts",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "summary": "Schema definition and object validation utilities with detailed error reporting.",
+      "tags": "validation,schema,type-definition",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:defineSchema",
+      "type": "function",
+      "name": "defineSchema",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [
+        48,
+        50
+      ],
+      "summary": "Schema validation helper: defineSchema.",
+      "tags": [
+        "validation",
+        "schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:defineRule",
+      "type": "function",
+      "name": "defineRule",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [
+        58,
+        60
+      ],
+      "summary": "Schema validation helper: defineRule.",
+      "tags": [
+        "validation",
+        "schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:validateField",
+      "type": "function",
+      "name": "validateField",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [
+        80,
+        228
+      ],
+      "summary": "Schema validation helper: validateField.",
+      "tags": [
+        "validation",
+        "schema"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:validateObject",
+      "type": "function",
+      "name": "validateObject",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [
+        236,
+        261
+      ],
+      "summary": "Schema validation helper: validateObject.",
+      "tags": [
+        "validation",
+        "schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:parse",
+      "type": "function",
+      "name": "parse",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [
+        269,
+        279
+      ],
+      "summary": "Schema validation helper: parse.",
+      "tags": [
+        "validation",
+        "schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:libs/contracts/src/lib/validation/schema.ts:SchemaValidationError",
+      "type": "class",
+      "name": "SchemaValidationError",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [
+        63,
+        72
+      ],
+      "summary": "Error type thrown when schema validation fails, carrying field path and message.",
+      "tags": [
+        "validation",
+        "error",
+        "schema"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/generate-protos.mjs",
+      "type": "file",
+      "name": "generate-protos.mjs",
+      "filePath": "tools/generate-protos.mjs",
+      "summary": "Node script discovering protoc, collecting proto files, and generating TypeScript contracts.",
+      "tags": "script,build-system,codegen",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:findProtoc",
+      "type": "function",
+      "name": "findProtoc",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        46,
+        57
+      ],
+      "summary": "Codegen helper: findProtoc.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:assertProtocAvailable",
+      "type": "function",
+      "name": "assertProtocAvailable",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        60,
+        72
+      ],
+      "summary": "Codegen helper: assertProtocAvailable.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:findPlugin",
+      "type": "function",
+      "name": "findPlugin",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        74,
+        85
+      ],
+      "summary": "Codegen helper: findPlugin.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:collectProtos",
+      "type": "function",
+      "name": "collectProtos",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        87,
+        98
+      ],
+      "summary": "Codegen helper: collectProtos.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:generate",
+      "type": "function",
+      "name": "generate",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        100,
+        129
+      ],
+      "summary": "Codegen helper: generate.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:listFiles",
+      "type": "function",
+      "name": "listFiles",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        132,
+        143
+      ],
+      "summary": "Codegen helper: listFiles.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tools/generate-protos.mjs:checkMode",
+      "type": "function",
+      "name": "checkMode",
+      "filePath": "tools/generate-protos.mjs",
+      "lineRange": [
+        145,
+        176
+      ],
+      "summary": "Codegen helper: checkMode.",
+      "tags": [
+        "script",
+        "build-system"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:packages/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "packages/.gitkeep",
+      "summary": "Placeholder keeping the packages directory in version control.",
+      "tags": "placeholder,config",
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:createBaseOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:createBasePayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:createBaseProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/contracts.ts",
+      "target": "function:libs/contracts/src/lib/contracts.ts:resolveProtoDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/contracts.ts",
+      "target": "function:libs/contracts/src/lib/contracts.ts:resolveProtoDir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/contracts.ts",
+      "target": "function:libs/contracts/src/lib/contracts.ts:loadProtoDefinitions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/contracts.ts",
+      "target": "function:libs/contracts/src/lib/contracts.ts:loadProtoDefinitions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/events/registry.ts",
+      "target": "function:libs/contracts/src/lib/events/registry.ts:getEventSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/events/registry.ts",
+      "target": "function:libs/contracts/src/lib/events/registry.ts:getEventSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/events/registry.ts",
+      "target": "function:libs/contracts/src/lib/events/registry.ts:isEventType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/events/registry.ts",
+      "target": "function:libs/contracts/src/lib/events/registry.ts:isEventType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:defineSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:defineSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:defineRule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:defineRule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:validateField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:validateObject",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:validateObject",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:parse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "function:libs/contracts/src/lib/validation/schema.ts:parse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "class:libs/contracts/src/lib/validation/schema.ts:SchemaValidationError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "class:libs/contracts/src/lib/validation/schema.ts:SchemaValidationError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:findProtoc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:assertProtocAvailable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:findPlugin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:collectProtos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:generate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:listFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tools/generate-protos.mjs",
+      "target": "function:tools/generate-protos.mjs:checkMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/lib/events/registry.ts",
+      "target": "file:libs/contracts/src/lib/events/registry.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:libs/contracts/src/lib/validation/schema.ts",
+      "target": "file:libs/contracts/src/lib/validation/schema.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

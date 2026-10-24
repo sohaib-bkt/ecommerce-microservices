@@ -1,0 +1,14 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 70,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge script reported no mechanical fixes needed and no unfixable issues; all node IDs, types, and complexity values were already valid.",
+    "No dangling edges were dropped by the script.",
+    "Generated an import map from scan-result file inventory using extract-import-map.mjs (scan-result lacked importMap field) and added 70 missing imports edges between existing file nodes.",
+    "All 70 import pairs resolved to file nodes already present in the assembled graph."
+  ]
+}

@@ -1,0 +1,1107 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/product-service/src/app/product.service.ts",
+      "type": "file",
+      "name": "product.service.ts",
+      "filePath": "apps/product-service/src/app/product.service.ts",
+      "summary": "In-memory product catalog service with CRUD, stock reservation and release.",
+      "tags": [
+        "service",
+        "data-model",
+        "crud"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/product-service/src/app/product.service.ts:ProductService",
+      "type": "class",
+      "name": "ProductService",
+      "filePath": "apps/product-service/src/app/product.service.ts",
+      "lineRange": [
+        28,
+        165
+      ],
+      "summary": "Class ProductService in product.service.ts.",
+      "tags": [
+        "data-model",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/product-service/src/assets/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "apps/product-service/src/assets/.gitkeep",
+      "summary": "Placeholder keeping the assets directory in version control.",
+      "tags": [
+        "placeholder"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/product-service/src/main.ts",
+      "summary": "Bootstraps the NestJS product microservice and gRPC server.",
+      "tags": [
+        "entry-point",
+        "bootstrap",
+        "grpc"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/product-service/src/main.ts:resolveProtoPaths",
+      "type": "function",
+      "name": "resolveProtoPaths",
+      "filePath": "apps/product-service/src/main.ts",
+      "lineRange": [
+        6,
+        25
+      ],
+      "summary": "Function resolveProtoPaths in main.ts.",
+      "tags": [
+        "utility",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/product-service/src/main.ts:bootstrap",
+      "type": "function",
+      "name": "bootstrap",
+      "filePath": "apps/product-service/src/main.ts",
+      "lineRange": [
+        27,
+        58
+      ],
+      "summary": "Function bootstrap in main.ts.",
+      "tags": [
+        "utility",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/webpack.config.js",
+      "type": "file",
+      "name": "webpack.config.js",
+      "filePath": "apps/product-service/webpack.config.js",
+      "summary": "Webpack build configuration for the product service.",
+      "tags": [
+        "build-system",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "Root ESLint flat configuration.",
+      "tags": [
+        "configuration",
+        "linting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:jest.config.ts",
+      "type": "file",
+      "name": "jest.config.ts",
+      "filePath": "jest.config.ts",
+      "summary": "Jest test runner configuration.",
+      "tags": [
+        "configuration",
+        "testing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:jest.preset.js",
+      "type": "file",
+      "name": "jest.preset.js",
+      "filePath": "jest.preset.js",
+      "summary": "Shared Jest preset for the monorepo.",
+      "tags": [
+        "configuration",
+        "testing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "libs/contracts/.spec.swcrc",
+      "summary": "SWC transform config for tests.",
+      "tags": [
+        "configuration",
+        "testing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "libs/contracts/eslint.config.mjs",
+      "summary": "ESLint flat config for contracts library.",
+      "tags": [
+        "configuration",
+        "linting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "libs/contracts/jest.config.cts",
+      "summary": "Jest config for contracts library.",
+      "tags": [
+        "configuration",
+        "testing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto",
+      "type": "schema",
+      "name": "account.proto",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "summary": "Protobuf schema defining account.proto messages and RPCs.",
+      "tags": [
+        "schema-definition",
+        "protobuf",
+        "api-schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:Account",
+      "type": "schema",
+      "name": "Account",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        16,
+        24
+      ],
+      "summary": "Protobuf message Account with fields id, email, display_name, status.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:GetAccountRequest",
+      "type": "schema",
+      "name": "GetAccountRequest",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        27,
+        29
+      ],
+      "summary": "Protobuf message GetAccountRequest with fields id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:GetAccountResponse",
+      "type": "schema",
+      "name": "GetAccountResponse",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        32,
+        34
+      ],
+      "summary": "Protobuf message GetAccountResponse with fields account.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:ListAccountsRequest",
+      "type": "schema",
+      "name": "ListAccountsRequest",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "Protobuf message ListAccountsRequest with fields status.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:ListAccountsResponse",
+      "type": "schema",
+      "name": "ListAccountsResponse",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        43,
+        46
+      ],
+      "summary": "Protobuf message ListAccountsResponse with fields accounts.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:CreateAccountRequest",
+      "type": "schema",
+      "name": "CreateAccountRequest",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        49,
+        53
+      ],
+      "summary": "Protobuf message CreateAccountRequest with fields email, display_name.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:CreateAccountResponse",
+      "type": "schema",
+      "name": "CreateAccountResponse",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        56,
+        58
+      ],
+      "summary": "Protobuf message CreateAccountResponse with fields account.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:UpdateAccountRequest",
+      "type": "schema",
+      "name": "UpdateAccountRequest",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        61,
+        66
+      ],
+      "summary": "Protobuf message UpdateAccountRequest with fields id, display_name, status.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:UpdateAccountResponse",
+      "type": "schema",
+      "name": "UpdateAccountResponse",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        69,
+        71
+      ],
+      "summary": "Protobuf message UpdateAccountResponse with fields account.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/account/v1/account.proto:AccountStatus",
+      "type": "schema",
+      "name": "AccountStatus",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        8,
+        13
+      ],
+      "summary": "Protobuf enum AccountStatus with fields ACCOUNT_STATUS_UNSPECIFIED, ACCOUNT_STATUS_ACTIVE, ACCOUNT_STATUS_SUSPENDED, ACCOUNT_STATUS_CLOSED.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.GetAccount",
+      "type": "endpoint",
+      "name": "rpc AccountService.GetAccount",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        75,
+        75
+      ],
+      "summary": "RPC endpoint AccountService.GetAccount.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.ListAccounts",
+      "type": "endpoint",
+      "name": "rpc AccountService.ListAccounts",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        76,
+        76
+      ],
+      "summary": "RPC endpoint AccountService.ListAccounts.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.CreateAccount",
+      "type": "endpoint",
+      "name": "rpc AccountService.CreateAccount",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        77,
+        77
+      ],
+      "summary": "RPC endpoint AccountService.CreateAccount.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.UpdateAccount",
+      "type": "endpoint",
+      "name": "rpc AccountService.UpdateAccount",
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "lineRange": [
+        78,
+        78
+      ],
+      "summary": "RPC endpoint AccountService.UpdateAccount.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/common/v1/common.proto",
+      "type": "schema",
+      "name": "common.proto",
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "summary": "Protobuf schema defining common.proto messages and RPCs.",
+      "tags": [
+        "schema-definition",
+        "protobuf",
+        "api-schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:libs/contracts/proto/common/v1/common.proto:Money",
+      "type": "schema",
+      "name": "Money",
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "lineRange": [
+        7,
+        12
+      ],
+      "summary": "Protobuf message Money with fields currency, amount.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/common/v1/common.proto:Address",
+      "type": "schema",
+      "name": "Address",
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "lineRange": [
+        15,
+        22
+      ],
+      "summary": "Protobuf message Address with fields line1, line2, city, region, postal_code, country.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/common/v1/common.proto:PageRequest",
+      "type": "schema",
+      "name": "PageRequest",
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "Protobuf message PageRequest with fields page, page_size.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/common/v1/common.proto:PageResponse",
+      "type": "schema",
+      "name": "PageResponse",
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "lineRange": [
+        31,
+        35
+      ],
+      "summary": "Protobuf message PageResponse with fields total_items, total_pages, current_page.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/common/v1/common.proto:Timestamp",
+      "type": "schema",
+      "name": "Timestamp",
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "lineRange": [
+        38,
+        40
+      ],
+      "summary": "Protobuf message Timestamp with fields epoch_millis.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto",
+      "type": "schema",
+      "name": "order.proto",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "summary": "Protobuf schema defining order.proto messages and RPCs.",
+      "tags": [
+        "schema-definition",
+        "protobuf",
+        "api-schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:OrderItem",
+      "type": "schema",
+      "name": "OrderItem",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        20,
+        26
+      ],
+      "summary": "Protobuf message OrderItem with fields product_id, sku, name, quantity.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:Order",
+      "type": "schema",
+      "name": "Order",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        29,
+        40
+      ],
+      "summary": "Protobuf message Order with fields id, account_id, status, items, currency, payment_id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:GetOrderRequest",
+      "type": "schema",
+      "name": "GetOrderRequest",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        43,
+        45
+      ],
+      "summary": "Protobuf message GetOrderRequest with fields id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:GetOrderResponse",
+      "type": "schema",
+      "name": "GetOrderResponse",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        48,
+        50
+      ],
+      "summary": "Protobuf message GetOrderResponse with fields order.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:ListOrdersRequest",
+      "type": "schema",
+      "name": "ListOrdersRequest",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        53,
+        57
+      ],
+      "summary": "Protobuf message ListOrdersRequest with fields account_id, status.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:ListOrdersResponse",
+      "type": "schema",
+      "name": "ListOrdersResponse",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        60,
+        63
+      ],
+      "summary": "Protobuf message ListOrdersResponse with fields orders.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:CreateOrderRequest",
+      "type": "schema",
+      "name": "CreateOrderRequest",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        66,
+        70
+      ],
+      "summary": "Protobuf message CreateOrderRequest with fields account_id, items.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:CreateOrderResponse",
+      "type": "schema",
+      "name": "CreateOrderResponse",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        73,
+        75
+      ],
+      "summary": "Protobuf message CreateOrderResponse with fields order.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:UpdateOrderStatusRequest",
+      "type": "schema",
+      "name": "UpdateOrderStatusRequest",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        78,
+        82
+      ],
+      "summary": "Protobuf message UpdateOrderStatusRequest with fields id, status, reason.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:UpdateOrderStatusResponse",
+      "type": "schema",
+      "name": "UpdateOrderStatusResponse",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        85,
+        87
+      ],
+      "summary": "Protobuf message UpdateOrderStatusResponse with fields order.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:CancelOrderRequest",
+      "type": "schema",
+      "name": "CancelOrderRequest",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        90,
+        93
+      ],
+      "summary": "Protobuf message CancelOrderRequest with fields id, reason.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:CancelOrderResponse",
+      "type": "schema",
+      "name": "CancelOrderResponse",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        96,
+        98
+      ],
+      "summary": "Protobuf message CancelOrderResponse with fields order.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/order/v1/order.proto:OrderStatus",
+      "type": "schema",
+      "name": "OrderStatus",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        8,
+        17
+      ],
+      "summary": "Protobuf enum OrderStatus with fields ORDER_STATUS_UNSPECIFIED, ORDER_STATUS_PENDING, ORDER_STATUS_CONFIRMED, ORDER_STATUS_PAID, ORDER_STATUS_SHIPPED, ORDER_STATUS_DELIVERED, ORDER_STATUS_CANCELLED, ORDER_STATUS_REFUNDED.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.GetOrder",
+      "type": "endpoint",
+      "name": "rpc OrderService.GetOrder",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        102,
+        102
+      ],
+      "summary": "RPC endpoint OrderService.GetOrder.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.ListOrders",
+      "type": "endpoint",
+      "name": "rpc OrderService.ListOrders",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        103,
+        103
+      ],
+      "summary": "RPC endpoint OrderService.ListOrders.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.CreateOrder",
+      "type": "endpoint",
+      "name": "rpc OrderService.CreateOrder",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        104,
+        104
+      ],
+      "summary": "RPC endpoint OrderService.CreateOrder.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.UpdateOrderStatus",
+      "type": "endpoint",
+      "name": "rpc OrderService.UpdateOrderStatus",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        105,
+        105
+      ],
+      "summary": "RPC endpoint OrderService.UpdateOrderStatus.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.CancelOrder",
+      "type": "endpoint",
+      "name": "rpc OrderService.CancelOrder",
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "lineRange": [
+        106,
+        106
+      ],
+      "summary": "RPC endpoint OrderService.CancelOrder.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/product-service/src/app/product.service.ts",
+      "target": "class:apps/product-service/src/app/product.service.ts:ProductService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.service.ts",
+      "target": "class:apps/product-service/src/app/product.service.ts:ProductService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/main.ts",
+      "target": "function:apps/product-service/src/main.ts:resolveProtoPaths",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/main.ts",
+      "target": "function:apps/product-service/src/main.ts:bootstrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:Account",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:GetAccountRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:GetAccountResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:ListAccountsRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:ListAccountsResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:CreateAccountRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:CreateAccountResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:UpdateAccountRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:UpdateAccountResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "schema:libs/contracts/proto/account/v1/account.proto:AccountStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.GetAccount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.ListAccounts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.CreateAccount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "endpoint:libs/contracts/proto/account/v1/account.proto:rpc-AccountService.UpdateAccount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/common/v1/common.proto",
+      "target": "schema:libs/contracts/proto/common/v1/common.proto:Money",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/common/v1/common.proto",
+      "target": "schema:libs/contracts/proto/common/v1/common.proto:Address",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/common/v1/common.proto",
+      "target": "schema:libs/contracts/proto/common/v1/common.proto:PageRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/common/v1/common.proto",
+      "target": "schema:libs/contracts/proto/common/v1/common.proto:PageResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/common/v1/common.proto",
+      "target": "schema:libs/contracts/proto/common/v1/common.proto:Timestamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:OrderItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:Order",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:GetOrderRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:GetOrderResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:ListOrdersRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:ListOrdersResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:CreateOrderRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:CreateOrderResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:UpdateOrderStatusRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:UpdateOrderStatusResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:CancelOrderRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:CancelOrderResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "schema:libs/contracts/proto/order/v1/order.proto:OrderStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.GetOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.ListOrders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.CreateOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.UpdateOrderStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/order/v1/order.proto",
+      "target": "endpoint:libs/contracts/proto/order/v1/order.proto:rpc-OrderService.CancelOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/account/v1/account.proto",
+      "target": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "schema:libs/contracts/proto/common/v1/common.proto",
+      "target": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

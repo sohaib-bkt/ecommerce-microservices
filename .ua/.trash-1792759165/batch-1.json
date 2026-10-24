@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project overview and Nx workspace getting-started guide covering library generation, running tasks, versioning, CI setup, and useful links.",
+      "tags": ["documentation", "entry-point", "nx", "workspace"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:nx.json",
+      "type": "config",
+      "name": "nx.json",
+      "filePath": "nx.json",
+      "summary": "Nx workspace configuration defining analytics, named inputs, plugins (TypeScript, webpack, eslint, jest), and target defaults.",
+      "tags": ["configuration", "build-system", "nx", "orchestration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Root package manifest for the @ecommerce-platform/source monorepo, declaring workspaces (apps, libs, packages), scripts, and runtime/dev dependencies.",
+      "tags": ["configuration", "build-system", "monorepo", "dependencies"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:tsconfig.base.json",
+      "type": "config",
+      "name": "tsconfig.base.json",
+      "filePath": "tsconfig.base.json",
+      "summary": "Shared TypeScript compiler base configuration enabling strict mode, project references, and ES2022 target for all workspace projects.",
+      "tags": ["configuration", "typescript", "build-system", "strict-mode"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "Root TypeScript solution file extending the base config and listing project references for all apps and libs.",
+      "tags": ["configuration", "typescript", "project-references", "build-system"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:tsconfig.base.json",
+      "target": "config:tsconfig.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:nx.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:nx.json",
+      "target": "config:package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

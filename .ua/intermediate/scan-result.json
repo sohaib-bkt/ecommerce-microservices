@@ -1,0 +1,1091 @@
+{
+  "scriptCompleted": true,
+  "contentDigest": "bf9c21e093674e6ba5de3e2dc025c3816aacbc7f5aac76dabf91ae606aa87518",
+  "files": [
+    {
+      "path": ".prettierignore",
+      "language": "unknown",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/account-service-e2e/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/account-service-e2e/src/account-service/account-service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/src/support/global-setup.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/src/support/global-teardown.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/src/support/test-setup.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service-e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/account-service/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/account-service/src/app/app.controller.spec.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/src/app/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/src/app/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/src/app/app.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/src/app/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/account-service/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/account-service/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/account-service/tsconfig.spec.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/account-service/webpack.config.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/src/support/global-setup.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/src/support/global-teardown.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/src/support/test-setup.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway-e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api-gateway/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api-gateway/src/app/app.controller.spec.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/app/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/app/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/app/app.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/app/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/app/contracts-integration.spec.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api-gateway/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api-gateway/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api-gateway/tsconfig.spec.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api-gateway/webpack.config.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/order-service-e2e/src/order-service/order-service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/src/support/global-setup.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/src/support/global-teardown.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/src/support/test-setup.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service-e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/order-service/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/order-service/src/app/app.controller.spec.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/src/app/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/src/app/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/src/app/app.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/src/app/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/order-service/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/order-service/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/order-service/tsconfig.spec.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/order-service/webpack.config.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/src/support/global-setup.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/src/support/global-teardown.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/src/support/test-setup.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service-e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/payment-service/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/payment-service/src/app/app.controller.spec.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/src/app/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/src/app/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/src/app/app.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/src/app/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/payment-service/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/payment-service/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/payment-service/tsconfig.spec.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/payment-service/webpack.config.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/package.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/product-service-e2e/src/product-service/product-service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/src/support/global-setup.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/src/support/global-teardown.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/src/support/test-setup.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service-e2e/tsconfig.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/product-service/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/package.json",
+      "language": "json",
+      "sizeLines": 80,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/product-service/src/app/app.controller.spec.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/app/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/app/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/app/app.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/app/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/app/product.controller.ts",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/app/product.service.ts",
+      "language": "typescript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/assets/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/product-service/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/product-service/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/product-service/tsconfig.spec.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/product-service/webpack.config.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "jest.config.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "jest.preset.js",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/.spec.swcrc",
+      "language": "swcrc",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/README.md",
+      "language": "markdown",
+      "sizeLines": 131,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "libs/contracts/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/jest.config.cts",
+      "language": "cts",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/package.json",
+      "language": "json",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/contracts/project.json",
+      "language": "json",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/contracts/proto/account/v1/account.proto",
+      "language": "protobuf",
+      "sizeLines": 79,
+      "fileCategory": "data"
+    },
+    {
+      "path": "libs/contracts/proto/common/v1/common.proto",
+      "language": "protobuf",
+      "sizeLines": 40,
+      "fileCategory": "data"
+    },
+    {
+      "path": "libs/contracts/proto/order/v1/order.proto",
+      "language": "protobuf",
+      "sizeLines": 107,
+      "fileCategory": "data"
+    },
+    {
+      "path": "libs/contracts/proto/payment/v1/payment.proto",
+      "language": "protobuf",
+      "sizeLines": 91,
+      "fileCategory": "data"
+    },
+    {
+      "path": "libs/contracts/proto/product/v1/product.proto",
+      "language": "protobuf",
+      "sizeLines": 118,
+      "fileCategory": "data"
+    },
+    {
+      "path": "libs/contracts/src/generated/account/v1/account.ts",
+      "language": "typescript",
+      "sizeLines": 1060,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/common/v1/common.ts",
+      "language": "typescript",
+      "sizeLines": 596,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.account.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.account.v1.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.common.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.common.v1.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.order.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.order.v1.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.payment.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.payment.v1.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.product.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.product.v1.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ecommerce.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/index.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/order/v1/order.ts",
+      "language": "typescript",
+      "sizeLines": 1453,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "language": "typescript",
+      "sizeLines": 1158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/generated/product/v1/product.ts",
+      "language": "typescript",
+      "sizeLines": 1673,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/index.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/contracts.ts",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/account.events.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/envelope.ts",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/order.events.ts",
+      "language": "typescript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/payment.events.ts",
+      "language": "typescript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/product.events.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/registry.spec.ts",
+      "language": "typescript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/events/registry.ts",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/generated.spec.ts",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/validation/schema.spec.ts",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/src/lib/validation/schema.ts",
+      "language": "typescript",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    },
+    {
+      "path": "libs/contracts/tsconfig.json",
+      "language": "json",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/contracts/tsconfig.lib.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "libs/contracts/tsconfig.spec.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nx.json",
+      "language": "json",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 59,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tools/generate-protos.mjs",
+      "language": "javascript",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "sizeLines": 40,
+      "fileCategory": "config"
+    }
+  ],
+  "totalFiles": 177,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "failures": [],
+  "stats": {
+    "filesScanned": 177,
+    "byCategory": {
+      "code": 131,
+      "docs": 2,
+      "config": 39,
+      "data": 5
+    },
+    "byLanguage": {
+      "unknown": 7,
+      "markdown": 2,
+      "swcrc": 11,
+      "javascript": 19,
+      "cts": 11,
+      "json": 39,
+      "typescript": 83,
+      "protobuf": 5
+    }
+  }
+}

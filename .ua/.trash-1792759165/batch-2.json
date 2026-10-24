@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/account-service/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/account-service/package.json",
+      "summary": "Nx project manifest for the account-service NestJS app, declaring runtime dependencies (@nestjs/*, rxjs) and build/serve/test targets.",
+      "tags": ["configuration", "package", "build-system", "nx"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:apps/account-service/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/account-service/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the account-service application build, enabling decorators and strict type checks over src.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/account-service/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/account-service/tsconfig.json",
+      "summary": "Root TypeScript project references file delegating to the app and spec tsconfig configurations for the account-service.",
+      "tags": ["configuration", "typescript", "project-references"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/account-service/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/account-service/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for the account-service test suite, including Jest types and spec files.",
+      "tags": ["configuration", "typescript", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/account-service/tsconfig.app.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/account-service/tsconfig.spec.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/account-service/tsconfig.json",
+      "target": "config:apps/account-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/account-service/tsconfig.json",
+      "target": "config:apps/account-service/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/account-service/package.json",
+      "target": "file:apps/account-service/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

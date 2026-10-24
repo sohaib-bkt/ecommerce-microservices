@@ -1,0 +1,3948 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "9055446569236d9758d2cd233cdfe6771d0a196e",
+  "generatedAt": "2026-10-23T12:39:20.818Z",
+  "files": {
+    ".prettierignore": {
+      "filePath": ".prettierignore",
+      "contentHash": "7628e6cb1b3ed38a3cd72b3d68f7d86266684d4f45ada53cfd804b622f71e435",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "4737329932fc232967148b1f116861ea29a0a8abaffbbf6842aeb42ef92d6445",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 111,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service-e2e/.spec.swcrc": {
+      "filePath": "apps/account-service-e2e/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service-e2e/eslint.config.mjs": {
+      "filePath": "apps/account-service-e2e/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service-e2e/jest.config.cts": {
+      "filePath": "apps/account-service-e2e/jest.config.cts",
+      "contentHash": "b9a3a0c9a7396847c6125e660c7556cc0c2043e34ceb4662633270546d2c3057",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service-e2e/package.json": {
+      "filePath": "apps/account-service-e2e/package.json",
+      "contentHash": "a7e1f2587359077a178d25c7064d5c96ecb8a21072eba196241aeffcac5f2eb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service-e2e/src/account-service/account-service.spec.ts": {
+      "filePath": "apps/account-service-e2e/src/account-service/account-service.spec.ts",
+      "contentHash": "ddd1bb52e319293eb06f8f10cd002de0bd37c1eeab1461cf8815534749500b73",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service-e2e/src/support/global-setup.ts": {
+      "filePath": "apps/account-service-e2e/src/support/global-setup.ts",
+      "contentHash": "1e57b29cf4b210688aca04a509728a896a559962dc4b21f17fc085772fbc3c88",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "waitForPortOpen"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service-e2e/src/support/global-teardown.ts": {
+      "filePath": "apps/account-service-e2e/src/support/global-teardown.ts",
+      "contentHash": "f9e2f0dfca2acf50f48cab21610f25da34613c8878b25991185111ce8f10f759",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "killPort"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service-e2e/src/support/test-setup.ts": {
+      "filePath": "apps/account-service-e2e/src/support/test-setup.ts",
+      "contentHash": "cc0472698aa6e51d27531a0087a62410d95fd895755905397dec1549078978be",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service-e2e/tsconfig.json": {
+      "filePath": "apps/account-service-e2e/tsconfig.json",
+      "contentHash": "6e7e40de97984bd3d4c2bd759fc5112b8363502cf12572d8a7342edcab2215db",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/.spec.swcrc": {
+      "filePath": "apps/account-service/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/eslint.config.mjs": {
+      "filePath": "apps/account-service/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/jest.config.cts": {
+      "filePath": "apps/account-service/jest.config.cts",
+      "contentHash": "6353b38cb465676947662bad26f4f0b73b9487027acbd38a35d645c490172cee",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/package.json": {
+      "filePath": "apps/account-service/package.json",
+      "contentHash": "21c6468e0d6837b671aea9c6fc6a2cf145f88cdd01276861c6f5a61777553bc0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/src/app/app.controller.spec.ts": {
+      "filePath": "apps/account-service/src/app/app.controller.spec.ts",
+      "contentHash": "4327588ae3b11f6d5f0bb282095022e4ce4667ff484a34b9a238e77f3c1e92c1",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test",
+            "TestingModule"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/src/app/app.controller.ts": {
+      "filePath": "apps/account-service/src/app/app.controller.ts",
+      "contentHash": "eb4c6c96034109ba6722a70812e6cbbb20110d3ba420d29a16606bbfa16f7ecb",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppController",
+          "methods": [
+            "constructor",
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Get"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppController"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/src/app/app.module.ts": {
+      "filePath": "apps/account-service/src/app/app.module.ts",
+      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppModule"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/src/app/app.service.spec.ts": {
+      "filePath": "apps/account-service/src/app/app.service.spec.ts",
+      "contentHash": "ae5fd20b6cd3d23cf44b5341cb927e7e3aab2c9dd6825a6534684eb93a70594f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/src/app/app.service.ts": {
+      "filePath": "apps/account-service/src/app/app.service.ts",
+      "contentHash": "4c39152741ddfb578e12b53f507a53e8813c0702c57aa852dde5acd739af92ad",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppService",
+          "methods": [
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "AppService"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/src/assets/.gitkeep": {
+      "filePath": "apps/account-service/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/src/main.ts": {
+      "filePath": "apps/account-service/src/main.ts",
+      "contentHash": "e770f30252108746eeef490fb2ec20e9ac3b3456d5038edb453a381747b21deb",
+      "functions": [
+        {
+          "name": "bootstrap",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "NestFactory"
+          ]
+        },
+        {
+          "source": "./app/app.module",
+          "specifiers": [
+            "AppModule"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/account-service/tsconfig.app.json": {
+      "filePath": "apps/account-service/tsconfig.app.json",
+      "contentHash": "a796f630e8ed8b81c53a8ed0955e165594d0966784bc95377a655421861fb66b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/tsconfig.json": {
+      "filePath": "apps/account-service/tsconfig.json",
+      "contentHash": "191e062754e3e5d392507906d2b62d370dfa5a1a675a9a16e8287d1f76cbecb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/tsconfig.spec.json": {
+      "filePath": "apps/account-service/tsconfig.spec.json",
+      "contentHash": "2268f67c77828faf1a18b01f7a1db4d35ae6045405bc02916526a2d0f57d8240",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "apps/account-service/webpack.config.js": {
+      "filePath": "apps/account-service/webpack.config.js",
+      "contentHash": "fc1a293408c5300508197dab4489a9200bc3019716aff75453ded6652addecd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway-e2e/.spec.swcrc": {
+      "filePath": "apps/api-gateway-e2e/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway-e2e/eslint.config.mjs": {
+      "filePath": "apps/api-gateway-e2e/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway-e2e/jest.config.cts": {
+      "filePath": "apps/api-gateway-e2e/jest.config.cts",
+      "contentHash": "c90b7f4d566e74cf947ae2ffa16c24e7e7f8cdc599b5ba7eed570f48d7740c2d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway-e2e/package.json": {
+      "filePath": "apps/api-gateway-e2e/package.json",
+      "contentHash": "82447110c952e7d5e08d11b472170ecaa4e0de02950fa08a99f2163a0c99dd1f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts": {
+      "filePath": "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts",
+      "contentHash": "ddd1bb52e319293eb06f8f10cd002de0bd37c1eeab1461cf8815534749500b73",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway-e2e/src/support/global-setup.ts": {
+      "filePath": "apps/api-gateway-e2e/src/support/global-setup.ts",
+      "contentHash": "2e37089625cc9aff6575193a4b09a74747bcacc9767103358564f51935f2987d",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "waitForPortOpen"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway-e2e/src/support/global-teardown.ts": {
+      "filePath": "apps/api-gateway-e2e/src/support/global-teardown.ts",
+      "contentHash": "e1cc3737e361d6f77caa1462cd2afa9fd9da59b00056f3441a0578bbaf335565",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "killPort"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway-e2e/src/support/test-setup.ts": {
+      "filePath": "apps/api-gateway-e2e/src/support/test-setup.ts",
+      "contentHash": "be1d9a4a0b973f1836e0cf0df28886fba96ecb1f93255bde5ac7929f418f9478",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway-e2e/tsconfig.json": {
+      "filePath": "apps/api-gateway-e2e/tsconfig.json",
+      "contentHash": "70c09b6548ff565bf5f52931a38304f03724cecf4c49be851718616f20e4d123",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/.spec.swcrc": {
+      "filePath": "apps/api-gateway/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/eslint.config.mjs": {
+      "filePath": "apps/api-gateway/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/jest.config.cts": {
+      "filePath": "apps/api-gateway/jest.config.cts",
+      "contentHash": "dae4c42834ef2787e424fa3a5149cd67aea5b7744aa3914a8a308bd0118eb322",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/package.json": {
+      "filePath": "apps/api-gateway/package.json",
+      "contentHash": "3ed684f92b372840d694246df5490480053b4c5df4ef07621b1737483774f587",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/src/app/app.controller.spec.ts": {
+      "filePath": "apps/api-gateway/src/app/app.controller.spec.ts",
+      "contentHash": "4327588ae3b11f6d5f0bb282095022e4ce4667ff484a34b9a238e77f3c1e92c1",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test",
+            "TestingModule"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/app.controller.ts": {
+      "filePath": "apps/api-gateway/src/app/app.controller.ts",
+      "contentHash": "eb4c6c96034109ba6722a70812e6cbbb20110d3ba420d29a16606bbfa16f7ecb",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppController",
+          "methods": [
+            "constructor",
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Get"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppController"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/app.module.ts": {
+      "filePath": "apps/api-gateway/src/app/app.module.ts",
+      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppModule"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/app.service.spec.ts": {
+      "filePath": "apps/api-gateway/src/app/app.service.spec.ts",
+      "contentHash": "ae5fd20b6cd3d23cf44b5341cb927e7e3aab2c9dd6825a6534684eb93a70594f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/app.service.ts": {
+      "filePath": "apps/api-gateway/src/app/app.service.ts",
+      "contentHash": "4c39152741ddfb578e12b53f507a53e8813c0702c57aa852dde5acd739af92ad",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppService",
+          "methods": [
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "AppService"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/contracts-integration.spec.ts": {
+      "filePath": "apps/api-gateway/src/app/contracts-integration.spec.ts",
+      "contentHash": "9296faf8d39e0f0729cc847741f093dcf07197715dd3d3f27e191ced8b2e9627",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "EVENT_TYPES",
+            "ecommerce"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/assets/.gitkeep": {
+      "filePath": "apps/api-gateway/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/src/main.ts": {
+      "filePath": "apps/api-gateway/src/main.ts",
+      "contentHash": "b7da3ae347526d164de16add414df683d9c5843abc6b2926de30c50a020f8e26",
+      "functions": [
+        {
+          "name": "bootstrap",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "NestFactory"
+          ]
+        },
+        {
+          "source": "./app/app.module",
+          "specifiers": [
+            "AppModule"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/tsconfig.app.json": {
+      "filePath": "apps/api-gateway/tsconfig.app.json",
+      "contentHash": "a15a215c8c6f7ce0e7bab13f68bd2e5b447901e978868f04677c324422dd9b5c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/tsconfig.json": {
+      "filePath": "apps/api-gateway/tsconfig.json",
+      "contentHash": "191e062754e3e5d392507906d2b62d370dfa5a1a675a9a16e8287d1f76cbecb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/tsconfig.spec.json": {
+      "filePath": "apps/api-gateway/tsconfig.spec.json",
+      "contentHash": "2268f67c77828faf1a18b01f7a1db4d35ae6045405bc02916526a2d0f57d8240",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "apps/api-gateway/webpack.config.js": {
+      "filePath": "apps/api-gateway/webpack.config.js",
+      "contentHash": "fc1a293408c5300508197dab4489a9200bc3019716aff75453ded6652addecd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service-e2e/.spec.swcrc": {
+      "filePath": "apps/order-service-e2e/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service-e2e/eslint.config.mjs": {
+      "filePath": "apps/order-service-e2e/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service-e2e/jest.config.cts": {
+      "filePath": "apps/order-service-e2e/jest.config.cts",
+      "contentHash": "047f7b1e6e60d86c50f691520b04ec0577716f771890a415b920baa3f97eb5f4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service-e2e/package.json": {
+      "filePath": "apps/order-service-e2e/package.json",
+      "contentHash": "1e2362974399c83da04c3fabd8fc1072c57d86ccb61cf81bd7154199fe1e3bfb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service-e2e/src/order-service/order-service.spec.ts": {
+      "filePath": "apps/order-service-e2e/src/order-service/order-service.spec.ts",
+      "contentHash": "ddd1bb52e319293eb06f8f10cd002de0bd37c1eeab1461cf8815534749500b73",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service-e2e/src/support/global-setup.ts": {
+      "filePath": "apps/order-service-e2e/src/support/global-setup.ts",
+      "contentHash": "d754319c2f9e171e5b5eaae4087ca7b8e322563b91c41196be52f4278050d1f8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "waitForPortOpen"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service-e2e/src/support/global-teardown.ts": {
+      "filePath": "apps/order-service-e2e/src/support/global-teardown.ts",
+      "contentHash": "1259e2e6120b6870ccbae98b96fa3c34ea5f657c3ee5ad5fd7e0e0139f8cfeaf",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "killPort"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service-e2e/src/support/test-setup.ts": {
+      "filePath": "apps/order-service-e2e/src/support/test-setup.ts",
+      "contentHash": "e9f5f9a21ad9ef19358d44fa1fed325f1d37b0d8b6ba03e7cb588818db634f0b",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service-e2e/tsconfig.json": {
+      "filePath": "apps/order-service-e2e/tsconfig.json",
+      "contentHash": "8006defc9acb173a3ed7dd5cee048eee721d88ec1e7b574593df84327c6b75e2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/.spec.swcrc": {
+      "filePath": "apps/order-service/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/eslint.config.mjs": {
+      "filePath": "apps/order-service/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/jest.config.cts": {
+      "filePath": "apps/order-service/jest.config.cts",
+      "contentHash": "5aae8e06f3e8f38508769079563b2a14b8dbc3097a6950a79cf2aa203d11dadc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/package.json": {
+      "filePath": "apps/order-service/package.json",
+      "contentHash": "39448d225f65392cb9ba13bf9852c47684f17f3d2ef24c594a97aa2b1c9afb41",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/src/app/app.controller.spec.ts": {
+      "filePath": "apps/order-service/src/app/app.controller.spec.ts",
+      "contentHash": "4327588ae3b11f6d5f0bb282095022e4ce4667ff484a34b9a238e77f3c1e92c1",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test",
+            "TestingModule"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/app.controller.ts": {
+      "filePath": "apps/order-service/src/app/app.controller.ts",
+      "contentHash": "eb4c6c96034109ba6722a70812e6cbbb20110d3ba420d29a16606bbfa16f7ecb",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppController",
+          "methods": [
+            "constructor",
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Get"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppController"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/app.module.ts": {
+      "filePath": "apps/order-service/src/app/app.module.ts",
+      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppModule"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/app.service.spec.ts": {
+      "filePath": "apps/order-service/src/app/app.service.spec.ts",
+      "contentHash": "ae5fd20b6cd3d23cf44b5341cb927e7e3aab2c9dd6825a6534684eb93a70594f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/app.service.ts": {
+      "filePath": "apps/order-service/src/app/app.service.ts",
+      "contentHash": "4c39152741ddfb578e12b53f507a53e8813c0702c57aa852dde5acd739af92ad",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppService",
+          "methods": [
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "AppService"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/assets/.gitkeep": {
+      "filePath": "apps/order-service/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/src/main.ts": {
+      "filePath": "apps/order-service/src/main.ts",
+      "contentHash": "6a9913a617ff40a0c273c7dab17764ba0fabf51b19f7d7e3b21134032ed98ee8",
+      "functions": [
+        {
+          "name": "bootstrap",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "NestFactory"
+          ]
+        },
+        {
+          "source": "./app/app.module",
+          "specifiers": [
+            "AppModule"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/tsconfig.app.json": {
+      "filePath": "apps/order-service/tsconfig.app.json",
+      "contentHash": "a796f630e8ed8b81c53a8ed0955e165594d0966784bc95377a655421861fb66b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/tsconfig.json": {
+      "filePath": "apps/order-service/tsconfig.json",
+      "contentHash": "191e062754e3e5d392507906d2b62d370dfa5a1a675a9a16e8287d1f76cbecb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/tsconfig.spec.json": {
+      "filePath": "apps/order-service/tsconfig.spec.json",
+      "contentHash": "2268f67c77828faf1a18b01f7a1db4d35ae6045405bc02916526a2d0f57d8240",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "apps/order-service/webpack.config.js": {
+      "filePath": "apps/order-service/webpack.config.js",
+      "contentHash": "fc1a293408c5300508197dab4489a9200bc3019716aff75453ded6652addecd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service-e2e/.spec.swcrc": {
+      "filePath": "apps/payment-service-e2e/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service-e2e/eslint.config.mjs": {
+      "filePath": "apps/payment-service-e2e/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service-e2e/jest.config.cts": {
+      "filePath": "apps/payment-service-e2e/jest.config.cts",
+      "contentHash": "d84f94258d16e30d38b26cd5553baed0a69dd36ac4bc0cc1805192e7710c72a5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service-e2e/package.json": {
+      "filePath": "apps/payment-service-e2e/package.json",
+      "contentHash": "afdbac5a7a6ba832f3030d9217601965deb1c3d1e611ceecd840267981ade530",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts": {
+      "filePath": "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts",
+      "contentHash": "ddd1bb52e319293eb06f8f10cd002de0bd37c1eeab1461cf8815534749500b73",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service-e2e/src/support/global-setup.ts": {
+      "filePath": "apps/payment-service-e2e/src/support/global-setup.ts",
+      "contentHash": "006bd9cd5187817f3b22ed2bca78ca150404f06a6f6522b070ac2f85ab2cc26b",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "waitForPortOpen"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service-e2e/src/support/global-teardown.ts": {
+      "filePath": "apps/payment-service-e2e/src/support/global-teardown.ts",
+      "contentHash": "0c65e03734d888a653cd5a177fb10391de95dc4e8dd4af3a12728a7aadcb81d9",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "killPort"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service-e2e/src/support/test-setup.ts": {
+      "filePath": "apps/payment-service-e2e/src/support/test-setup.ts",
+      "contentHash": "b9c2584ec3f2fcd5e51fc0e0597399c5e2d34ce4b1b7102211ffc934c54c4c55",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service-e2e/tsconfig.json": {
+      "filePath": "apps/payment-service-e2e/tsconfig.json",
+      "contentHash": "e89c711172c2fb9aa54a48271ecd175c9e06854c350f796bed6d2011d0a769a9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/.spec.swcrc": {
+      "filePath": "apps/payment-service/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/eslint.config.mjs": {
+      "filePath": "apps/payment-service/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/jest.config.cts": {
+      "filePath": "apps/payment-service/jest.config.cts",
+      "contentHash": "221d58958fc4cce0f63d86d5a30e12883c90b4ebbd967ce6b581c76cad541b0a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/package.json": {
+      "filePath": "apps/payment-service/package.json",
+      "contentHash": "c06b14b78d29827022ee318878eaf4e7dd1f924c196c605302c4f0d5a222194c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/src/app/app.controller.spec.ts": {
+      "filePath": "apps/payment-service/src/app/app.controller.spec.ts",
+      "contentHash": "4327588ae3b11f6d5f0bb282095022e4ce4667ff484a34b9a238e77f3c1e92c1",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test",
+            "TestingModule"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/app.controller.ts": {
+      "filePath": "apps/payment-service/src/app/app.controller.ts",
+      "contentHash": "eb4c6c96034109ba6722a70812e6cbbb20110d3ba420d29a16606bbfa16f7ecb",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppController",
+          "methods": [
+            "constructor",
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Get"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppController"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/app.module.ts": {
+      "filePath": "apps/payment-service/src/app/app.module.ts",
+      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppModule"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/app.service.spec.ts": {
+      "filePath": "apps/payment-service/src/app/app.service.spec.ts",
+      "contentHash": "ae5fd20b6cd3d23cf44b5341cb927e7e3aab2c9dd6825a6534684eb93a70594f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/app.service.ts": {
+      "filePath": "apps/payment-service/src/app/app.service.ts",
+      "contentHash": "4c39152741ddfb578e12b53f507a53e8813c0702c57aa852dde5acd739af92ad",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppService",
+          "methods": [
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "AppService"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/assets/.gitkeep": {
+      "filePath": "apps/payment-service/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/src/main.ts": {
+      "filePath": "apps/payment-service/src/main.ts",
+      "contentHash": "f47116b441143046a25b2c14f4dc3235bd57f7f3b676af0b9517e0b95f60de2f",
+      "functions": [
+        {
+          "name": "bootstrap",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "NestFactory"
+          ]
+        },
+        {
+          "source": "./app/app.module",
+          "specifiers": [
+            "AppModule"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/tsconfig.app.json": {
+      "filePath": "apps/payment-service/tsconfig.app.json",
+      "contentHash": "a796f630e8ed8b81c53a8ed0955e165594d0966784bc95377a655421861fb66b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/tsconfig.json": {
+      "filePath": "apps/payment-service/tsconfig.json",
+      "contentHash": "191e062754e3e5d392507906d2b62d370dfa5a1a675a9a16e8287d1f76cbecb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/tsconfig.spec.json": {
+      "filePath": "apps/payment-service/tsconfig.spec.json",
+      "contentHash": "2268f67c77828faf1a18b01f7a1db4d35ae6045405bc02916526a2d0f57d8240",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "apps/payment-service/webpack.config.js": {
+      "filePath": "apps/payment-service/webpack.config.js",
+      "contentHash": "fc1a293408c5300508197dab4489a9200bc3019716aff75453ded6652addecd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service-e2e/.spec.swcrc": {
+      "filePath": "apps/product-service-e2e/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service-e2e/eslint.config.mjs": {
+      "filePath": "apps/product-service-e2e/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service-e2e/jest.config.cts": {
+      "filePath": "apps/product-service-e2e/jest.config.cts",
+      "contentHash": "54cea6adc1a6dda18dbb2b257f2a23a52e72d4fbd568b577aede0deca961b509",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service-e2e/package.json": {
+      "filePath": "apps/product-service-e2e/package.json",
+      "contentHash": "b3cdf95f57197d071f5209da94ba4e9b9ba85bb50f7323f853d0dfe10ae68ec2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service-e2e/src/product-service/product-service.spec.ts": {
+      "filePath": "apps/product-service-e2e/src/product-service/product-service.spec.ts",
+      "contentHash": "ddd1bb52e319293eb06f8f10cd002de0bd37c1eeab1461cf8815534749500b73",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service-e2e/src/support/global-setup.ts": {
+      "filePath": "apps/product-service-e2e/src/support/global-setup.ts",
+      "contentHash": "75887d8169e4d72f0f1ea71b5ec4003ae31f2fab153dfc0c766e0343b9dd42d2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "waitForPortOpen"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service-e2e/src/support/global-teardown.ts": {
+      "filePath": "apps/product-service-e2e/src/support/global-teardown.ts",
+      "contentHash": "746d2a60a93a421e9d9f7942686b01dcda391e3b7d1e3979c62df5c88cc8f46c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/node/utils",
+          "specifiers": [
+            "killPort"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service-e2e/src/support/test-setup.ts": {
+      "filePath": "apps/product-service-e2e/src/support/test-setup.ts",
+      "contentHash": "b1acc32e39042bd5daa31f07c17618e412b105614662eab76d313f9c336534ef",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service-e2e/tsconfig.json": {
+      "filePath": "apps/product-service-e2e/tsconfig.json",
+      "contentHash": "3476e1d8de8fa34f90424a8ab284fbdcf1f894360d4e32723193947811250859",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/.spec.swcrc": {
+      "filePath": "apps/product-service/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/eslint.config.mjs": {
+      "filePath": "apps/product-service/eslint.config.mjs",
+      "contentHash": "3b8f36c1c109f7af93dd3161444f3da1c0c10a4665460e35bcaf9ae476fd0b4c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/jest.config.cts": {
+      "filePath": "apps/product-service/jest.config.cts",
+      "contentHash": "77e33d83f65c54899e622783fcb3d32b795b577565b7a36ac010237f0a891e99",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/package.json": {
+      "filePath": "apps/product-service/package.json",
+      "contentHash": "322e3c6b0365c6e0381ce232272c0d3b390b32b04c7130d4af75d1b7046c7728",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/src/app/app.controller.spec.ts": {
+      "filePath": "apps/product-service/src/app/app.controller.spec.ts",
+      "contentHash": "4327588ae3b11f6d5f0bb282095022e4ce4667ff484a34b9a238e77f3c1e92c1",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test",
+            "TestingModule"
+          ]
+        },
+        {
+          "source": "./app.controller",
+          "specifiers": [
+            "AppController"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/app/app.controller.ts": {
+      "filePath": "apps/product-service/src/app/app.controller.ts",
+      "contentHash": "eb4c6c96034109ba6722a70812e6cbbb20110d3ba420d29a16606bbfa16f7ecb",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppController",
+          "methods": [
+            "constructor",
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Get"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppController"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/app/app.module.ts": {
+      "filePath": "apps/product-service/src/app/app.module.ts",
+      "contentHash": "7a82a059b6bfdac1ec8a2f594fc62de1d7b2defa4938a4b73ae4dfb154162bb1",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./product.controller.js",
+          "specifiers": [
+            "ProductController"
+          ]
+        },
+        {
+          "source": "./product.service.js",
+          "specifiers": [
+            "ProductService"
+          ]
+        }
+      ],
+      "exports": [
+        "AppModule"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/app/app.service.spec.ts": {
+      "filePath": "apps/product-service/src/app/app.service.spec.ts",
+      "contentHash": "ae5fd20b6cd3d23cf44b5341cb927e7e3aab2c9dd6825a6534684eb93a70594f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/testing",
+          "specifiers": [
+            "Test"
+          ]
+        },
+        {
+          "source": "./app.service",
+          "specifiers": [
+            "AppService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/app/app.service.ts": {
+      "filePath": "apps/product-service/src/app/app.service.ts",
+      "contentHash": "4c39152741ddfb578e12b53f507a53e8813c0702c57aa852dde5acd739af92ad",
+      "functions": [],
+      "classes": [
+        {
+          "name": "AppService",
+          "methods": [
+            "getData"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "AppService"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/app/product.controller.ts": {
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "contentHash": "37120abc987e2e5a4734d823ea1bbda8afcb1bdb26c7f1a2ed97a886cb0c2531",
+      "functions": [
+        {
+          "name": "toProto",
+          "params": [
+            "product"
+          ],
+          "returnType": "ecommerce.product.v1.Product",
+          "exported": false,
+          "lineCount": 27
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProductController",
+          "methods": [
+            "constructor",
+            "getProduct",
+            "listProducts",
+            "createProduct",
+            "updateProduct",
+            "reserveStock",
+            "releaseStock"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 57
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "GrpcMethod"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "ecommerce"
+          ]
+        },
+        {
+          "source": "./product.service.js",
+          "specifiers": [
+            "ProductService"
+          ]
+        }
+      ],
+      "exports": [
+        "ProductController"
+      ],
+      "totalLines": 106,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/app/product.service.ts": {
+      "filePath": "apps/product-service/src/app/product.service.ts",
+      "contentHash": "54d73911a7ab5ff833e8aa4afccbbd6d62825638055ab3e22ac9b32184ca313b",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ProductService",
+          "methods": [
+            "constructor",
+            "seed",
+            "findById",
+            "list",
+            "create",
+            "update",
+            "reserve",
+            "release"
+          ],
+          "properties": [
+            "products",
+            "nextId"
+          ],
+          "exported": true,
+          "lineCount": 138
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "ecommerce"
+          ]
+        }
+      ],
+      "exports": [
+        "ProductService"
+      ],
+      "totalLines": 166,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/src/assets/.gitkeep": {
+      "filePath": "apps/product-service/src/assets/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/src/main.ts": {
+      "filePath": "apps/product-service/src/main.ts",
+      "contentHash": "74d5f6a40d218643f63e0ee00017483275dd7c32137779eef004c4206f5c9850",
+      "functions": [
+        {
+          "name": "resolveProtoPaths",
+          "params": [],
+          "returnType": "{ protoPath: string; includeDir: string }",
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "bootstrap",
+          "params": [],
+          "exported": false,
+          "lineCount": 32
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "MicroserviceOptions",
+            "Transport"
+          ]
+        },
+        {
+          "source": "@nestjs/core",
+          "specifiers": [
+            "NestFactory"
+          ]
+        },
+        {
+          "source": "./app/app.module.js",
+          "specifiers": [
+            "AppModule"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 61,
+      "hasStructuralAnalysis": true
+    },
+    "apps/product-service/tsconfig.app.json": {
+      "filePath": "apps/product-service/tsconfig.app.json",
+      "contentHash": "a15a215c8c6f7ce0e7bab13f68bd2e5b447901e978868f04677c324422dd9b5c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/tsconfig.json": {
+      "filePath": "apps/product-service/tsconfig.json",
+      "contentHash": "191e062754e3e5d392507906d2b62d370dfa5a1a675a9a16e8287d1f76cbecb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/tsconfig.spec.json": {
+      "filePath": "apps/product-service/tsconfig.spec.json",
+      "contentHash": "2268f67c77828faf1a18b01f7a1db4d35ae6045405bc02916526a2d0f57d8240",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "apps/product-service/webpack.config.js": {
+      "filePath": "apps/product-service/webpack.config.js",
+      "contentHash": "fc1a293408c5300508197dab4489a9200bc3019716aff75453ded6652addecd8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "eslint.config.mjs": {
+      "filePath": "eslint.config.mjs",
+      "contentHash": "139cf1e6345524e3ef857990c59a2e61ebeef80ddd21921c6fd266337a73c60a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nx/eslint-plugin",
+          "specifiers": [
+            "nx"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "jest.config.ts": {
+      "filePath": "jest.config.ts",
+      "contentHash": "89a3f04bec5db1e19d34f6987c77506d3797cc0bbdcfdc6abab4e317c4eca851",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "jest",
+          "specifiers": [
+            "Config"
+          ]
+        },
+        {
+          "source": "@nx/jest",
+          "specifiers": [
+            "getJestProjectsAsync"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "jest.preset.js": {
+      "filePath": "jest.preset.js",
+      "contentHash": "2a1bad0e8ed09f34acbf5391bb4f96467dba5c533a927bacb7075c3ed04d73c2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/.spec.swcrc": {
+      "filePath": "libs/contracts/.spec.swcrc",
+      "contentHash": "1088d15cd8fe8068d19df786712d77f3f82bf64c9168a922753d09334058910f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/README.md": {
+      "filePath": "libs/contracts/README.md",
+      "contentHash": "9cf8921863b148054e6c994467fdaecdad160807efa654b3cffb773828af0df2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 132,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/eslint.config.mjs": {
+      "filePath": "libs/contracts/eslint.config.mjs",
+      "contentHash": "3eb6fb0314c10c1f4acef6c72d108287fd1a2f94906134a32211bcacbae789c8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../eslint.config.mjs",
+          "specifiers": [
+            "baseConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/jest.config.cts": {
+      "filePath": "libs/contracts/jest.config.cts",
+      "contentHash": "7623069e32a832bf9e7120c121f266a5fe5f171d041ac12a6f92362651d22740",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/package.json": {
+      "filePath": "libs/contracts/package.json",
+      "contentHash": "001813eb6b921fd93677bce53c475849b49271e5b37a1f80521a0d5280c31fec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/project.json": {
+      "filePath": "libs/contracts/project.json",
+      "contentHash": "9b45f14622e3159931fffbe04f98a5ddbe0394ea23c5255788e85e9befa7099d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 63,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/proto/account/v1/account.proto": {
+      "filePath": "libs/contracts/proto/account/v1/account.proto",
+      "contentHash": "b554a3d4be586074ea51355a7390f4cb8ab075327f796a35b09375280440a0f5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 80,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/proto/common/v1/common.proto": {
+      "filePath": "libs/contracts/proto/common/v1/common.proto",
+      "contentHash": "15810b4c9ce738e5daf38b4d9a4ebc006750d525071cc0caa25652ae6a70336f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/proto/order/v1/order.proto": {
+      "filePath": "libs/contracts/proto/order/v1/order.proto",
+      "contentHash": "3b0a0f78b9d6c967624fc04131307c3fc793e2929557b49c79eb81b6b586a378",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 108,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/proto/payment/v1/payment.proto": {
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "contentHash": "93dcf6fc9138ff1e58f1379c73fd810f7bf62d57c723af16eddbdac15446b534",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 92,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/proto/product/v1/product.proto": {
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "contentHash": "b17c98b87c6c76a860f7f913bb4a52649d7187e1a6165bc2c75aa8bdae0d0bcc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 119,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/src/generated/account/v1/account.ts": {
+      "filePath": "libs/contracts/src/generated/account/v1/account.ts",
+      "contentHash": "294ca7879441c9e88ee8d2784072a467f29127b4b424bf979e9ef2fec0708291",
+      "functions": [
+        {
+          "name": "accountStatusFromJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "AccountStatus",
+          "exported": true,
+          "lineCount": 20
+        },
+        {
+          "name": "accountStatusToJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 15
+        },
+        {
+          "name": "createBaseAccount",
+          "params": [],
+          "returnType": "Account",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "createBaseGetAccountRequest",
+          "params": [],
+          "returnType": "GetAccountRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseGetAccountResponse",
+          "params": [],
+          "returnType": "GetAccountResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseListAccountsRequest",
+          "params": [],
+          "returnType": "ListAccountsRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseListAccountsResponse",
+          "params": [],
+          "returnType": "ListAccountsResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreateAccountRequest",
+          "params": [],
+          "returnType": "CreateAccountRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreateAccountResponse",
+          "params": [],
+          "returnType": "CreateAccountResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseUpdateAccountRequest",
+          "params": [],
+          "returnType": "UpdateAccountRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseUpdateAccountResponse",
+          "params": [],
+          "returnType": "UpdateAccountResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "isSet",
+          "params": [
+            "value"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@bufbuild/protobuf/wire",
+          "specifiers": [
+            "BinaryReader",
+            "BinaryWriter"
+          ]
+        },
+        {
+          "source": "../../common/v1/common.js",
+          "specifiers": [
+            "Address",
+            "PageRequest",
+            "PageResponse",
+            "Timestamp"
+          ]
+        }
+      ],
+      "exports": [
+        "accountStatusFromJSON",
+        "accountStatusToJSON",
+        "Account",
+        "GetAccountRequest",
+        "GetAccountResponse",
+        "ListAccountsRequest",
+        "ListAccountsResponse",
+        "CreateAccountRequest",
+        "CreateAccountResponse",
+        "UpdateAccountRequest",
+        "UpdateAccountResponse",
+        "AccountServiceDefinition"
+      ],
+      "totalLines": 1061,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/common/v1/common.ts": {
+      "filePath": "libs/contracts/src/generated/common/v1/common.ts",
+      "contentHash": "0794b9b891b5a3523a9834a5db3bd6b1a6c791ce5dbe4f12981f5e9677fa1295",
+      "functions": [
+        {
+          "name": "createBaseMoney",
+          "params": [],
+          "returnType": "Money",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseAddress",
+          "params": [],
+          "returnType": "Address",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBasePageRequest",
+          "params": [],
+          "returnType": "PageRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBasePageResponse",
+          "params": [],
+          "returnType": "PageResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseTimestamp",
+          "params": [],
+          "returnType": "Timestamp",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "longToNumber",
+          "params": [
+            "int64"
+          ],
+          "returnType": "number",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "isSet",
+          "params": [
+            "value"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@bufbuild/protobuf/wire",
+          "specifiers": [
+            "BinaryReader",
+            "BinaryWriter"
+          ]
+        }
+      ],
+      "exports": [
+        "Money",
+        "Address",
+        "PageRequest",
+        "PageResponse",
+        "Timestamp"
+      ],
+      "totalLines": 597,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.account.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.account.ts",
+      "contentHash": "25ab5342ed4b9be0693c3a6d0585c7c10a935166569b52754c3d2ee94e6b0804",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.account.v1.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.account.v1.ts",
+      "contentHash": "24694afacc6889a295ca71a16924f8f8fdad413af07277876653f6241965b966",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.common.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.common.ts",
+      "contentHash": "bfad8233688ba631bf738ab2c7a409e28fa19262d28bd06d383ab8dfa8655e0e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.common.v1.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.common.v1.ts",
+      "contentHash": "59020dfb93cf42f046b006ec646ed2456b5bca3f8bf5d6916298a6a00f0e8439",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.order.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.order.ts",
+      "contentHash": "3e428fa0545357f669b0f89736d53205f1ff37e5224811948ee794c3e650d7b8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.order.v1.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.order.v1.ts",
+      "contentHash": "db83c760875d0c4d0e5837546301737eabc94dc5c74a56777ec98805fa6cd134",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.payment.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.payment.ts",
+      "contentHash": "1a20830a14bda520ebee5650012fdaeec9da40a43b379ff42325fbf7bf8f2edf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.payment.v1.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.payment.v1.ts",
+      "contentHash": "75d8d0bbd214d4b754ff2b66fc62aaa450617d47dba9feebac7b89c361c5ec55",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.product.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.product.ts",
+      "contentHash": "d3dd83185d9530f7b3da6698b71fcb02701e50f9cece28453a634ef1dd357d85",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.product.v1.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.product.v1.ts",
+      "contentHash": "116e535bf751071481302d1116dc4b596cdd8f1d861d0d0defe06965c170dc68",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ecommerce.ts": {
+      "filePath": "libs/contracts/src/generated/index.ecommerce.ts",
+      "contentHash": "3433621f2a5a1479a2cb47acef7530e9776c1727dedf1d9ff55922d36ecdbedb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/index.ts": {
+      "filePath": "libs/contracts/src/generated/index.ts",
+      "contentHash": "5772f0a3956b3206fced98edb8da4da0a87b9dcf05a4dee9a007023e9ed21672",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/order/v1/order.ts": {
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "contentHash": "fe05138bd44aaa4b646210b3f7096d5fc9ad643dd355455b0318ae79ca47cc53",
+      "functions": [
+        {
+          "name": "orderStatusFromJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "OrderStatus",
+          "exported": true,
+          "lineCount": 32
+        },
+        {
+          "name": "orderStatusToJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "createBaseOrderItem",
+          "params": [],
+          "returnType": "OrderItem",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseOrder",
+          "params": [],
+          "returnType": "Order",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "createBaseGetOrderRequest",
+          "params": [],
+          "returnType": "GetOrderRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseGetOrderResponse",
+          "params": [],
+          "returnType": "GetOrderResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseListOrdersRequest",
+          "params": [],
+          "returnType": "ListOrdersRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseListOrdersResponse",
+          "params": [],
+          "returnType": "ListOrdersResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreateOrderRequest",
+          "params": [],
+          "returnType": "CreateOrderRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreateOrderResponse",
+          "params": [],
+          "returnType": "CreateOrderResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseUpdateOrderStatusRequest",
+          "params": [],
+          "returnType": "UpdateOrderStatusRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseUpdateOrderStatusResponse",
+          "params": [],
+          "returnType": "UpdateOrderStatusResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCancelOrderRequest",
+          "params": [],
+          "returnType": "CancelOrderRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCancelOrderResponse",
+          "params": [],
+          "returnType": "CancelOrderResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "isSet",
+          "params": [
+            "value"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@bufbuild/protobuf/wire",
+          "specifiers": [
+            "BinaryReader",
+            "BinaryWriter"
+          ]
+        },
+        {
+          "source": "../../common/v1/common.js",
+          "specifiers": [
+            "Address",
+            "Money",
+            "PageRequest",
+            "PageResponse",
+            "Timestamp"
+          ]
+        }
+      ],
+      "exports": [
+        "orderStatusFromJSON",
+        "orderStatusToJSON",
+        "OrderItem",
+        "Order",
+        "GetOrderRequest",
+        "GetOrderResponse",
+        "ListOrdersRequest",
+        "ListOrdersResponse",
+        "CreateOrderRequest",
+        "CreateOrderResponse",
+        "UpdateOrderStatusRequest",
+        "UpdateOrderStatusResponse",
+        "CancelOrderRequest",
+        "CancelOrderResponse",
+        "OrderServiceDefinition"
+      ],
+      "totalLines": 1454,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/payment/v1/payment.ts": {
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "contentHash": "6366860c360f9d238bf6f809bb941e0b38b9f01d0732c68fd4ec00d1532c9c08",
+      "functions": [
+        {
+          "name": "paymentStatusFromJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "PaymentStatus",
+          "exported": true,
+          "lineCount": 26
+        },
+        {
+          "name": "paymentStatusToJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 19
+        },
+        {
+          "name": "paymentMethodTypeFromJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "PaymentMethodType",
+          "exported": true,
+          "lineCount": 20
+        },
+        {
+          "name": "paymentMethodTypeToJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 15
+        },
+        {
+          "name": "createBasePayment",
+          "params": [],
+          "returnType": "Payment",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "createBaseGetPaymentRequest",
+          "params": [],
+          "returnType": "GetPaymentRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseGetPaymentResponse",
+          "params": [],
+          "returnType": "GetPaymentResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreatePaymentRequest",
+          "params": [],
+          "returnType": "CreatePaymentRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreatePaymentResponse",
+          "params": [],
+          "returnType": "CreatePaymentResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCapturePaymentRequest",
+          "params": [],
+          "returnType": "CapturePaymentRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCapturePaymentResponse",
+          "params": [],
+          "returnType": "CapturePaymentResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseRefundPaymentRequest",
+          "params": [],
+          "returnType": "RefundPaymentRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseRefundPaymentResponse",
+          "params": [],
+          "returnType": "RefundPaymentResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "isSet",
+          "params": [
+            "value"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@bufbuild/protobuf/wire",
+          "specifiers": [
+            "BinaryReader",
+            "BinaryWriter"
+          ]
+        },
+        {
+          "source": "../../common/v1/common.js",
+          "specifiers": [
+            "Money",
+            "Timestamp"
+          ]
+        }
+      ],
+      "exports": [
+        "paymentStatusFromJSON",
+        "paymentStatusToJSON",
+        "paymentMethodTypeFromJSON",
+        "paymentMethodTypeToJSON",
+        "Payment",
+        "GetPaymentRequest",
+        "GetPaymentResponse",
+        "CreatePaymentRequest",
+        "CreatePaymentResponse",
+        "CapturePaymentRequest",
+        "CapturePaymentResponse",
+        "RefundPaymentRequest",
+        "RefundPaymentResponse",
+        "PaymentServiceDefinition"
+      ],
+      "totalLines": 1159,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/generated/product/v1/product.ts": {
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "contentHash": "d7601af3607c434705a4086b10ae40e4d88665c2753f4c26d35f76eec8e38aba",
+      "functions": [
+        {
+          "name": "productStatusFromJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "ProductStatus",
+          "exported": true,
+          "lineCount": 20
+        },
+        {
+          "name": "productStatusToJSON",
+          "params": [
+            "object"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 15
+        },
+        {
+          "name": "createBaseProduct",
+          "params": [],
+          "returnType": "Product",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "createBaseGetProductRequest",
+          "params": [],
+          "returnType": "GetProductRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseGetProductResponse",
+          "params": [],
+          "returnType": "GetProductResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseListProductsRequest",
+          "params": [],
+          "returnType": "ListProductsRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseListProductsResponse",
+          "params": [],
+          "returnType": "ListProductsResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreateProductRequest",
+          "params": [],
+          "returnType": "CreateProductRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseCreateProductResponse",
+          "params": [],
+          "returnType": "CreateProductResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseUpdateProductRequest",
+          "params": [],
+          "returnType": "UpdateProductRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseUpdateProductResponse",
+          "params": [],
+          "returnType": "UpdateProductResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseReserveStockRequest",
+          "params": [],
+          "returnType": "ReserveStockRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseReserveStockResponse",
+          "params": [],
+          "returnType": "ReserveStockResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseReleaseStockRequest",
+          "params": [],
+          "returnType": "ReleaseStockRequest",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "createBaseReleaseStockResponse",
+          "params": [],
+          "returnType": "ReleaseStockResponse",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "isSet",
+          "params": [
+            "value"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@bufbuild/protobuf/wire",
+          "specifiers": [
+            "BinaryReader",
+            "BinaryWriter"
+          ]
+        },
+        {
+          "source": "../../common/v1/common.js",
+          "specifiers": [
+            "Money",
+            "PageRequest",
+            "PageResponse",
+            "Timestamp"
+          ]
+        }
+      ],
+      "exports": [
+        "productStatusFromJSON",
+        "productStatusToJSON",
+        "Product",
+        "GetProductRequest",
+        "GetProductResponse",
+        "ListProductsRequest",
+        "ListProductsResponse",
+        "CreateProductRequest",
+        "CreateProductResponse",
+        "UpdateProductRequest",
+        "UpdateProductResponse",
+        "ReserveStockRequest",
+        "ReserveStockResponse",
+        "ReleaseStockRequest",
+        "ReleaseStockResponse",
+        "ProductServiceDefinition"
+      ],
+      "totalLines": 1674,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/index.ts": {
+      "filePath": "libs/contracts/src/index.ts",
+      "contentHash": "e6e22251ec24edf62a451063b1e931667eaff06c8bf2d4ad6100dfb020aa4ad2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/contracts.ts": {
+      "filePath": "libs/contracts/src/lib/contracts.ts",
+      "contentHash": "0e837fd76c21619370d51858cdfe625f4512a1758b84afe48dea7163a95a7156",
+      "functions": [
+        {
+          "name": "resolveProtoDir",
+          "params": [],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 16
+        },
+        {
+          "name": "loadProtoDefinitions",
+          "params": [
+            "protoFiles",
+            "options"
+          ],
+          "returnType": "Record<string, unknown>",
+          "exported": true,
+          "lineCount": 21
+        },
+        {
+          "name": "dirnameOf",
+          "params": [
+            "url"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:path",
+          "specifiers": [
+            "join"
+          ]
+        },
+        {
+          "source": "node:fs",
+          "specifiers": [
+            "existsSync"
+          ]
+        },
+        {
+          "source": "@grpc/grpc-js",
+          "specifiers": [
+            "loadPackageDefinition"
+          ]
+        },
+        {
+          "source": "@grpc/proto-loader",
+          "specifiers": [
+            "loadSync"
+          ]
+        }
+      ],
+      "exports": [
+        "resolveProtoDir",
+        "loadProtoDefinitions"
+      ],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/account.events.ts": {
+      "filePath": "libs/contracts/src/lib/events/account.events.ts",
+      "contentHash": "ba75be2883041b74fecdec07d1f6a3e0a6e960631f3a1c7479291dd72dfd5b8e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "defineSchema"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "EventEnvelope"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "addressSchema",
+            "envelopeSchema",
+            "moneySchema"
+          ]
+        }
+      ],
+      "exports": [
+        "ACCOUNT_STATUSES",
+        "accountRegisteredSchema",
+        "accountUpdatedSchema",
+        "accountSuspendedSchema",
+        "ACCOUNT_REGISTERED_EVENT",
+        "ACCOUNT_UPDATED_EVENT",
+        "ACCOUNT_SUSPENDED_EVENT",
+        "addressSchema",
+        "moneySchema"
+      ],
+      "totalLines": 88,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/envelope.ts": {
+      "filePath": "libs/contracts/src/lib/events/envelope.ts",
+      "contentHash": "94c2461c962fe1478fdac13722df597644ccc0f7d7d9e1e56754b164b477b6ce",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "defineSchema"
+          ]
+        },
+        {
+          "source": "../../generated/common/v1/common.js",
+          "specifiers": [
+            "Address",
+            "Money"
+          ]
+        }
+      ],
+      "exports": [
+        "envelopeSchema",
+        "moneySchema",
+        "addressSchema",
+        "Address",
+        "Money"
+      ],
+      "totalLines": 60,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/order.events.ts": {
+      "filePath": "libs/contracts/src/lib/events/order.events.ts",
+      "contentHash": "f8120220eef2ab64193a7406014c771b7a03693211973bc2638f788ef7440e08",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "defineRule",
+            "defineSchema"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "Address",
+            "Money"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "EventEnvelope"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "addressSchema",
+            "envelopeSchema",
+            "moneySchema"
+          ]
+        }
+      ],
+      "exports": [
+        "ORDER_STATUSES",
+        "orderCreatedSchema",
+        "orderConfirmedSchema",
+        "orderStatusChangedSchema",
+        "orderCancelledSchema",
+        "ORDER_CREATED_EVENT",
+        "ORDER_CONFIRMED_EVENT",
+        "ORDER_STATUS_CHANGED_EVENT",
+        "ORDER_CANCELLED_EVENT"
+      ],
+      "totalLines": 148,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/payment.events.ts": {
+      "filePath": "libs/contracts/src/lib/events/payment.events.ts",
+      "contentHash": "7fabda2fe0d66eccd73b18dde48efa8de08e5d2328ea2643fda46c363daa5a05",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "defineSchema"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "Money"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "EventEnvelope"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "envelopeSchema",
+            "moneySchema"
+          ]
+        }
+      ],
+      "exports": [
+        "PAYMENT_STATUSES",
+        "PAYMENT_METHOD_TYPES",
+        "paymentInitiatedSchema",
+        "paymentAuthorizedSchema",
+        "paymentCapturedSchema",
+        "paymentFailedSchema",
+        "paymentRefundedSchema",
+        "PAYMENT_INITIATED_EVENT",
+        "PAYMENT_AUTHORIZED_EVENT",
+        "PAYMENT_CAPTURED_EVENT",
+        "PAYMENT_FAILED_EVENT",
+        "PAYMENT_REFUNDED_EVENT"
+      ],
+      "totalLines": 160,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/product.events.ts": {
+      "filePath": "libs/contracts/src/lib/events/product.events.ts",
+      "contentHash": "5f8e81ec7a6d0513aaa4101de173573fa26abbaca66603a124f666df622c258e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "defineSchema"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "Money"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "EventEnvelope"
+          ]
+        },
+        {
+          "source": "./envelope.js",
+          "specifiers": [
+            "envelopeSchema",
+            "moneySchema"
+          ]
+        }
+      ],
+      "exports": [
+        "PRODUCT_STATUSES",
+        "productCreatedSchema",
+        "productPriceChangedSchema",
+        "productStockChangedSchema",
+        "PRODUCT_CREATED_EVENT",
+        "PRODUCT_PRICE_CHANGED_EVENT",
+        "PRODUCT_STOCK_CHANGED_EVENT"
+      ],
+      "totalLines": 92,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/registry.spec.ts": {
+      "filePath": "libs/contracts/src/lib/events/registry.spec.ts",
+      "contentHash": "44b8c589a1e00fa5572cb19edc958447d46c5bd38d79cb12b7b9f0e20472bc28",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@jest/globals",
+          "specifiers": [
+            "describe",
+            "expect",
+            "it"
+          ]
+        },
+        {
+          "source": "./registry.js",
+          "specifiers": [
+            "EVENT_SCHEMAS",
+            "EVENT_TYPES",
+            "getEventSchema",
+            "isEventType"
+          ]
+        },
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "parse"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 160,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/events/registry.ts": {
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "contentHash": "ac83c1a3cd759354b946672e0e1e82b39519d178eb6c365e3332ead271d7fb71",
+      "functions": [
+        {
+          "name": "getEventSchema",
+          "params": [
+            "type"
+          ],
+          "returnType": "ObjectSchema",
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "isEventType",
+          "params": [
+            "type"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../validation/schema.js",
+          "specifiers": [
+            "ObjectSchema"
+          ]
+        },
+        {
+          "source": "./account.events.js",
+          "specifiers": [
+            "ACCOUNT_REGISTERED_EVENT",
+            "ACCOUNT_SUSPENDED_EVENT",
+            "ACCOUNT_UPDATED_EVENT",
+            "accountRegisteredSchema",
+            "accountSuspendedSchema",
+            "accountUpdatedSchema"
+          ]
+        },
+        {
+          "source": "./order.events.js",
+          "specifiers": [
+            "ORDER_CANCELLED_EVENT",
+            "ORDER_CONFIRMED_EVENT",
+            "ORDER_CREATED_EVENT",
+            "ORDER_STATUS_CHANGED_EVENT",
+            "orderCancelledSchema",
+            "orderConfirmedSchema",
+            "orderCreatedSchema",
+            "orderStatusChangedSchema"
+          ]
+        },
+        {
+          "source": "./payment.events.js",
+          "specifiers": [
+            "PAYMENT_AUTHORIZED_EVENT",
+            "PAYMENT_CAPTURED_EVENT",
+            "PAYMENT_FAILED_EVENT",
+            "PAYMENT_INITIATED_EVENT",
+            "PAYMENT_REFUNDED_EVENT",
+            "paymentAuthorizedSchema",
+            "paymentCapturedSchema",
+            "paymentFailedSchema",
+            "paymentInitiatedSchema",
+            "paymentRefundedSchema"
+          ]
+        },
+        {
+          "source": "./product.events.js",
+          "specifiers": [
+            "PRODUCT_CREATED_EVENT",
+            "PRODUCT_PRICE_CHANGED_EVENT",
+            "PRODUCT_STOCK_CHANGED_EVENT",
+            "productCreatedSchema",
+            "productPriceChangedSchema",
+            "productStockChangedSchema"
+          ]
+        }
+      ],
+      "exports": [
+        "EVENT_SCHEMAS",
+        "EVENT_TYPES",
+        "getEventSchema",
+        "isEventType"
+      ],
+      "totalLines": 90,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/generated.spec.ts": {
+      "filePath": "libs/contracts/src/lib/generated.spec.ts",
+      "contentHash": "1e8bba74c3121e5e1aba0f1ba385cbdb3353008bb287f3239d70e7f5ee71eb4b",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@jest/globals",
+          "specifiers": [
+            "describe",
+            "expect",
+            "it"
+          ]
+        },
+        {
+          "source": "../generated/index.js",
+          "specifiers": [
+            "ecommerce"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 105,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/validation/schema.spec.ts": {
+      "filePath": "libs/contracts/src/lib/validation/schema.spec.ts",
+      "contentHash": "f7b8546f6bf528ecb057c8cc53c2c88a69a5587d313a1618f5b99520332dff8d",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@jest/globals",
+          "specifiers": [
+            "describe",
+            "expect",
+            "it"
+          ]
+        },
+        {
+          "source": "./schema.js",
+          "specifiers": [
+            "SchemaValidationError",
+            "parse",
+            "validateObject"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 120,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/src/lib/validation/schema.ts": {
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "contentHash": "e7d85c22f4155393d86e9550b789f18941ac924aab3f8d4e175ca8c00048c242",
+      "functions": [
+        {
+          "name": "defineSchema",
+          "params": [
+            "schema"
+          ],
+          "returnType": "T",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "defineRule",
+          "params": [
+            "rule"
+          ],
+          "returnType": "T",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "typeOf",
+          "params": [
+            "value"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "validateField",
+          "params": [
+            "value",
+            "rule",
+            "path"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 149
+        },
+        {
+          "name": "validateObject",
+          "params": [
+            "value",
+            "schema",
+            "path"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 26
+        },
+        {
+          "name": "parse",
+          "params": [
+            "value",
+            "schema",
+            "path"
+          ],
+          "returnType": "T",
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "SchemaValidationError",
+          "methods": [
+            "constructor"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "defineSchema",
+        "defineRule",
+        "SchemaValidationError",
+        "validateObject",
+        "parse"
+      ],
+      "totalLines": 280,
+      "hasStructuralAnalysis": true
+    },
+    "libs/contracts/tsconfig.json": {
+      "filePath": "libs/contracts/tsconfig.json",
+      "contentHash": "edaa6080829e6c133300aba9d42cdf5ff488cccf8399c461e6828c4458c76083",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/tsconfig.lib.json": {
+      "filePath": "libs/contracts/tsconfig.lib.json",
+      "contentHash": "2ae41ff85ae9282a3b8c256533e9527ca2402b8d66534aa7dd113e50ffd18b37",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": false
+    },
+    "libs/contracts/tsconfig.spec.json": {
+      "filePath": "libs/contracts/tsconfig.spec.json",
+      "contentHash": "1df37c4ec5ab2188d6457cd3a19da4444a0548ade4f057c3d3ab3a16ed694672",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "nx.json": {
+      "filePath": "nx.json",
+      "contentHash": "9937f836871294505ef53733ca8d2d412b4fe8d17a4fb62d5fc08829d4707f28",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 73,
+      "hasStructuralAnalysis": false
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "33a51f0642ccc981f2affaf8794a0b3fa151f02296c51938f26c0b702d1e0ef7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": false
+    },
+    "packages/.gitkeep": {
+      "filePath": "packages/.gitkeep",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "tools/generate-protos.mjs": {
+      "filePath": "tools/generate-protos.mjs",
+      "contentHash": "f111b9467538bb90f1e44aaff8fe21edd78e3e4b063d62867c205716a8727966",
+      "functions": [
+        {
+          "name": "findProtoc",
+          "params": [],
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "assertProtocAvailable",
+          "params": [
+            "protoc"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "findPlugin",
+          "params": [],
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "collectProtos",
+          "params": [
+            "dir"
+          ],
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "generate",
+          "params": [
+            "out"
+          ],
+          "exported": false,
+          "lineCount": 30
+        },
+        {
+          "name": "listFiles",
+          "params": [
+            "dir"
+          ],
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "checkMode",
+          "params": [],
+          "exported": false,
+          "lineCount": 32
+        },
+        {
+          "name": "writeMode",
+          "params": [],
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:child_process",
+          "specifiers": [
+            "execFileSync"
+          ]
+        },
+        {
+          "source": "node:fs",
+          "specifiers": [
+            "mkdirSync",
+            "mkdtempSync",
+            "readdirSync",
+            "readFileSync",
+            "rmSync",
+            "statSync",
+            "existsSync"
+          ]
+        },
+        {
+          "source": "node:path",
+          "specifiers": [
+            "join",
+            "dirname",
+            "relative"
+          ]
+        },
+        {
+          "source": "node:os",
+          "specifiers": [
+            "tmpdir"
+          ]
+        },
+        {
+          "source": "node:url",
+          "specifiers": [
+            "fileURLToPath"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 194,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.base.json": {
+      "filePath": "tsconfig.base.json",
+      "contentHash": "029b5a7a5575d4899a85635de82692746330339cba29786dc6eaed4668335bf9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "ee71e786e80d79c509c471b684066f5f0847c24194e364950d0e050b0b5f0a98",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": false
+    }
+  }
+}

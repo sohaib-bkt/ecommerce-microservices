@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/order-service/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/order-service/package.json",
+      "summary": "Nx project manifest for the order-service NestJS app, declaring runtime dependencies (@nestjs/*, rxjs) and build/serve/test targets.",
+      "tags": ["configuration", "package", "build-system", "nx"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:apps/order-service/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/order-service/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the order-service application build, enabling decorators and strict type checks over src.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/order-service/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/order-service/tsconfig.json",
+      "summary": "Root TypeScript project references file delegating to the app and spec tsconfig configurations for the order-service.",
+      "tags": ["configuration", "typescript", "project-references"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/order-service/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/order-service/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for the order-service test suite, including Jest types and spec files.",
+      "tags": ["configuration", "typescript", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/order-service/tsconfig.app.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/order-service/tsconfig.spec.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/order-service/tsconfig.json",
+      "target": "config:apps/order-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/order-service/tsconfig.json",
+      "target": "config:apps/order-service/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/order-service/package.json",
+      "target": "file:apps/order-service/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

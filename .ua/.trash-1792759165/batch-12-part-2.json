@@ -1,0 +1,967 @@
+{
+  "nodes": [
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "type": "schema",
+      "name": "payment.proto",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "summary": "Protobuf schema defining payment.proto messages and RPCs.",
+      "tags": [
+        "schema-definition",
+        "protobuf",
+        "api-schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:Payment",
+      "type": "schema",
+      "name": "Payment",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        26,
+        38
+      ],
+      "summary": "Protobuf message Payment with fields id, order_id, account_id, status, method_type, currency, provider_reference, failure_reason.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:GetPaymentRequest",
+      "type": "schema",
+      "name": "GetPaymentRequest",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        41,
+        43
+      ],
+      "summary": "Protobuf message GetPaymentRequest with fields id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:GetPaymentResponse",
+      "type": "schema",
+      "name": "GetPaymentResponse",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        46,
+        48
+      ],
+      "summary": "Protobuf message GetPaymentResponse with fields payment.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:CreatePaymentRequest",
+      "type": "schema",
+      "name": "CreatePaymentRequest",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        51,
+        56
+      ],
+      "summary": "Protobuf message CreatePaymentRequest with fields order_id, account_id, method_type.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:CreatePaymentResponse",
+      "type": "schema",
+      "name": "CreatePaymentResponse",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        59,
+        61
+      ],
+      "summary": "Protobuf message CreatePaymentResponse with fields payment.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:CapturePaymentRequest",
+      "type": "schema",
+      "name": "CapturePaymentRequest",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        64,
+        66
+      ],
+      "summary": "Protobuf message CapturePaymentRequest with fields id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:CapturePaymentResponse",
+      "type": "schema",
+      "name": "CapturePaymentResponse",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        69,
+        71
+      ],
+      "summary": "Protobuf message CapturePaymentResponse with fields payment.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:RefundPaymentRequest",
+      "type": "schema",
+      "name": "RefundPaymentRequest",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        74,
+        78
+      ],
+      "summary": "Protobuf message RefundPaymentRequest with fields id, reason.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:RefundPaymentResponse",
+      "type": "schema",
+      "name": "RefundPaymentResponse",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        81,
+        83
+      ],
+      "summary": "Protobuf message RefundPaymentResponse with fields payment.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:PaymentStatus",
+      "type": "schema",
+      "name": "PaymentStatus",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        8,
+        15
+      ],
+      "summary": "Protobuf enum PaymentStatus with fields PAYMENT_STATUS_UNSPECIFIED, PAYMENT_STATUS_PENDING, PAYMENT_STATUS_AUTHORIZED, PAYMENT_STATUS_CAPTURED, PAYMENT_STATUS_FAILED, PAYMENT_STATUS_REFUNDED.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/payment/v1/payment.proto:PaymentMethodType",
+      "type": "schema",
+      "name": "PaymentMethodType",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        18,
+        23
+      ],
+      "summary": "Protobuf enum PaymentMethodType with fields PAYMENT_METHOD_TYPE_UNSPECIFIED, PAYMENT_METHOD_TYPE_CARD, PAYMENT_METHOD_TYPE_BANK_TRANSFER, PAYMENT_METHOD_TYPE_WALLET.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.GetPayment",
+      "type": "endpoint",
+      "name": "rpc PaymentService.GetPayment",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        87,
+        87
+      ],
+      "summary": "RPC endpoint PaymentService.GetPayment.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.CreatePayment",
+      "type": "endpoint",
+      "name": "rpc PaymentService.CreatePayment",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        88,
+        88
+      ],
+      "summary": "RPC endpoint PaymentService.CreatePayment.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.CapturePayment",
+      "type": "endpoint",
+      "name": "rpc PaymentService.CapturePayment",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        89,
+        89
+      ],
+      "summary": "RPC endpoint PaymentService.CapturePayment.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.RefundPayment",
+      "type": "endpoint",
+      "name": "rpc PaymentService.RefundPayment",
+      "filePath": "libs/contracts/proto/payment/v1/payment.proto",
+      "lineRange": [
+        90,
+        90
+      ],
+      "summary": "RPC endpoint PaymentService.RefundPayment.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto",
+      "type": "schema",
+      "name": "product.proto",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "summary": "Protobuf schema defining product.proto messages and RPCs.",
+      "tags": [
+        "schema-definition",
+        "protobuf",
+        "api-schema"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:Product",
+      "type": "schema",
+      "name": "Product",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        16,
+        28
+      ],
+      "summary": "Protobuf message Product with fields id, sku, name, description, currency, stock_quantity, status, category_ids.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:GetProductRequest",
+      "type": "schema",
+      "name": "GetProductRequest",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        31,
+        33
+      ],
+      "summary": "Protobuf message GetProductRequest with fields id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:GetProductResponse",
+      "type": "schema",
+      "name": "GetProductResponse",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        36,
+        38
+      ],
+      "summary": "Protobuf message GetProductResponse with fields product.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ListProductsRequest",
+      "type": "schema",
+      "name": "ListProductsRequest",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        41,
+        45
+      ],
+      "summary": "Protobuf message ListProductsRequest with fields category_id, status.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ListProductsResponse",
+      "type": "schema",
+      "name": "ListProductsResponse",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        48,
+        51
+      ],
+      "summary": "Protobuf message ListProductsResponse with fields products.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:CreateProductRequest",
+      "type": "schema",
+      "name": "CreateProductRequest",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        54,
+        61
+      ],
+      "summary": "Protobuf message CreateProductRequest with fields sku, name, description, stock_quantity, category_ids.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:CreateProductResponse",
+      "type": "schema",
+      "name": "CreateProductResponse",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        64,
+        66
+      ],
+      "summary": "Protobuf message CreateProductResponse with fields product.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:UpdateProductRequest",
+      "type": "schema",
+      "name": "UpdateProductRequest",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        69,
+        75
+      ],
+      "summary": "Protobuf message UpdateProductRequest with fields id, name, description, status.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:UpdateProductResponse",
+      "type": "schema",
+      "name": "UpdateProductResponse",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        78,
+        80
+      ],
+      "summary": "Protobuf message UpdateProductResponse with fields product.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ReserveStockRequest",
+      "type": "schema",
+      "name": "ReserveStockRequest",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        84,
+        88
+      ],
+      "summary": "Protobuf message ReserveStockRequest with fields product_id, quantity, reservation_id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ReserveStockResponse",
+      "type": "schema",
+      "name": "ReserveStockResponse",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        91,
+        95
+      ],
+      "summary": "Protobuf message ReserveStockResponse with fields product_id, remaining_stock, fulfilled.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ReleaseStockRequest",
+      "type": "schema",
+      "name": "ReleaseStockRequest",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        98,
+        102
+      ],
+      "summary": "Protobuf message ReleaseStockRequest with fields product_id, quantity, reservation_id.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ReleaseStockResponse",
+      "type": "schema",
+      "name": "ReleaseStockResponse",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        105,
+        108
+      ],
+      "summary": "Protobuf message ReleaseStockResponse with fields product_id, remaining_stock.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:libs/contracts/proto/product/v1/product.proto:ProductStatus",
+      "type": "schema",
+      "name": "ProductStatus",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        8,
+        13
+      ],
+      "summary": "Protobuf enum ProductStatus with fields PRODUCT_STATUS_UNSPECIFIED, PRODUCT_STATUS_DRAFT, PRODUCT_STATUS_ACTIVE, PRODUCT_STATUS_ARCHIVED.",
+      "tags": [
+        "schema-definition",
+        "protobuf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.GetProduct",
+      "type": "endpoint",
+      "name": "rpc ProductService.GetProduct",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        112,
+        112
+      ],
+      "summary": "RPC endpoint ProductService.GetProduct.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.ListProducts",
+      "type": "endpoint",
+      "name": "rpc ProductService.ListProducts",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        113,
+        113
+      ],
+      "summary": "RPC endpoint ProductService.ListProducts.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.CreateProduct",
+      "type": "endpoint",
+      "name": "rpc ProductService.CreateProduct",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        114,
+        114
+      ],
+      "summary": "RPC endpoint ProductService.CreateProduct.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.UpdateProduct",
+      "type": "endpoint",
+      "name": "rpc ProductService.UpdateProduct",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        115,
+        115
+      ],
+      "summary": "RPC endpoint ProductService.UpdateProduct.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.ReserveStock",
+      "type": "endpoint",
+      "name": "rpc ProductService.ReserveStock",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        116,
+        116
+      ],
+      "summary": "RPC endpoint ProductService.ReserveStock.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.ReleaseStock",
+      "type": "endpoint",
+      "name": "rpc ProductService.ReleaseStock",
+      "filePath": "libs/contracts/proto/product/v1/product.proto",
+      "lineRange": [
+        117,
+        117
+      ],
+      "summary": "RPC endpoint ProductService.ReleaseStock.",
+      "tags": [
+        "api-schema",
+        "rpc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "type": "file",
+      "name": "account.ts",
+      "filePath": "libs/contracts/src/generated/account/v1/account.ts",
+      "summary": "Auto-generated TypeScript bindings for account.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "libs/contracts/src/generated/common/v1/common.ts",
+      "summary": "Auto-generated TypeScript bindings for common.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.account.ts",
+      "type": "file",
+      "name": "index.ecommerce.account.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.account.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.account.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.account.v1.ts",
+      "type": "file",
+      "name": "index.ecommerce.account.v1.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.account.v1.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.account.v1.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.common.ts",
+      "type": "file",
+      "name": "index.ecommerce.common.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.common.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.common.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.common.v1.ts",
+      "type": "file",
+      "name": "index.ecommerce.common.v1.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.common.v1.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.common.v1.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.order.ts",
+      "type": "file",
+      "name": "index.ecommerce.order.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.order.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.order.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.order.v1.ts",
+      "type": "file",
+      "name": "index.ecommerce.order.v1.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.order.v1.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.order.v1.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.payment.ts",
+      "type": "file",
+      "name": "index.ecommerce.payment.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.payment.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.payment.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/index.ecommerce.payment.v1.ts",
+      "type": "file",
+      "name": "index.ecommerce.payment.v1.ts",
+      "filePath": "libs/contracts/src/generated/index.ecommerce.payment.v1.ts",
+      "summary": "Auto-generated TypeScript bindings for index.ecommerce.payment.v1.ts.",
+      "tags": [
+        "generated",
+        "serialization",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:Payment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:GetPaymentRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:GetPaymentResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:CreatePaymentRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:CreatePaymentResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:CapturePaymentRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:CapturePaymentResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:RefundPaymentRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:RefundPaymentResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:PaymentStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "schema:libs/contracts/proto/payment/v1/payment.proto:PaymentMethodType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.GetPayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.CreatePayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.CapturePayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/payment/v1/payment.proto",
+      "target": "endpoint:libs/contracts/proto/payment/v1/payment.proto:rpc-PaymentService.RefundPayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:Product",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:GetProductRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:GetProductResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ListProductsRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ListProductsResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:CreateProductRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:CreateProductResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:UpdateProductRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:UpdateProductResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ReserveStockRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ReserveStockResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ReleaseStockRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ReleaseStockResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "schema:libs/contracts/proto/product/v1/product.proto:ProductStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.GetProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.ListProducts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.CreateProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.UpdateProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.ReserveStock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "schema:libs/contracts/proto/product/v1/product.proto",
+      "target": "endpoint:libs/contracts/proto/product/v1/product.proto:rpc-ProductService.ReleaseStock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    }
+  ]
+}

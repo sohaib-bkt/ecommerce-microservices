@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {"id": "config:apps/order-service-e2e/tsconfig.json", "type": "config", "name": "tsconfig.json", "filePath": "apps/order-service-e2e/tsconfig.json", "summary": "TypeScript compiler configuration for the order-service e2e project, extending the base config with Jest and Node types.", "tags": ["configuration", "typescript", "build-system"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/.spec.swcrc", "type": "file", "name": ".spec.swcrc", "filePath": "apps/order-service/.spec.swcrc", "summary": "SWC compilation configuration for Jest spec files in the order-service, enabling TypeScript decorators and source maps.", "tags": ["configuration", "build-system", "testing"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/eslint.config.mjs", "type": "file", "name": "eslint.config.mjs", "filePath": "apps/order-service/eslint.config.mjs", "summary": "ESLint configuration for the order-service that re-exports the shared root ESLint config.", "tags": ["configuration", "linting", "code-quality"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/jest.config.cts", "type": "file", "name": "jest.config.cts", "filePath": "apps/order-service/jest.config.cts", "summary": "Jest configuration for the order-service that loads SWC transform settings and sets the Node test environment.", "tags": ["configuration", "testing", "build-system"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/app/app.controller.spec.ts", "type": "file", "name": "app.controller.spec.ts", "filePath": "apps/order-service/src/app/app.controller.spec.ts", "summary": "Unit tests for AppController verifying that getData returns the expected hello message.", "tags": ["test", "unit-test", "nestjs"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/app/app.controller.ts", "type": "file", "name": "app.controller.ts", "filePath": "apps/order-service/src/app/app.controller.ts", "summary": "NestJS controller exposing a GET endpoint that delegates to AppService to return a hello message.", "tags": ["api-handler", "controller", "nestjs"], "complexity": "simple"},
+
+    {"id": "class:apps/order-service/src/app/app.controller.ts:AppController", "type": "class", "name": "AppController", "filePath": "apps/order-service/src/app/app.controller.ts", "lineRange": [5, 12], "summary": "NestJS controller class with a constructor injecting AppService and a getData handler.", "tags": ["api-handler", "controller", "nestjs"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/app/app.module.ts", "type": "file", "name": "app.module.ts", "filePath": "apps/order-service/src/app/app.module.ts", "summary": "NestJS root module wiring AppController and AppService with empty imports.", "tags": ["module", "nestjs", "configuration"], "complexity": "simple"},
+
+    {"id": "class:apps/order-service/src/app/app.module.ts:AppModule", "type": "class", "name": "AppModule", "filePath": "apps/order-service/src/app/app.module.ts", "lineRange": [10, 10], "summary": "NestJS module class decorated with @Module, registering the controller and provider.", "tags": ["module", "nestjs"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/app/app.service.spec.ts", "type": "file", "name": "app.service.spec.ts", "filePath": "apps/order-service/src/app/app.service.spec.ts", "summary": "Unit tests for AppService verifying that getData returns the expected hello message.", "tags": ["test", "unit-test", "nestjs"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/app/app.service.ts", "type": "file", "name": "app.service.ts", "filePath": "apps/order-service/src/app/app.service.ts", "summary": "NestJS injectable service returning a hello API message from getData.", "tags": ["service", "nestjs", "business-logic"], "complexity": "simple"},
+
+    {"id": "class:apps/order-service/src/app/app.service.ts:AppService", "type": "class", "name": "AppService", "filePath": "apps/order-service/src/app/app.service.ts", "lineRange": [4, 8], "summary": "Injectable service class with a getData method returning a message object.", "tags": ["service", "nestjs"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/assets/.gitkeep", "type": "file", "name": ".gitkeep", "filePath": "apps/order-service/src/assets/.gitkeep", "summary": "Placeholder file keeping the assets directory tracked in version control.", "tags": ["placeholder", "assets"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/src/main.ts", "type": "file", "name": "main.ts", "filePath": "apps/order-service/src/main.ts", "summary": "Application bootstrap that creates the NestJS app, sets a global API prefix, and listens on a port.", "tags": ["entry-point", "bootstrap", "nestjs"], "complexity": "simple"},
+
+    {"id": "function:apps/order-service/src/main.ts:bootstrap", "type": "function", "name": "bootstrap", "filePath": "apps/order-service/src/main.ts", "lineRange": [10, 19], "summary": "Async bootstrap function creating the NestJS application, configuring global prefix, and starting the HTTP listener.", "tags": ["entry-point", "bootstrap", "nestjs"], "complexity": "simple"},
+
+    {"id": "file:apps/order-service/webpack.config.js", "type": "file", "name": "webpack.config.js", "filePath": "apps/order-service/webpack.config.js", "summary": "Webpack configuration using NxAppWebpackPlugin to build the Node application from main.ts.", "tags": ["build-system", "bundler", "configuration"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/.spec.swcrc", "type": "file", "name": ".spec.swcrc", "filePath": "apps/payment-service-e2e/.spec.swcrc", "summary": "SWC compilation configuration for Jest spec files in the payment-service e2e project.", "tags": ["configuration", "build-system", "testing"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/eslint.config.mjs", "type": "file", "name": "eslint.config.mjs", "filePath": "apps/payment-service-e2e/eslint.config.mjs", "summary": "ESLint configuration for the payment-service e2e project re-exporting the shared root config.", "tags": ["configuration", "linting", "code-quality"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/jest.config.cts", "type": "file", "name": "jest.config.cts", "filePath": "apps/payment-service-e2e/jest.config.cts", "summary": "Jest configuration for payment-service e2e tests with global setup, teardown, and SWC transform.", "tags": ["configuration", "testing", "build-system"], "complexity": "simple"},
+
+    {"id": "config:apps/payment-service-e2e/package.json", "type": "config", "name": "package.json", "filePath": "apps/payment-service-e2e/package.json", "summary": "Package manifest for the payment-service e2e project declaring Nx implicit dependency and e2e target.", "tags": ["configuration", "package-manifest", "e2e"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/src/payment-service/payment-service.spec.ts", "type": "file", "name": "payment-service.spec.ts", "filePath": "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts", "summary": "End-to-end test hitting GET /api and asserting a 200 response with a hello message.", "tags": ["test", "e2e", "api"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/src/support/global-setup.ts", "type": "file", "name": "global-setup.ts", "filePath": "apps/payment-service-e2e/src/support/global-setup.ts", "summary": "Global Jest setup that waits for the payment service port to open before running e2e tests.", "tags": ["test", "setup", "e2e"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/src/support/global-teardown.ts", "type": "file", "name": "global-teardown.ts", "filePath": "apps/payment-service-e2e/src/support/global-teardown.ts", "summary": "Global Jest teardown that kills the payment service port after e2e tests complete.", "tags": ["test", "teardown", "e2e"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service-e2e/src/support/test-setup.ts", "type": "file", "name": "test-setup.ts", "filePath": "apps/payment-service-e2e/src/support/test-setup.ts", "summary": "Test setup configuring axios base URL for e2e requests against the running payment service.", "tags": ["test", "setup", "e2e"], "complexity": "simple"},
+
+    {"id": "config:apps/payment-service-e2e/tsconfig.json", "type": "config", "name": "tsconfig.json", "filePath": "apps/payment-service-e2e/tsconfig.json", "summary": "TypeScript compiler configuration for the payment-service e2e project extending the base config.", "tags": ["configuration", "typescript", "build-system"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service/.spec.swcrc", "type": "file", "name": ".spec.swcrc", "filePath": "apps/payment-service/.spec.swcrc", "summary": "SWC compilation configuration for Jest spec files in the payment-service.", "tags": ["configuration", "build-system", "testing"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service/eslint.config.mjs", "type": "file", "name": "eslint.config.mjs", "filePath": "apps/payment-service/eslint.config.mjs", "summary": "ESLint configuration for the payment-service re-exporting the shared root config.", "tags": ["configuration", "linting", "code-quality"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service/jest.config.cts", "type": "file", "name": "jest.config.cts", "filePath": "apps/payment-service/jest.config.cts", "summary": "Jest configuration for the payment-service with SWC transform and Node test environment.", "tags": ["configuration", "testing", "build-system"], "complexity": "simple"},
+
+    {"id": "file:apps/payment-service/src/app/app.controller.spec.ts", "type": "file", "name": "app.controller.spec.ts", "filePath": "apps/payment-service/src/app/app.controller.spec.ts", "summary": "Unit tests for AppController verifying that getData returns the expected hello message.", "tags": ["test", "unit-test", "nestjs"], "complexity": "simple"}
+  ],
+  "edges": [
+    {"source": "file:apps/order-service/src/app/app.controller.ts", "target": "class:apps/order-service/src/app/app.controller.ts:AppController", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/order-service/src/app/app.controller.ts", "target": "class:apps/order-service/src/app/app.controller.ts:AppController", "type": "exports", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/order-service/src/app/app.module.ts", "target": "class:apps/order-service/src/app/app.module.ts:AppModule", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/order-service/src/app/app.module.ts", "target": "class:apps/order-service/src/app/app.module.ts:AppModule", "type": "exports", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/order-service/src/app/app.service.ts", "target": "class:apps/order-service/src/app/app.service.ts:AppService", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:apps/order-service/src/app/app.service.ts", "target": "class:apps/order-service/src/app/app.service.ts:AppService", "type": "exports", "direction": "forward", "weight": 0.8},
+
+    {"source": "file:apps/order-service/src/main.ts", "target": "function:apps/order-service/src/main.ts:bootstrap", "type": "contains", "direction": "forward", "weight": 1.0},
+
+    {"source": "file:apps/order-service/src/app/app.controller.ts", "target": "file:apps/order-service/src/app/app.controller.spec.ts", "type": "tested_by", "direction": "forward", "weight": 0.5},
+    {"source": "file:apps/order-service/src/app/app.service.ts", "target": "file:apps/order-service/src/app/app.service.spec.ts", "type": "tested_by", "direction": "forward", "weight": 0.5},
+
+    {"source": "file:apps/order-service/webpack.config.js", "target": "file:apps/order-service/src/main.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+
+    {"source": "file:apps/order-service/jest.config.cts", "target": "file:apps/order-service/src/app/app.controller.spec.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+    {"source": "file:apps/order-service/jest.config.cts", "target": "file:apps/order-service/src/app/app.service.spec.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+
+    {"source": "file:apps/order-service/eslint.config.mjs", "target": "file:apps/order-service/src/app/app.controller.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+
+    {"source": "config:apps/payment-service-e2e/package.json", "target": "file:apps/payment-service-e2e/src/payment-service/payment-service.spec.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+    {"source": "file:apps/payment-service-e2e/jest.config.cts", "target": "file:apps/payment-service-e2e/src/payment-service/payment-service.spec.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+    {"source": "file:apps/payment-service-e2e/jest.config.cts", "target": "file:apps/payment-service-e2e/src/support/global-setup.ts", "type": "configures", "direction": "forward", "weight": 0.6},
+    {"source": "config:apps/payment-service-e2e/tsconfig.json", "target": "file:apps/payment-service-e2e/src/support/global-setup.ts", "type": "configures", "direction": "forward", "weight": 0.6}
+  ]
+}

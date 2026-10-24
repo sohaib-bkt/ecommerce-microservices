@@ -1,0 +1,92 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the root README to understand the Nx monorepo layout, how projects are generated, and how tasks, versioning, and CI are wired up. This sets the stage for the microservices and shared contracts you will explore next.",
+    "nodeIds": ["document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Workspace Configuration",
+    "description": "Nx orchestrates builds, tests, and code generation across every app and library in the repo, while the base TypeScript config enforces shared compiler options. Together they define how each project is built and type-checked.",
+    "nodeIds": ["config:nx.json", "config:tsconfig.base.json"],
+    "languageLesson": "Nx uses project.json/tsconfig references to compose a dependency graph; changing tsconfig.base.json affects type-checking for every project in the workspace."
+  },
+  {
+    "order": 3,
+    "title": "Shared Contracts Library",
+    "description": "The contracts library is the single source of truth shared by all services: it re-exports generated protobuf types alongside event schemas and validation helpers. Services import from here instead of redefining messages, keeping the API surface consistent.",
+    "nodeIds": ["file:libs/contracts/src/index.ts"]
+  },
+  {
+    "order": 4,
+    "title": "Protobuf API Contracts",
+    "description": "The .proto files define the gRPC service methods and message shapes that every service implements, such as Product and the shared Money, Address, and paging types. Field numbers and message definitions here are the contract the generated code and services must honor.",
+    "nodeIds": ["schema:libs/contracts/proto/common/v1/common.proto", "schema:libs/contracts/proto/product/v1/product.proto"],
+    "languageLesson": "In Protobuf, field numbers are permanent and must never be reused; backward compatibility is achieved by only adding optional fields."
+  },
+  {
+    "order": 5,
+    "title": "Generated TypeScript Bindings",
+    "description": "protoc-generated modules translate the .proto definitions into TypeScript classes and serializers used at runtime. The barrel index re-exports everything so services import typed messages and service definitions from one place.",
+    "nodeIds": ["file:libs/contracts/src/generated/index.ts", "file:libs/contracts/src/lib/contracts.ts"],
+    "languageLesson": "Generated code should never be hand-edited; regenerate it whenever proto definitions change to keep types and serialization in sync."
+  },
+  {
+    "order": 6,
+    "title": "Event Schemas and Envelope",
+    "description": "Domain events share a common envelope and typed schemas for account, order, payment, and product changes. The registry maps event type strings to their validation schemas so publishers and consumers agree on payloads.",
+    "nodeIds": ["file:libs/contracts/src/lib/events/envelope.ts", "file:libs/contracts/src/lib/events/registry.ts"]
+  },
+  {
+    "order": 7,
+    "title": "Schema Validation Utilities",
+    "description": "defineSchema and defineRule provide reusable validation with detailed error reporting, used to guard event and request payloads. Centralizing validation keeps business rules consistent across services.",
+    "nodeIds": ["file:libs/contracts/src/lib/validation/schema.ts"]
+  },
+  {
+    "order": 8,
+    "title": "Product Service gRPC Controller",
+    "description": "ProductController implements the ProductService RPCs including getProduct, listProducts, createProduct, updateProduct, and stock reservation/release, mapping internal products to protobuf messages. It is the richest service in the repo and shows the full request-to-domain flow.",
+    "nodeIds": ["file:apps/product-service/src/app/product.controller.ts", "class:apps/product-service/src/app/product.controller.ts:ProductController"],
+    "languageLesson": "NestJS gRPC controllers use @GrpcMethod decorators and receive protobuf messages directly, so input validation and mapping to domain objects happen in the controller."
+  },
+  {
+    "order": 9,
+    "title": "Product Catalog and Stock Logic",
+    "description": "ProductService holds an in-memory catalog with CRUD plus reserveStock and releaseStock operations that track inventory. This is where business rules around product status and stock availability live.",
+    "nodeIds": ["file:apps/product-service/src/app/product.service.ts", "class:apps/product-service/src/app/product.service.ts:ProductService"]
+  },
+  {
+    "order": 10,
+    "title": "Dual HTTP and gRPC Bootstrap",
+    "description": "The product service main.ts starts both an HTTP listener and a gRPC server, resolving proto paths from the contracts library. This pattern lets the service expose REST-style health checks alongside gRPC RPCs.",
+    "nodeIds": ["file:apps/product-service/src/main.ts", "function:apps/product-service/src/main.ts:bootstrap"],
+    "languageLesson": "NestJS can run multiple transports in one application by calling app.connectMicroservice with a gRPC options object and then app.startAllMicroservices()."
+  },
+  {
+    "order": 11,
+    "title": "A Typical Microservice",
+    "description": "The account service follows the standard NestJS scaffold: a bootstrap main, a root module, a controller, and a service returning a hello payload. Comparing it to the product service shows how additional transports and domain logic layer on top of the same baseline.",
+    "nodeIds": ["file:apps/account-service/src/main.ts", "file:apps/account-service/src/app/app.module.ts", "file:apps/account-service/src/app/app.service.ts"]
+  },
+  {
+    "order": 12,
+    "title": "API Gateway",
+    "description": "The api-gateway boots a NestJS HTTP app and includes an integration test that loads contracts and proto definitions at runtime, verifying the shared library resolves correctly. It is the entry point clients use to reach the underlying services.",
+    "nodeIds": ["file:apps/api-gateway/src/main.ts", "file:apps/api-gateway/src/app/contracts-integration.spec.ts"]
+  },
+  {
+    "order": 13,
+    "title": "Proto Code Generation",
+    "description": "generate-protos.mjs discovers protoc, collects every .proto file, and emits the TypeScript bindings used by the contracts library. Running it regenerates all bindings after a schema change.",
+    "nodeIds": ["file:tools/generate-protos.mjs"],
+    "languageLesson": "Automating protoc invocation in a script keeps code generation reproducible in CI and avoids manual command drift."
+  },
+  {
+    "order": 14,
+    "title": "Contracts Library Documentation",
+    "description": "The contracts README documents the gRPC service definitions, event schemas, code generation workflow, and usage patterns. It is the reference for how services consume shared contracts and events.",
+    "nodeIds": ["document:libs/contracts/README.md"]
+  }
+]

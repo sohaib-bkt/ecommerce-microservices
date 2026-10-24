@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/payment-service/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/payment-service/package.json",
+      "summary": "Nx/NPM package manifest for the payment-service, declaring NestJS runtime dependencies and build/serve/test targets.",
+      "tags": ["configuration", "build-system", "nx", "nestjs"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:apps/payment-service/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/payment-service/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the payment-service application source, enabling strict checks and decorator metadata.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/payment-service/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/payment-service/tsconfig.json",
+      "summary": "Solution-style TypeScript project references aggregating the app and spec configurations for the payment-service.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/payment-service/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/payment-service/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for payment-service test files, including Jest types and references to the app config.",
+      "tags": ["configuration", "typescript", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/payment-service/tsconfig.json",
+      "target": "config:apps/payment-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/payment-service/tsconfig.json",
+      "target": "config:apps/payment-service/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/payment-service/tsconfig.app.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/payment-service/tsconfig.spec.json",
+      "target": "config:apps/payment-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/payment-service/tsconfig.app.json",
+      "target": "file:apps/payment-service/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

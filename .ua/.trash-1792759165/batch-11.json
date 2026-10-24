@@ -1,0 +1,454 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/payment-service/src/app/app.controller.ts",
+      "type": "file",
+      "name": "app.controller.ts",
+      "filePath": "apps/payment-service/src/app/app.controller.ts",
+      "summary": "NestJS controller exposing a single getData endpoint that delegates to AppService.",
+      "tags": ["api-handler", "controller", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/app.controller.ts:AppController",
+      "type": "class",
+      "name": "AppController",
+      "filePath": "apps/payment-service/src/app/app.controller.ts",
+      "lineRange": [5, 12],
+      "summary": "Controller handling the getData request by delegating to AppService.",
+      "tags": ["api-handler", "controller", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/payment-service/src/app/app.module.ts",
+      "summary": "NestJS root module wiring controllers and providers for the payment service.",
+      "tags": ["config", "module", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/payment-service/src/app/app.module.ts",
+      "lineRange": [10, 10],
+      "summary": "Root NestJS module declaring AppController and AppService.",
+      "tags": ["config", "module", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.service.spec.ts",
+      "type": "file",
+      "name": "app.service.spec.ts",
+      "filePath": "apps/payment-service/src/app/app.service.spec.ts",
+      "summary": "Unit tests for AppService.getData in the payment service.",
+      "tags": ["test", "unit-test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.service.ts",
+      "type": "file",
+      "name": "app.service.ts",
+      "filePath": "apps/payment-service/src/app/app.service.ts",
+      "summary": "NestJS service providing the getData business logic for the payment service.",
+      "tags": ["service", "business-logic", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/app.service.ts:AppService",
+      "type": "class",
+      "name": "AppService",
+      "filePath": "apps/payment-service/src/app/app.service.ts",
+      "lineRange": [4, 8],
+      "summary": "Service implementing getData returning a hello message.",
+      "tags": ["service", "business-logic", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/assets/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "apps/payment-service/src/assets/.gitkeep",
+      "summary": "Placeholder keeping the assets directory tracked in git.",
+      "tags": ["placeholder", "assets"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/payment-service/src/main.ts",
+      "summary": "Entry point bootstrapping the NestJS payment service on port 3004.",
+      "tags": ["entry-point", "bootstrap", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/payment-service/src/main.ts:bootstrap",
+      "type": "function",
+      "name": "bootstrap",
+      "filePath": "apps/payment-service/src/main.ts",
+      "lineRange": [10, 19],
+      "summary": "Creates the NestJS application, sets the global api prefix, and starts listening.",
+      "tags": ["entry-point", "bootstrap", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/webpack.config.js",
+      "type": "file",
+      "name": "webpack.config.js",
+      "filePath": "apps/payment-service/webpack.config.js",
+      "summary": "Webpack configuration for building the payment service via Nx.",
+      "tags": ["build-system", "webpack", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/product-service-e2e/.spec.swcrc",
+      "summary": "SWC compiler configuration for e2e test transpilation.",
+      "tags": ["configuration", "swc", "test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/product-service-e2e/eslint.config.mjs",
+      "summary": "ESLint flat config for the product service e2e project.",
+      "tags": ["configuration", "linting"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/product-service-e2e/jest.config.cts",
+      "summary": "Jest configuration for product service e2e tests.",
+      "tags": ["configuration", "test", "jest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/product-service-e2e/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/product-service-e2e/package.json",
+      "summary": "Package manifest and Nx project config for product service e2e tests.",
+      "tags": ["configuration", "package-manifest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/src/product-service/product-service.spec.ts",
+      "type": "file",
+      "name": "product-service.spec.ts",
+      "filePath": "apps/product-service-e2e/src/product-service/product-service.spec.ts",
+      "summary": "E2e spec exercising the product service endpoints.",
+      "tags": ["test", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/src/support/global-setup.ts",
+      "type": "file",
+      "name": "global-setup.ts",
+      "filePath": "apps/product-service-e2e/src/support/global-setup.ts",
+      "summary": "Global setup hook for product service e2e test suite.",
+      "tags": ["test", "setup"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/src/support/global-teardown.ts",
+      "type": "file",
+      "name": "global-teardown.ts",
+      "filePath": "apps/product-service-e2e/src/support/global-teardown.ts",
+      "summary": "Global teardown hook for product service e2e test suite.",
+      "tags": ["test", "teardown"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/src/support/test-setup.ts",
+      "type": "file",
+      "name": "test-setup.ts",
+      "filePath": "apps/product-service-e2e/src/support/test-setup.ts",
+      "summary": "Test setup configuration for product service e2e suite.",
+      "tags": ["test", "setup"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/product-service-e2e/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/product-service-e2e/tsconfig.json",
+      "summary": "TypeScript config extending base for product service e2e tests.",
+      "tags": ["configuration", "typescript"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/product-service/.spec.swcrc",
+      "summary": "SWC compiler configuration for product service test transpilation.",
+      "tags": ["configuration", "swc", "test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/product-service/eslint.config.mjs",
+      "summary": "ESLint flat config for the product service project.",
+      "tags": ["configuration", "linting"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/product-service/jest.config.cts",
+      "summary": "Jest configuration for product service unit tests.",
+      "tags": ["configuration", "test", "jest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/app.controller.spec.ts",
+      "type": "file",
+      "name": "app.controller.spec.ts",
+      "filePath": "apps/product-service/src/app/app.controller.spec.ts",
+      "summary": "Unit tests for AppController in the product service.",
+      "tags": ["test", "unit-test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/app.controller.ts",
+      "type": "file",
+      "name": "app.controller.ts",
+      "filePath": "apps/product-service/src/app/app.controller.ts",
+      "summary": "NestJS controller exposing getData delegating to AppService.",
+      "tags": ["api-handler", "controller", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/product-service/src/app/app.controller.ts:AppController",
+      "type": "class",
+      "name": "AppController",
+      "filePath": "apps/product-service/src/app/app.controller.ts",
+      "lineRange": [5, 12],
+      "summary": "Controller handling getData by delegating to AppService.",
+      "tags": ["api-handler", "controller", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/product-service/src/app/app.module.ts",
+      "summary": "NestJS root module wiring controllers and providers for product service.",
+      "tags": ["config", "module", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/product-service/src/app/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/product-service/src/app/app.module.ts",
+      "lineRange": [10, 10],
+      "summary": "Root NestJS module declaring AppController and AppService.",
+      "tags": ["config", "module", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/app.service.spec.ts",
+      "type": "file",
+      "name": "app.service.spec.ts",
+      "filePath": "apps/product-service/src/app/app.service.spec.ts",
+      "summary": "Unit tests for AppService.getData in product service.",
+      "tags": ["test", "unit-test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/app.service.ts",
+      "type": "file",
+      "name": "app.service.ts",
+      "filePath": "apps/product-service/src/app/app.service.ts",
+      "summary": "NestJS service providing getData business logic for product service.",
+      "tags": ["service", "business-logic", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/product-service/src/app/app.service.ts:AppService",
+      "type": "class",
+      "name": "AppService",
+      "filePath": "apps/product-service/src/app/app.service.ts",
+      "lineRange": [4, 8],
+      "summary": "Service implementing getData returning a hello message.",
+      "tags": ["service", "business-logic", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/product.controller.ts",
+      "type": "file",
+      "name": "product.controller.ts",
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "summary": "gRPC ProductController implementing ProductService methods with stock reservation and proto mapping.",
+      "tags": ["api-handler", "grpc", "controller"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/product-service/src/app/product.controller.ts:ProductController",
+      "type": "class",
+      "name": "ProductController",
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "lineRange": [21, 77],
+      "summary": "gRPC controller implementing getProduct, listProducts, createProduct, updateProduct, reserveStock, releaseStock.",
+      "tags": ["api-handler", "grpc", "controller"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/product-service/src/app/product.controller.ts:toProto",
+      "type": "function",
+      "name": "toProto",
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "lineRange": [79, 105],
+      "summary": "Maps an internal product object to the protobuf Product message.",
+      "tags": ["serialization", "mapping", "utility"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.ts",
+      "target": "class:apps/payment-service/src/app/app.controller.ts:AppController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.ts",
+      "target": "class:apps/payment-service/src/app/app.controller.ts:AppController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "class:apps/payment-service/src/app/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "class:apps/payment-service/src/app/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.ts",
+      "target": "class:apps/payment-service/src/app/app.service.ts:AppService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.ts",
+      "target": "class:apps/payment-service/src/app/app.service.ts:AppService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.ts",
+      "target": "file:apps/payment-service/src/app/app.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/main.ts",
+      "target": "function:apps/payment-service/src/main.ts:bootstrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.controller.ts",
+      "target": "class:apps/product-service/src/app/app.controller.ts:AppController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.controller.ts",
+      "target": "class:apps/product-service/src/app/app.controller.ts:AppController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.controller.ts",
+      "target": "file:apps/product-service/src/app/app.controller.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.module.ts",
+      "target": "class:apps/product-service/src/app/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.module.ts",
+      "target": "class:apps/product-service/src/app/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.service.ts",
+      "target": "class:apps/product-service/src/app/app.service.ts:AppService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.service.ts",
+      "target": "class:apps/product-service/src/app/app.service.ts:AppService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.service.ts",
+      "target": "file:apps/product-service/src/app/app.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "class:apps/product-service/src/app/product.controller.ts:ProductController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "class:apps/product-service/src/app/product.controller.ts:ProductController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "function:apps/product-service/src/app/product.controller.ts:toProto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    }
+  ]
+}
