@@ -1,11 +1,12 @@
 import { Pool } from 'pg';
-import { PAYMENT_SCHEMA_SQL } from '../database/schema';
-import { PaymentRepository } from './payment.repository';
+import { PAYMENT_SCHEMA_SQL } from '../database/schema.js';
+import { PaymentRepository } from './payment.repository.js';
 
 const describeDb = process.env.PAYMENT_DB_TESTS === '1' ? describe : describe.skip;
 
 describeDb('PaymentRepository', () => {
-  const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  const connectionString = process.env.DATABASE_URL ?? 'postgres://ecommerce:ecommerce@localhost:5433/ecommerce';
+  const pool = new Pool({ connectionString });
 
   beforeAll(async () => {
     await pool.query(PAYMENT_SCHEMA_SQL);
