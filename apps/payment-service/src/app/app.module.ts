@@ -3,10 +3,11 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseModule } from './database/database.module';
+import { PaymentsModule } from './payments/payments.module';
 import { StripeModule } from './payments/stripe/stripe.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), DatabaseModule, StripeModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), DatabaseModule, StripeModule, PaymentsModule],
   controllers: [AppController],
   providers: [AppService],
 })
