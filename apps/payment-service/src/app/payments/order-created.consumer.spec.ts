@@ -17,6 +17,9 @@ describe('OrderCreatedConsumer', () => {
     await consumer.handleOrderCreated({
       id: 'evt_1',
       type: 'OrderCreated',
+      occurredAt: Date.now(),
+      source: 'order-service',
+      version: 1,
       payload: {
         orderId: 'order_1',
         accountId: 'acct_1',
@@ -44,6 +47,9 @@ describe('OrderCreatedConsumer', () => {
     await expect(consumer.handleOrderCreated({
       id: 'evt_2',
       type: 'OrderCreated',
+      occurredAt: Date.now(),
+      source: 'order-service',
+      version: 1,
       payload: {
         orderId: 'order_2',
         accountId: 'acct_2',

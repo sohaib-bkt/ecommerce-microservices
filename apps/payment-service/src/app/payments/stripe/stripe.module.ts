@@ -3,6 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import Stripe from 'stripe';
 import { FakeStripeGateway } from './fake-stripe.gateway.js';
 import { StripeSdkGateway } from './stripe-sdk.gateway.js';
+import { StripeWebhookVerifier } from './stripe-webhook.verifier.js';
 import { STRIPE_CLIENT, STRIPE_GATEWAY } from './stripe.gateway.js';
 
 @Global()
@@ -47,7 +48,15 @@ import { STRIPE_CLIENT, STRIPE_GATEWAY } from './stripe.gateway.js';
       },
       inject: [ConfigService, STRIPE_CLIENT],
     },
+    {
+      provide: StripeWebhookVerifier,
+      useFactory: (config: ConfigService, client: Stripe | null) => {
+        const stripeClient = client ?? new Stripe('sk_test_fake');
+        return new StripeWebhookVerifier(stripeClient, config);
+      },
+      inject: [ConfigService, STRIPE_CLIENT],
+    },
   ],
-  exports: [STRIPE_CLIENT, STRIPE_GATEWAY],
+  exports: [STRIPE_CLIENT, STRIPE_GATEWAY, StripeWebhookVerifier],
 })
 export class StripeModule {}

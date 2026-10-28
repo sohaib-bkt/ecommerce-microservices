@@ -4,6 +4,8 @@ import { PG_POOL } from '../database/database.tokens.js';
 import { PaymentRepository } from './payment.repository.js';
 import { OrderCreatedConsumer } from './order-created.consumer.js';
 import { PaymentsService } from './payments.service.js';
+import { StripeWebhookController } from './stripe-webhook.controller.js';
+import { StripeWebhookService } from './stripe-webhook.service.js';
 
 @Module({
   providers: [
@@ -14,7 +16,9 @@ import { PaymentsService } from './payments.service.js';
     },
     PaymentsService,
     OrderCreatedConsumer,
+    StripeWebhookService,
   ],
-  exports: [PaymentsService, OrderCreatedConsumer],
+  controllers: [StripeWebhookController],
+  exports: [PaymentsService, OrderCreatedConsumer, StripeWebhookService],
 })
 export class PaymentsModule {}
