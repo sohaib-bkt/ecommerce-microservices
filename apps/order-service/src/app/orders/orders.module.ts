@@ -3,7 +3,8 @@ import { PaymentResultConsumer } from './payment-result.consumer.js';
 import { OrderStatusService } from './order-status.service.js';
 
 @Module({
-  providers: [OrderStatusService, PaymentResultConsumer],
-  exports: [OrderStatusService, PaymentResultConsumer],
+  providers: [OrderStatusService],
+  controllers: [PaymentResultConsumer],
+  exports: [OrderStatusService],
 })
 export class OrdersModule {}

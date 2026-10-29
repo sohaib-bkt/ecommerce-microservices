@@ -16,11 +16,10 @@ import { StripeWebhookService } from './stripe-webhook.service.js';
       inject: [PG_POOL],
     },
     PaymentsService,
-    OrderCreatedConsumer,
     PaymentResultPublisher,
     StripeWebhookService,
   ],
-  controllers: [StripeWebhookController],
-  exports: [PaymentsService, OrderCreatedConsumer, StripeWebhookService, PaymentResultPublisher],
+  controllers: [StripeWebhookController, OrderCreatedConsumer],
+  exports: [PaymentsService, StripeWebhookService, PaymentResultPublisher],
 })
 export class PaymentsModule {}
