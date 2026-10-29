@@ -23,6 +23,13 @@ export class OrderStatusService {
       amount: { amount: number; currency: string };
     },
   ): OrderStatusSnapshot {
+    // Idempotency: if the order is already PAID, do not overwrite the stored
+    // snapshot or re-trigger downstream side effects for a duplicate event.
+    const current = this.orders.get(orderId);
+    if (current?.status === 'PAID') {
+      return current;
+    }
+
     const next: OrderStatusSnapshot = {
       orderId,
       status: 'PAID',
@@ -44,6 +51,13 @@ export class OrderStatusService {
       amount: { amount: number; currency: string };
     },
   ): OrderStatusSnapshot {
+    // Idempotency: if the order is already PENDING with the same payment failure,
+    // do not overwrite the stored snapshot or re-trigger downstream side effects.
+    const current = this.orders.get(orderId);
+    if (current?.status === 'PENDING' && current.paymentId === payload.paymentId) {
+      return current;
+    }
+
     const next: OrderStatusSnapshot = {
       orderId,
       status: 'PENDING',
@@ -59,5 +73,14 @@ export class OrderStatusService {
 
   getStatus(orderId: string): OrderStatusSnapshot | undefined {
     return this.orders.get(orderId);
+  }
+
+  /**
+   * Idempotency check: returns true when the order already reflects the given
+   * final status, so a duplicate Kafka event can be skipped before any side
+   * effects (notifications, inventory deductions, etc.) are triggered.
+   */
+  isAlreadyProcessed(orderId: string, status: OrderStatus): boolean {
+    return this.orders.get(orderId)?.status === status;
   }
 }

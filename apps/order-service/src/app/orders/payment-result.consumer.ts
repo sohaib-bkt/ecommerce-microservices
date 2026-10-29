@@ -52,7 +52,15 @@ export class PaymentResultConsumer {
     try {
       const event = parse<PaymentResultEvent>(data, paymentCapturedSchema) as PaymentResultEvent;
       if (event.type === 'PaymentCaptured') {
-        this.orderStatusService.applyPaymentCaptured(event.payload.orderId, {
+        const orderId = event.payload.orderId;
+        // Idempotency: Kafka delivers at-least-once; skip duplicate captured events.
+        if (this.orderStatusService.isAlreadyProcessed?.(orderId, 'PAID')) {
+          this.logger.log(
+            `Skipping duplicate PaymentCaptured event for order ${orderId}`,
+          );
+          return;
+        }
+        this.orderStatusService.applyPaymentCaptured(orderId, {
           paymentId: event.payload.paymentId,
           providerReference: event.payload.providerReference,
           amount: event.payload.amount,
@@ -68,7 +76,15 @@ export class PaymentResultConsumer {
     try {
       const event = parse<PaymentResultEvent>(data, paymentFailedSchema) as PaymentResultEvent;
       if (event.type === 'PaymentFailed') {
-        this.orderStatusService.applyPaymentFailed(event.payload.orderId, {
+        const orderId = event.payload.orderId;
+        // Idempotency: Kafka delivers at-least-once; skip duplicate failed events.
+        if (this.orderStatusService.isAlreadyProcessed?.(orderId, 'PENDING')) {
+          this.logger.log(
+            `Skipping duplicate PaymentFailed event for order ${orderId}`,
+          );
+          return;
+        }
+        this.orderStatusService.applyPaymentFailed(orderId, {
           paymentId: event.payload.paymentId,
           reason: event.payload.reason,
           retryable: event.payload.retryable,
