@@ -78,7 +78,13 @@ export class PaymentResultConsumer {
       if (event.type === 'PaymentFailed') {
         const orderId = event.payload.orderId;
         // Idempotency: Kafka delivers at-least-once; skip duplicate failed events.
-        if (this.orderStatusService.isAlreadyProcessed?.(orderId, 'PENDING')) {
+        if (
+          this.orderStatusService.isAlreadyProcessed?.(
+            orderId,
+            'PENDING',
+            event.payload.paymentId,
+          )
+        ) {
           this.logger.log(
             `Skipping duplicate PaymentFailed event for order ${orderId}`,
           );

@@ -1,4 +1,5 @@
 import { PaymentResultConsumer } from './payment-result.consumer.js';
+import { OrderStatusService } from './order-status.service.js';
 
 describe('PaymentResultConsumer', () => {
   it('drops malformed payment events without calling the order service', async () => {
@@ -66,6 +67,34 @@ describe('PaymentResultConsumer', () => {
       reason: 'card declined',
       retryable: false,
       amount: { amount: 3000, currency: 'USD' },
+    });
+  });
+
+  it('processes a new failed payment attempt after an earlier failure', async () => {
+    const orderStatusService = new OrderStatusService();
+    const consumer = new PaymentResultConsumer(orderStatusService);
+    const createFailureEvent = (id: string, paymentId: string, reason: string) => ({
+      id,
+      type: 'PaymentFailed',
+      occurredAt: Date.now(),
+      source: 'payment-service',
+      version: 1,
+      payload: {
+        paymentId,
+        orderId: 'order_retry',
+        amount: { amount: 3000, currency: 'USD' },
+        reason,
+        retryable: false,
+      },
+    });
+
+    await consumer.handlePaymentResult(createFailureEvent('evt_1', 'pay_1', 'first decline'));
+    await consumer.handlePaymentResult(createFailureEvent('evt_2', 'pay_2', 'second decline'));
+
+    expect(orderStatusService.getStatus('order_retry')).toMatchObject({
+      status: 'PENDING',
+      paymentId: 'pay_2',
+      reason: 'second decline',
     });
   });
 });

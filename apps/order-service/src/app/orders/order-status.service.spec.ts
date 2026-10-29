@@ -38,5 +38,7 @@ describe('OrderStatusService', () => {
       providerReference: undefined,
       amount: { amount: 500, currency: 'USD' },
     });
+    expect(service.isAlreadyProcessed('order_2', 'PENDING', 'pay_2')).toBe(true);
+    expect(service.isAlreadyProcessed('order_2', 'PENDING', 'pay_3')).toBe(false);
   });
 });

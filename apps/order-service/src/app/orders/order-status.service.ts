@@ -80,7 +80,8 @@ export class OrderStatusService {
    * final status, so a duplicate Kafka event can be skipped before any side
    * effects (notifications, inventory deductions, etc.) are triggered.
    */
-  isAlreadyProcessed(orderId: string, status: OrderStatus): boolean {
-    return this.orders.get(orderId)?.status === status;
+  isAlreadyProcessed(orderId: string, status: OrderStatus, paymentId?: string): boolean {
+    const current = this.orders.get(orderId);
+    return current?.status === status && (paymentId === undefined || current.paymentId === paymentId);
   }
 }
