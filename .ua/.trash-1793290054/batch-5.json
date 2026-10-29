@@ -1,0 +1,346 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/api-gateway/src/app/app.controller.spec.ts",
+      "type": "file",
+      "name": "app.controller.spec.ts",
+      "filePath": "apps/api-gateway/src/app/app.controller.spec.ts",
+      "summary": "Unit tests for AppController verifying the getData endpoint returns the expected 'Hello API' message.",
+      "tags": ["test", "unit-test", "controller-test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/app.controller.ts",
+      "type": "file",
+      "name": "app.controller.ts",
+      "filePath": "apps/api-gateway/src/app/app.controller.ts",
+      "summary": "NestJS controller exposing a single GET route that delegates to AppService for the root endpoint.",
+      "tags": ["api-handler", "controller", "nestjs", "rest"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api-gateway/src/app/app.controller.ts:AppController",
+      "type": "class",
+      "name": "AppController",
+      "filePath": "apps/api-gateway/src/app/app.controller.ts",
+      "lineRange": [5, 12],
+      "summary": "Root controller handling the default GET route and delegating to AppService.",
+      "tags": ["api-handler", "controller", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/api-gateway/src/app/app.module.ts",
+      "summary": "Root NestJS module wiring ConfigModule, ProductModule, AppController, and AppService together.",
+      "tags": ["module", "nestjs", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api-gateway/src/app/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/api-gateway/src/app/app.module.ts",
+      "lineRange": [16, 16],
+      "summary": "Root application module registering global config and the product feature module.",
+      "tags": ["module", "nestjs", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/app.service.spec.ts",
+      "type": "file",
+      "name": "app.service.spec.ts",
+      "filePath": "apps/api-gateway/src/app/app.service.spec.ts",
+      "summary": "Unit tests for AppService verifying getData returns the expected 'Hello API' message.",
+      "tags": ["test", "unit-test", "service-test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/app.service.ts",
+      "type": "file",
+      "name": "app.service.ts",
+      "filePath": "apps/api-gateway/src/app/app.service.ts",
+      "summary": "Simple injectable service returning a static 'Hello API' message for the root endpoint.",
+      "tags": ["service", "nestjs", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api-gateway/src/app/app.service.ts:AppService",
+      "type": "class",
+      "name": "AppService",
+      "filePath": "apps/api-gateway/src/app/app.service.ts",
+      "lineRange": [4, 8],
+      "summary": "Injectable service exposing getData() which returns a static hello message.",
+      "tags": ["service", "nestjs", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/product.controller.ts",
+      "type": "file",
+      "name": "product.controller.ts",
+      "filePath": "apps/api-gateway/src/app/product.controller.ts",
+      "summary": "REST controller exposing product CRUD, listing, and stock reservation/release endpoints that proxy to the gRPC product service.",
+      "tags": ["api-handler", "controller", "rest", "product", "grpc-client"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/api-gateway/src/app/product.controller.ts:ProductController",
+      "type": "class",
+      "name": "ProductController",
+      "filePath": "apps/api-gateway/src/app/product.controller.ts",
+      "lineRange": [30, 105],
+      "summary": "Controller handling product HTTP routes and forwarding requests to ProductClientService over gRPC.",
+      "tags": ["api-handler", "controller", "rest", "product"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/product.module.ts",
+      "type": "file",
+      "name": "product.module.ts",
+      "filePath": "apps/api-gateway/src/app/product.module.ts",
+      "summary": "NestJS module registering the gRPC client for the product service and wiring ProductController with ProductClientService.",
+      "tags": ["module", "grpc", "microservice", "product", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api-gateway/src/app/product.module.ts:ProductModule",
+      "type": "class",
+      "name": "ProductModule",
+      "filePath": "apps/api-gateway/src/app/product.module.ts",
+      "lineRange": [42, 42],
+      "summary": "Feature module configuring the PRODUCT_PACKAGE gRPC client from environment variables.",
+      "tags": ["module", "grpc", "microservice"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/app/product.service.ts",
+      "type": "file",
+      "name": "product.service.ts",
+      "filePath": "apps/api-gateway/src/app/product.service.ts",
+      "summary": "gRPC client wrapper exposing a typed ProductGrpcClient surface and forwarding product RPCs to the product microservice.",
+      "tags": ["service", "grpc", "client", "product", "microservice"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/api-gateway/src/app/product.service.ts:ProductClientService",
+      "type": "class",
+      "name": "ProductClientService",
+      "filePath": "apps/api-gateway/src/app/product.service.ts",
+      "lineRange": [42, 75],
+      "summary": "Injectable client service implementing OnModuleInit to resolve the ProductService gRPC stub and expose product RPC methods.",
+      "tags": ["service", "grpc", "client", "product"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/api-gateway/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/api-gateway/src/main.ts",
+      "summary": "Application bootstrap creating the NestJS app, setting the global 'api' prefix, and listening on the configured port.",
+      "tags": ["entry-point", "bootstrap", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/api-gateway/src/main.ts:bootstrap",
+      "type": "function",
+      "name": "bootstrap",
+      "filePath": "apps/api-gateway/src/main.ts",
+      "lineRange": [10, 19],
+      "summary": "Async bootstrap function that creates the NestJS application instance, applies the global prefix, and starts listening.",
+      "tags": ["entry-point", "bootstrap", "nestjs"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/api-gateway/src/app/app.controller.spec.ts",
+      "target": "file:apps/api-gateway/src/app/app.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.controller.spec.ts",
+      "target": "file:apps/api-gateway/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.controller.ts",
+      "target": "file:apps/api-gateway/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.module.ts",
+      "target": "file:apps/api-gateway/src/app/app.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.module.ts",
+      "target": "file:apps/api-gateway/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.module.ts",
+      "target": "file:apps/api-gateway/src/app/product.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.service.spec.ts",
+      "target": "file:apps/api-gateway/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.controller.ts",
+      "target": "file:apps/api-gateway/src/app/product.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.module.ts",
+      "target": "file:apps/api-gateway/src/app/product.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.module.ts",
+      "target": "file:apps/api-gateway/src/app/product.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/main.ts",
+      "target": "file:apps/api-gateway/src/app/app.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.controller.ts",
+      "target": "class:apps/api-gateway/src/app/app.controller.ts:AppController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.module.ts",
+      "target": "class:apps/api-gateway/src/app/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.service.ts",
+      "target": "class:apps/api-gateway/src/app/app.service.ts:AppService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.controller.ts",
+      "target": "class:apps/api-gateway/src/app/product.controller.ts:ProductController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.module.ts",
+      "target": "class:apps/api-gateway/src/app/product.module.ts:ProductModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.service.ts",
+      "target": "class:apps/api-gateway/src/app/product.service.ts:ProductClientService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/main.ts",
+      "target": "function:apps/api-gateway/src/main.ts:bootstrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.controller.ts",
+      "target": "class:apps/api-gateway/src/app/app.controller.ts:AppController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.module.ts",
+      "target": "class:apps/api-gateway/src/app/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.service.ts",
+      "target": "class:apps/api-gateway/src/app/app.service.ts:AppService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.controller.ts",
+      "target": "class:apps/api-gateway/src/app/product.controller.ts:ProductController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.module.ts",
+      "target": "class:apps/api-gateway/src/app/product.module.ts:ProductModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/product.service.ts",
+      "target": "class:apps/api-gateway/src/app/product.service.ts:ProductClientService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.controller.ts",
+      "target": "file:apps/api-gateway/src/app/app.controller.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.service.ts",
+      "target": "file:apps/api-gateway/src/app/app.controller.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/api-gateway/src/app/app.service.ts",
+      "target": "file:apps/api-gateway/src/app/app.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

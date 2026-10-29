@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "config:.ua/fingerprints.json",
+      "type": "config",
+      "name": "fingerprints.json",
+      "filePath": ".ua/fingerprints.json",
+      "summary": "Stores content hashes and structural fingerprints for 177 analyzed files, enabling incremental change detection between analysis runs.",
+      "tags": ["configuration", "fingerprint", "incremental-analysis", "cache"],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:.ua/knowledge-graph.json",
+      "type": "config",
+      "name": "knowledge-graph.json",
+      "filePath": ".ua/knowledge-graph.json",
+      "summary": "The generated knowledge graph for the ecommerce-platform monorepo, containing 301 nodes and 294 edges across layers and a guided tour.",
+      "tags": ["knowledge-graph", "configuration", "graph-data", "architecture"],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:.ua/meta.json",
+      "type": "config",
+      "name": "meta.json",
+      "filePath": ".ua/meta.json",
+      "summary": "Metadata about the last analysis run, including timestamp, git commit hash, schema version, and the number of analyzed files.",
+      "tags": ["configuration", "metadata", "analysis-state"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

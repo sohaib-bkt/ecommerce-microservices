@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/payment-service/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/payment-service/package.json",
+      "summary": "NPM package manifest and Nx target definitions for the payment service, declaring NestJS, Kafka, PostgreSQL, and Stripe runtime dependencies plus build/serve/test workflows.",
+      "tags": ["configuration", "build-system", "dependencies", "nx"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:apps/payment-service/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/payment-service/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the payment service application, enabling decorators and strict checks while targeting ES2021 and referencing the shared contracts library.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/payment-service/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/payment-service/tsconfig.json",
+      "summary": "Root TypeScript project references configuration that delegates compilation to the app and spec tsconfig files.",
+      "tags": ["configuration", "typescript", "project-references"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/payment-service/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/payment-service/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for payment service tests, enabling Jest types and decorators for spec files.",
+      "tags": ["configuration", "typescript", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/payment-service/tsconfig.json",
+      "target": "config:apps/payment-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/payment-service/tsconfig.json",
+      "target": "config:apps/payment-service/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/payment-service/tsconfig.spec.json",
+      "target": "config:apps/payment-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "type": "file",
+      "name": "payments.service.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "summary": "Unit tests for PaymentsService covering payment creation, idempotency, and gateway interaction flows.",
+      "tags": ["test", "payments", "service"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "type": "file",
+      "name": "fake-stripe.gateway.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "summary": "In-memory fake implementation of StripeGateway returning deterministic payment intents for tests and local development.",
+      "tags": ["test", "gateway", "fake", "stripe"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts:FakeStripeGateway",
+      "type": "class",
+      "name": "FakeStripeGateway",
+      "filePath": "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "lineRange": [7, 14],
+      "summary": "Fake Stripe gateway that returns a deterministic pi_fake_<paymentId> payment intent with requires_payment_method status.",
+      "tags": ["gateway", "fake", "stripe", "test-double"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "type": "file",
+      "name": "stripe-sdk.gateway.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "summary": "Production adapter wrapping the official Stripe SDK to create payment intents and map errors into retryable StripeGatewayError instances.",
+      "tags": ["gateway", "stripe", "sdk", "adapter"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts:StripeSdkGateway",
+      "type": "class",
+      "name": "StripeSdkGateway",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "lineRange": [3, 41],
+      "summary": "Implements StripeGateway by calling stripe.paymentIntents.create with normalized payload and idempotency key, converting SDK errors to StripeGatewayError.",
+      "tags": ["gateway", "stripe", "sdk", "adapter"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts",
+      "type": "file",
+      "name": "stripe-webhook.verifier.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts",
+      "summary": "Unit tests for StripeWebhookVerifier validating signature verification behavior.",
+      "tags": ["test", "webhook", "stripe"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "type": "file",
+      "name": "stripe-webhook.verifier.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "summary": "NestJS injectable that verifies Stripe webhook signatures using the configured webhook secret.",
+      "tags": ["webhook", "stripe", "verification", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts:StripeWebhookVerifier",
+      "type": "class",
+      "name": "StripeWebhookVerifier",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "lineRange": [10, 23],
+      "summary": "Verifies incoming Stripe webhook payloads by delegating to stripe.webhooks.constructEvent with the injected secret.",
+      "tags": ["webhook", "stripe", "verification"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "type": "file",
+      "name": "stripe.gateway.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "summary": "Unit tests covering FakeStripeGateway deterministic output and StripeSdkGateway payload/error handling.",
+      "tags": ["test", "gateway", "stripe"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "file",
+      "name": "stripe.gateway.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "summary": "Defines the StripeGateway contract, payment intent input/result types, StripeGatewayError, and DI injection tokens.",
+      "tags": ["gateway", "stripe", "interface", "types"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts:StripeGatewayError",
+      "type": "class",
+      "name": "StripeGatewayError",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "lineRange": [19, 28],
+      "summary": "Error subclass carrying a retryable flag and original cause for Stripe gateway failures.",
+      "tags": ["error", "gateway", "stripe", "retryable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "type": "file",
+      "name": "stripe.module.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "summary": "Global NestJS module wiring STRIPE_CLIENT, STRIPE_GATEWAY, and StripeWebhookVerifier providers based on configuration.",
+      "tags": ["module", "stripe", "di", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe/stripe.module.ts:StripeModule",
+      "type": "class",
+      "name": "StripeModule",
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "lineRange": [62, 62],
+      "summary": "Empty marker class for the global StripeModule registering Stripe providers and exports.",
+      "tags": ["module", "stripe", "nestjs"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts:FakeStripeGateway",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts:StripeSdkGateway",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts:StripeWebhookVerifier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts:StripeGatewayError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe.module.ts:StripeModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts:FakeStripeGateway",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts:StripeSdkGateway",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts:StripeWebhookVerifier",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts:StripeGatewayError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe/stripe.module.ts:StripeModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "target": "file:apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

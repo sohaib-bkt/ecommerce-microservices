@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "file:libs/contracts/src/lib/events/account.events.ts",
+      "type": "file",
+      "name": "account.events.ts",
+      "filePath": "libs/contracts/src/lib/events/account.events.ts",
+      "summary": "Defines the account service event contracts (AccountRegistered, AccountUpdated, AccountSuspended) with runtime schemas, payload interfaces, status constants, and re-exported address/money schemas.",
+      "tags": ["data-model", "type-definition", "event-definition", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/envelope.ts",
+      "type": "file",
+      "name": "envelope.ts",
+      "filePath": "libs/contracts/src/lib/events/envelope.ts",
+      "summary": "Defines the shared EventEnvelope interface and runtime schemas (envelope, money, address) used by every cross-service event, plus re-exports of generated Money/Address types.",
+      "tags": ["type-definition", "validation", "serialization", "event-envelope"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/order.events.ts",
+      "type": "file",
+      "name": "order.events.ts",
+      "filePath": "libs/contracts/src/lib/events/order.events.ts",
+      "summary": "Defines the order service event contracts (OrderCreated, OrderConfirmed, OrderStatusChanged, OrderCancelled) with runtime schemas, payload interfaces, item/order status constants.",
+      "tags": ["data-model", "type-definition", "event-definition", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/payment.events.ts",
+      "type": "file",
+      "name": "payment.events.ts",
+      "filePath": "libs/contracts/src/lib/events/payment.events.ts",
+      "summary": "Defines the payment service event contracts (PaymentInitiated, PaymentAuthorized, PaymentCaptured, PaymentFailed, PaymentRefunded) with runtime schemas and payment status/method constants.",
+      "tags": ["data-model", "type-definition", "event-definition", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/product.events.ts",
+      "type": "file",
+      "name": "product.events.ts",
+      "filePath": "libs/contracts/src/lib/events/product.events.ts",
+      "summary": "Defines the product service event contracts (ProductCreated, ProductPriceChanged, ProductStockChanged) with runtime schemas and product status constants.",
+      "tags": ["data-model", "type-definition", "event-definition", "validation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/registry.spec.ts",
+      "type": "file",
+      "name": "registry.spec.ts",
+      "filePath": "libs/contracts/src/lib/events/registry.spec.ts",
+      "summary": "Tests for the event registry covering schema lookup and event-type narrowing behavior.",
+      "tags": ["test", "validation", "event-registry"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/events/registry.ts",
+      "type": "file",
+      "name": "registry.ts",
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "summary": "Central registry mapping every published event type to its runtime schema, plus helpers to fetch a schema by type and narrow arbitrary strings to known event types.",
+      "tags": ["utility", "event-registry", "type-definition"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/validation/schema.spec.ts",
+      "type": "file",
+      "name": "schema.spec.ts",
+      "filePath": "libs/contracts/src/lib/validation/schema.spec.ts",
+      "summary": "Tests for the dependency-free schema validator covering field rules, object validation, and parsing.",
+      "tags": ["test", "validation", "schema"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:libs/contracts/src/lib/validation/schema.ts",
+      "type": "file",
+      "name": "schema.ts",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "summary": "A tiny dependency-free runtime schema validator providing FieldRule/ObjectSchema types, defineSchema/defineRule helpers, a SchemaValidationError class, and validate/parse functions used by all event contracts.",
+      "tags": ["utility", "validation", "type-definition"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/events/registry.ts:getEventSchema",
+      "type": "function",
+      "name": "getEventSchema",
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "lineRange": [76, 84],
+      "summary": "Returns the runtime schema for a given event type string, throwing when the type is unknown.",
+      "tags": ["utility", "event-registry", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/events/registry.ts:isEventType",
+      "type": "function",
+      "name": "isEventType",
+      "filePath": "libs/contracts/src/lib/events/registry.ts",
+      "lineRange": [87, 89],
+      "summary": "Type guard that narrows an arbitrary string to a known EventType using hasOwnProperty on EVENT_SCHEMAS.",
+      "tags": ["utility", "type-guard", "event-registry"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:defineSchema",
+      "type": "function",
+      "name": "defineSchema",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [48, 50],
+      "summary": "Identity helper that declares an object schema while preserving literal rule types for compile-time checking.",
+      "tags": ["factory", "type-definition", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:defineRule",
+      "type": "function",
+      "name": "defineRule",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [58, 60],
+      "summary": "Identity helper that declares a single field rule while preserving its literal types.",
+      "tags": ["factory", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:validateField",
+      "type": "function",
+      "name": "validateField",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [80, 228],
+      "summary": "Validates a single value against a FieldRule, dispatching by rule type and throwing SchemaValidationError on mismatch.",
+      "tags": ["validation", "utility"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:validateObject",
+      "type": "function",
+      "name": "validateObject",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [236, 261],
+      "summary": "Validates an object against an ObjectSchema, requiring all non-optional fields and recursing into nested rules.",
+      "tags": ["validation", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/lib/validation/schema.ts:parse",
+      "type": "function",
+      "name": "parse",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [269, 279],
+      "summary": "Validates a value against a schema and returns it typed as T, throwing SchemaValidationError on failure.",
+      "tags": ["validation", "utility", "parsing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:libs/contracts/src/lib/validation/schema.ts:SchemaValidationError",
+      "type": "class",
+      "name": "SchemaValidationError",
+      "filePath": "libs/contracts/src/lib/validation/schema.ts",
+      "lineRange": [63, 72],
+      "summary": "Error subclass carrying the validation path and offending value for a schema validation failure.",
+      "tags": ["error-handling", "validation"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:libs/contracts/src/lib/events/account.events.ts", "target": "file:libs/contracts/src/lib/events/envelope.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/account.events.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/envelope.ts", "target": "file:libs/contracts/src/generated/common/v1/common.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/envelope.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/order.events.ts", "target": "file:libs/contracts/src/lib/events/envelope.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/order.events.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/payment.events.ts", "target": "file:libs/contracts/src/lib/events/envelope.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/payment.events.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/product.events.ts", "target": "file:libs/contracts/src/lib/events/envelope.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/product.events.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.spec.ts", "target": "file:libs/contracts/src/lib/events/registry.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.spec.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "file:libs/contracts/src/lib/events/account.events.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "file:libs/contracts/src/lib/events/order.events.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "file:libs/contracts/src/lib/events/payment.events.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "file:libs/contracts/src/lib/events/product.events.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/validation/schema.spec.ts", "target": "file:libs/contracts/src/lib/validation/schema.ts", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "function:libs/contracts/src/lib/events/registry.ts:getEventSchema", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "function:libs/contracts/src/lib/events/registry.ts:isEventType", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:defineSchema", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:defineRule", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:validateField", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:validateObject", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:parse", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "class:libs/contracts/src/lib/validation/schema.ts:SchemaValidationError", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "function:libs/contracts/src/lib/events/registry.ts:getEventSchema", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "function:libs/contracts/src/lib/events/registry.ts:isEventType", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:defineSchema", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:defineRule", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "class:libs/contracts/src/lib/validation/schema.ts:SchemaValidationError", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:validateObject", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "function:libs/contracts/src/lib/validation/schema.ts:parse", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:libs/contracts/src/lib/events/registry.ts", "target": "file:libs/contracts/src/lib/events/registry.spec.ts", "type": "tested_by", "direction": "forward", "weight": 0.5},
+    {"source": "file:libs/contracts/src/lib/validation/schema.ts", "target": "file:libs/contracts/src/lib/validation/schema.spec.ts", "type": "tested_by", "direction": "forward", "weight": 0.5}
+  ]
+}

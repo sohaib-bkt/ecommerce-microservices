@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/product-service/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/product-service/package.json",
+      "summary": "Nx project manifest for the product-service microservice, defining serve/test/build targets and runtime dependencies on NestJS and RxJS.",
+      "tags": ["configuration", "build-system", "nx", "nestjs"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/product-service/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/product-service/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the product-service application build, extending the base config with decorator support, strict checks, and a reference to the contracts library.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/product-service/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/product-service/tsconfig.json",
+      "summary": "Solution-style TypeScript configuration for product-service that references the app and spec project configurations.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/product-service/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/product-service/tsconfig.spec.json",
+      "summary": "TypeScript configuration for product-service test compilation with Jest, including spec files and decorator metadata support.",
+      "tags": ["configuration", "typescript", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/product-service/tsconfig.json",
+      "target": "config:apps/product-service/tsconfig.app.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/product-service/tsconfig.json",
+      "target": "config:apps/product-service/tsconfig.spec.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/product-service/tsconfig.spec.json",
+      "target": "config:apps/product-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

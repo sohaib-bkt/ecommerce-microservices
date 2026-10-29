@@ -1,8 +1,18 @@
 {
   "version": "1.0.0",
-  "gitCommitHash": "9055446569236d9758d2cd233cdfe6771d0a196e",
-  "generatedAt": "2026-10-23T12:39:20.818Z",
+  "gitCommitHash": "7f6d55c1531e23cde90f6bb1f2ad048f96a6cd28",
+  "generatedAt": "2026-10-29T16:07:29.149Z",
   "files": {
+    ".env.example": {
+      "filePath": ".env.example",
+      "contentHash": "62dba31e3f65c7fb096f8e9668b83ae13defd124892903b6fa91e674f0a58156",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": false
+    },
     ".prettierignore": {
       "filePath": ".prettierignore",
       "contentHash": "7628e6cb1b3ed38a3cd72b3d68f7d86266684d4f45ada53cfd804b622f71e435",
@@ -11,6 +21,256 @@
       "imports": [],
       "exports": [],
       "totalLines": 9,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/assemble-review.json": {
+      "filePath": ".ua/.trash-1792759165/assemble-review.json",
+      "contentHash": "be28e5e20b0316903de2b3225acac45f5d77bed8659db45e6346a5ee0572ff06",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/assembled-graph.json": {
+      "filePath": ".ua/.trash-1792759165/assembled-graph.json",
+      "contentHash": "b7934849200c3bfb1947f918b92e4c655a3f0df4a3321f1b4dc5fed53ecf0b9d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6737,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-1.json": {
+      "filePath": ".ua/.trash-1792759165/batch-1.json",
+      "contentHash": "2d039444d1d40c4ef31318a89d95a13954ebc09f2662ac2a0973d231eb7e7ee5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-10.json": {
+      "filePath": ".ua/.trash-1792759165/batch-10.json",
+      "contentHash": "b8b960cf1d2e1bc18680f0e2918ca573b9e1b747ffd85ccc37b2b29813488116",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 88,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-11.json": {
+      "filePath": ".ua/.trash-1792759165/batch-11.json",
+      "contentHash": "e2a45cf8499439e42fab73ba053ed2856c26c863ce186baa269dee1fded56804",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 454,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-12-part-1.json": {
+      "filePath": ".ua/.trash-1792759165/batch-12-part-1.json",
+      "contentHash": "e18add48b879e5a8745f21cfbfd2d5aec8993e486ca172c841c789f9d649ade3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1107,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-12-part-2.json": {
+      "filePath": ".ua/.trash-1792759165/batch-12-part-2.json",
+      "contentHash": "a9c302f9a4c2520fc0db6ced5db4fc139a723a851e1a0a2bddbe8faedc6ccd4b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 967,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-13.json": {
+      "filePath": ".ua/.trash-1792759165/batch-13.json",
+      "contentHash": "d4ed8d6fa0bc6107d48684b0e490a4f0f93875fea91799d445df01a561ea490b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 984,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-2.json": {
+      "filePath": ".ua/.trash-1792759165/batch-2.json",
+      "contentHash": "e3c6413c73292269cfb59476f0231572b0d381f0799808af91550dcf7514b10d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-3.json": {
+      "filePath": ".ua/.trash-1792759165/batch-3.json",
+      "contentHash": "f909d0109d29afe36ba82bd5e322560e793f6f90adee780d2f25ddb7baa3edfe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 84,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-4.json": {
+      "filePath": ".ua/.trash-1792759165/batch-4.json",
+      "contentHash": "b4187e33a86ff52221939dbd6079910d1bad00f53f0bf368587a863b78e2c29b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-5.json": {
+      "filePath": ".ua/.trash-1792759165/batch-5.json",
+      "contentHash": "12af632147391b6241de9953724522b14e403cd7b9c77043a1c9f787b808bea1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-6.json": {
+      "filePath": ".ua/.trash-1792759165/batch-6.json",
+      "contentHash": "9a83af48d0c4d6c986ce92aa61005e84a350e740809dc7960fe5079e91b9e1be",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-7.json": {
+      "filePath": ".ua/.trash-1792759165/batch-7.json",
+      "contentHash": "1cc1c91e3f7e22f1a1315b3f88e0e0be9ba23149feede730b5e8f4a373c8de1f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 102,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-8.json": {
+      "filePath": ".ua/.trash-1792759165/batch-8.json",
+      "contentHash": "59338a2ecfa1c196068858ec70f66ce510205475a898b04eff4f86bcbe94408c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 50,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batch-9.json": {
+      "filePath": ".ua/.trash-1792759165/batch-9.json",
+      "contentHash": "0a5dbf42fbd7d45971c63c9b1724e863a9d9412257356720205192648a7bcabd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/batches.json": {
+      "filePath": ".ua/.trash-1792759165/batches.json",
+      "contentHash": "ec1cb3dec6bec3ec75add2041be4602e8e3fc6ca158d9c84664d17ab322ba10b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1646,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/fingerprint-input.json": {
+      "filePath": ".ua/.trash-1792759165/fingerprint-input.json",
+      "contentHash": "fdd4b751aa36304fdf1ddf3b2d36ec5fba67c4b3bfef47b5cb3fa8343c584194",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 183,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/layers.json": {
+      "filePath": ".ua/.trash-1792759165/layers.json",
+      "contentHash": "b9107a29cb6a55a68f0110ac373c59cdd230c7e4ede7a8321c3bca8209333654",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 221,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/review.json": {
+      "filePath": ".ua/.trash-1792759165/review.json",
+      "contentHash": "a36eff607b4a0b21a953448b8ea389c9041689cdf1416db848bddccd930012b8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 91,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.trash-1792759165/tour.json": {
+      "filePath": ".ua/.trash-1792759165/tour.json",
+      "contentHash": "b64d29000d0f0b2a606d96674e59c94029fb7a35753e2c92618ceb302d486392",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 92,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/fingerprints.json": {
+      "filePath": ".ua/fingerprints.json",
+      "contentHash": "e7f11636dcb021c48b77889de46af950568bfe5b67d85d09b15e6f462d1e1944",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3948,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/intermediate/scan-result.json": {
+      "filePath": ".ua/intermediate/scan-result.json",
+      "contentHash": "1e7837d1e3ffeeb26bad6ab244b507c4b65429cb82a6bc50f9a4c2f5472d7800",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1894,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/knowledge-graph.json": {
+      "filePath": ".ua/knowledge-graph.json",
+      "contentHash": "ba9ad9a353c9553cf6266cb6918a648af79fcdaaca5ace3d99ae879c8c3499fd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8410,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/meta.json": {
+      "filePath": ".ua/meta.json",
+      "contentHash": "f33fbe50d91d80a6ab0bd7662bb0cf6a532d94f4e2c5835c9e3baada01cccd70",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
       "hasStructuralAnalysis": false
     },
     "README.md": {
@@ -680,7 +940,7 @@
     },
     "apps/api-gateway/src/app/app.module.ts": {
       "filePath": "apps/api-gateway/src/app/app.module.ts",
-      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "contentHash": "0bc63dfd83dc53cc09a39269f090c6bd67f4f77f03d898afe1a6c5c648026367",
       "functions": [],
       "classes": [
         {
@@ -699,22 +959,34 @@
           ]
         },
         {
-          "source": "./app.controller",
+          "source": "@nestjs/config",
+          "specifiers": [
+            "ConfigModule"
+          ]
+        },
+        {
+          "source": "./app.controller.js",
           "specifiers": [
             "AppController"
           ]
         },
         {
-          "source": "./app.service",
+          "source": "./app.service.js",
           "specifiers": [
             "AppService"
+          ]
+        },
+        {
+          "source": "./product.module.js",
+          "specifiers": [
+            "ProductModule"
           ]
         }
       ],
       "exports": [
         "AppModule"
       ],
-      "totalLines": 11,
+      "totalLines": 17,
       "hasStructuralAnalysis": true
     },
     "apps/api-gateway/src/app/app.service.spec.ts": {
@@ -785,6 +1057,176 @@
       ],
       "exports": [],
       "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/product.controller.ts": {
+      "filePath": "apps/api-gateway/src/app/product.controller.ts",
+      "contentHash": "72bd08d3226b42a1e18bb4c06586ed0cb429f98038ced88d3ae7532161dcd0b3",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ProductController",
+          "methods": [
+            "constructor",
+            "getProduct",
+            "listProducts",
+            "createProduct",
+            "updateProduct",
+            "reserveStock",
+            "releaseStock"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 76
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Body",
+            "Controller",
+            "Get",
+            "Param",
+            "Post",
+            "Put",
+            "Query"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "ecommerce"
+          ]
+        },
+        {
+          "source": "rxjs",
+          "specifiers": [
+            "firstValueFrom"
+          ]
+        },
+        {
+          "source": "./product.service.js",
+          "specifiers": [
+            "ProductClientService"
+          ]
+        }
+      ],
+      "exports": [
+        "ProductController"
+      ],
+      "totalLines": 106,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/product.module.ts": {
+      "filePath": "apps/api-gateway/src/app/product.module.ts",
+      "contentHash": "0c8e75f6bdf96f7da4dfecdee108a698836d8e771199fba1975629a2a4a4e807",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ProductModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/config",
+          "specifiers": [
+            "ConfigModule",
+            "ConfigService"
+          ]
+        },
+        {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "ClientsModule",
+            "Transport"
+          ]
+        },
+        {
+          "source": "./product.controller.js",
+          "specifiers": [
+            "ProductController"
+          ]
+        },
+        {
+          "source": "./product.service.js",
+          "specifiers": [
+            "ProductClientService"
+          ]
+        }
+      ],
+      "exports": [
+        "ProductModule"
+      ],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "apps/api-gateway/src/app/product.service.ts": {
+      "filePath": "apps/api-gateway/src/app/product.service.ts",
+      "contentHash": "7b9abf261a289bf2576b6af60019f8b58f0008509363e75a77731b4af55f6291",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ProductClientService",
+          "methods": [
+            "constructor",
+            "onModuleInit",
+            "getProduct",
+            "listProducts",
+            "createProduct",
+            "updateProduct",
+            "reserveStock",
+            "releaseStock"
+          ],
+          "properties": [
+            "productService"
+          ],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Inject",
+            "Injectable",
+            "OnModuleInit"
+          ]
+        },
+        {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "ClientGrpc"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "ecommerce"
+          ]
+        },
+        {
+          "source": "rxjs",
+          "specifiers": [
+            "Observable"
+          ]
+        }
+      ],
+      "exports": [
+        "ProductClientService"
+      ],
+      "totalLines": 76,
       "hasStructuralAnalysis": true
     },
     "apps/api-gateway/src/assets/.gitkeep": {
@@ -1037,17 +1479,17 @@
     },
     "apps/order-service/package.json": {
       "filePath": "apps/order-service/package.json",
-      "contentHash": "39448d225f65392cb9ba13bf9852c47684f17f3d2ef24c594a97aa2b1c9afb41",
+      "contentHash": "b0534d76c7f7e692af201e988503ff501cf60fc11779aa06c64bbb025cee4f74",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 81,
+      "totalLines": 83,
       "hasStructuralAnalysis": false
     },
     "apps/order-service/src/app/app.controller.spec.ts": {
       "filePath": "apps/order-service/src/app/app.controller.spec.ts",
-      "contentHash": "4327588ae3b11f6d5f0bb282095022e4ce4667ff484a34b9a238e77f3c1e92c1",
+      "contentHash": "65c3b074987532ce62fda18e36b2981fa2b7da703ba6c897c5808f177f29eae1",
       "functions": [],
       "classes": [],
       "imports": [
@@ -1069,26 +1511,33 @@
           "specifiers": [
             "AppService"
           ]
+        },
+        {
+          "source": "./orders/order-status.service",
+          "specifiers": [
+            "OrderStatusService"
+          ]
         }
       ],
       "exports": [],
-      "totalLines": 22,
+      "totalLines": 23,
       "hasStructuralAnalysis": true
     },
     "apps/order-service/src/app/app.controller.ts": {
       "filePath": "apps/order-service/src/app/app.controller.ts",
-      "contentHash": "eb4c6c96034109ba6722a70812e6cbbb20110d3ba420d29a16606bbfa16f7ecb",
+      "contentHash": "277c8c1a84300d5332e416b1aec4a2c77c10b21ae487854ab8583f0b7f02642c",
       "functions": [],
       "classes": [
         {
           "name": "AppController",
           "methods": [
             "constructor",
-            "getData"
+            "getData",
+            "getOrderStatus"
           ],
           "properties": [],
           "exported": true,
-          "lineCount": 8
+          "lineCount": 20
         }
       ],
       "imports": [
@@ -1096,7 +1545,8 @@
           "source": "@nestjs/common",
           "specifiers": [
             "Controller",
-            "Get"
+            "Get",
+            "Param"
           ]
         },
         {
@@ -1104,17 +1554,23 @@
           "specifiers": [
             "AppService"
           ]
+        },
+        {
+          "source": "./orders/order-status.service.js",
+          "specifiers": [
+            "OrderStatusService"
+          ]
         }
       ],
       "exports": [
         "AppController"
       ],
-      "totalLines": 13,
+      "totalLines": 26,
       "hasStructuralAnalysis": true
     },
     "apps/order-service/src/app/app.module.ts": {
       "filePath": "apps/order-service/src/app/app.module.ts",
-      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "contentHash": "7d8badaa94e5c3565dee53c62dedb08c2d1da350576dca0dedcebddff93a795a",
       "functions": [],
       "classes": [
         {
@@ -1133,6 +1589,12 @@
           ]
         },
         {
+          "source": "@nestjs/config",
+          "specifiers": [
+            "ConfigModule"
+          ]
+        },
+        {
           "source": "./app.controller",
           "specifiers": [
             "AppController"
@@ -1143,12 +1605,18 @@
           "specifiers": [
             "AppService"
           ]
+        },
+        {
+          "source": "./orders/orders.module.js",
+          "specifiers": [
+            "OrdersModule"
+          ]
         }
       ],
       "exports": [
         "AppModule"
       ],
-      "totalLines": 11,
+      "totalLines": 13,
       "hasStructuralAnalysis": true
     },
     "apps/order-service/src/app/app.service.spec.ts": {
@@ -1203,6 +1671,168 @@
       "totalLines": 9,
       "hasStructuralAnalysis": true
     },
+    "apps/order-service/src/app/orders/order-status.service.spec.ts": {
+      "filePath": "apps/order-service/src/app/orders/order-status.service.spec.ts",
+      "contentHash": "fcd5f271b9d57f7a93023f84385d24932cc53684f0d92402c0f437fe82dc047b",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./order-status.service.js",
+          "specifiers": [
+            "OrderStatusService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/orders/order-status.service.ts": {
+      "filePath": "apps/order-service/src/app/orders/order-status.service.ts",
+      "contentHash": "bee58ec0fdd2b3e5b08dd90bad7020ed9954962e53535026d51107d6531264e1",
+      "functions": [],
+      "classes": [
+        {
+          "name": "OrderStatusService",
+          "methods": [
+            "applyPaymentCaptured",
+            "applyPaymentFailed",
+            "getStatus"
+          ],
+          "properties": [
+            "orders"
+          ],
+          "exported": true,
+          "lineCount": 49
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        }
+      ],
+      "exports": [
+        "OrderStatusService"
+      ],
+      "totalLines": 64,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/orders/orders.module.ts": {
+      "filePath": "apps/order-service/src/app/orders/orders.module.ts",
+      "contentHash": "6beca8156ca34197bd83a191df6d41bdaf2631ceb14155f641aa8dde17d9000f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "OrdersModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "./payment-result.consumer.js",
+          "specifiers": [
+            "PaymentResultConsumer"
+          ]
+        },
+        {
+          "source": "./order-status.service.js",
+          "specifiers": [
+            "OrderStatusService"
+          ]
+        }
+      ],
+      "exports": [
+        "OrdersModule"
+      ],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/orders/payment-result.consumer.spec.ts": {
+      "filePath": "apps/order-service/src/app/orders/payment-result.consumer.spec.ts",
+      "contentHash": "b0facc82e877243e756315dde3c8273d25095145a581af155d2e3d9197918ef4",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./payment-result.consumer.js",
+          "specifiers": [
+            "PaymentResultConsumer"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "apps/order-service/src/app/orders/payment-result.consumer.ts": {
+      "filePath": "apps/order-service/src/app/orders/payment-result.consumer.ts",
+      "contentHash": "d732228cda7e2e70ed636849ee951993578a99d52c68a9bb8d3929bb27dffc5f",
+      "functions": [],
+      "classes": [
+        {
+          "name": "PaymentResultConsumer",
+          "methods": [
+            "constructor",
+            "handleCaptured",
+            "handleFailed",
+            "handlePaymentResult"
+          ],
+          "properties": [
+            "logger"
+          ],
+          "exported": true,
+          "lineCount": 52
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "EventPattern"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "parse",
+            "paymentCapturedSchema",
+            "paymentFailedSchema",
+            "SchemaValidationError"
+          ]
+        },
+        {
+          "source": "./order-status.service.js",
+          "specifiers": [
+            "OrderStatusService"
+          ]
+        }
+      ],
+      "exports": [
+        "PaymentResultConsumer"
+      ],
+      "totalLines": 88,
+      "hasStructuralAnalysis": true
+    },
     "apps/order-service/src/assets/.gitkeep": {
       "filePath": "apps/order-service/src/assets/.gitkeep",
       "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1215,13 +1845,13 @@
     },
     "apps/order-service/src/main.ts": {
       "filePath": "apps/order-service/src/main.ts",
-      "contentHash": "6a9913a617ff40a0c273c7dab17764ba0fabf51b19f7d7e3b21134032ed98ee8",
+      "contentHash": "9c229f83a73cd41da0375224c9b53cd6c891831488b6f9142601a0dc4031f87d",
       "functions": [
         {
           "name": "bootstrap",
           "params": [],
           "exported": false,
-          "lineCount": 10
+          "lineCount": 22
         }
       ],
       "classes": [],
@@ -1239,6 +1869,12 @@
           ]
         },
         {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "Transport"
+          ]
+        },
+        {
           "source": "./app/app.module",
           "specifiers": [
             "AppModule"
@@ -1246,7 +1882,7 @@
         }
       ],
       "exports": [],
-      "totalLines": 22,
+      "totalLines": 30,
       "hasStructuralAnalysis": true
     },
     "apps/order-service/tsconfig.app.json": {
@@ -1453,12 +2089,12 @@
     },
     "apps/payment-service/package.json": {
       "filePath": "apps/payment-service/package.json",
-      "contentHash": "c06b14b78d29827022ee318878eaf4e7dd1f924c196c605302c4f0d5a222194c",
+      "contentHash": "124e95342e9a69e91b9398ffb3a36a1c1803caff0fffd02e7d0040dde7fcc5e7",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 81,
+      "totalLines": 87,
       "hasStructuralAnalysis": false
     },
     "apps/payment-service/src/app/app.controller.spec.ts": {
@@ -1530,7 +2166,7 @@
     },
     "apps/payment-service/src/app/app.module.ts": {
       "filePath": "apps/payment-service/src/app/app.module.ts",
-      "contentHash": "319f8e45e370ba3d33f0887e3046096714959d3764fc68b444885cfdb9c101dd",
+      "contentHash": "a4a4cd4063c40dc2c36b4fd1e7374c491d39894fe9a0f85265ba4759ff55d4b7",
       "functions": [],
       "classes": [
         {
@@ -1549,6 +2185,12 @@
           ]
         },
         {
+          "source": "@nestjs/config",
+          "specifiers": [
+            "ConfigModule"
+          ]
+        },
+        {
           "source": "./app.controller",
           "specifiers": [
             "AppController"
@@ -1559,12 +2201,30 @@
           "specifiers": [
             "AppService"
           ]
+        },
+        {
+          "source": "./database/database.module",
+          "specifiers": [
+            "DatabaseModule"
+          ]
+        },
+        {
+          "source": "./payments/payments.module",
+          "specifiers": [
+            "PaymentsModule"
+          ]
+        },
+        {
+          "source": "./payments/stripe/stripe.module",
+          "specifiers": [
+            "StripeModule"
+          ]
         }
       ],
       "exports": [
         "AppModule"
       ],
-      "totalLines": 11,
+      "totalLines": 15,
       "hasStructuralAnalysis": true
     },
     "apps/payment-service/src/app/app.service.spec.ts": {
@@ -1619,6 +2279,934 @@
       "totalLines": 9,
       "hasStructuralAnalysis": true
     },
+    "apps/payment-service/src/app/database/database.module.ts": {
+      "filePath": "apps/payment-service/src/app/database/database.module.ts",
+      "contentHash": "7a696f3e4c16c7ecc703a80e961c1f7faeb0f4bf885df61cbb856fa9bae42503",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DatabaseModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Global",
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/config",
+          "specifiers": [
+            "ConfigService"
+          ]
+        },
+        {
+          "source": "pg",
+          "specifiers": [
+            "Pool"
+          ]
+        },
+        {
+          "source": "./database.service",
+          "specifiers": [
+            "DatabaseService"
+          ]
+        },
+        {
+          "source": "./database.tokens",
+          "specifiers": [
+            "PG_POOL"
+          ]
+        }
+      ],
+      "exports": [
+        "DatabaseModule"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/database/database.service.ts": {
+      "filePath": "apps/payment-service/src/app/database/database.service.ts",
+      "contentHash": "182e18d5a60fa16161e6e60fdcdaa8784cdc2782aa6de988e305b7bdfb0b5083",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DatabaseService",
+          "methods": [
+            "constructor",
+            "onModuleInit",
+            "onModuleDestroy"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable",
+            "OnModuleDestroy",
+            "OnModuleInit"
+          ]
+        },
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Inject"
+          ]
+        },
+        {
+          "source": "pg",
+          "specifiers": [
+            "Pool"
+          ]
+        },
+        {
+          "source": "./database.tokens.js",
+          "specifiers": [
+            "PG_POOL"
+          ]
+        },
+        {
+          "source": "./schema.js",
+          "specifiers": [
+            "PAYMENT_SCHEMA_SQL"
+          ]
+        }
+      ],
+      "exports": [
+        "DatabaseService"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/database/database.tokens.ts": {
+      "filePath": "apps/payment-service/src/app/database/database.tokens.ts",
+      "contentHash": "bc2dd5253ee4f3a2da8ce83350ca39c419281f7add7484a70764c976eef1e28e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "PG_POOL"
+      ],
+      "totalLines": 2,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/database/schema.ts": {
+      "filePath": "apps/payment-service/src/app/database/schema.ts",
+      "contentHash": "bfbf8d7fcb765decff58654a2eec6c0f1dc04bfc105005309ea057d017938ff7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "PAYMENT_SCHEMA_SQL"
+      ],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/order-created.consumer.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/order-created.consumer.spec.ts",
+      "contentHash": "d889c07a8fa978209a6b86f92fa312619cab656ef785b9814cafb9f3c210d491",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./order-created.consumer.js",
+          "specifiers": [
+            "OrderCreatedConsumer"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/order-created.consumer.ts": {
+      "filePath": "apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "contentHash": "df6ffc9763f15f3eafe947acafd1ac9d0b1cb65d2de5a93a8d2081ba5b01ce8c",
+      "functions": [],
+      "classes": [
+        {
+          "name": "OrderCreatedConsumer",
+          "methods": [
+            "constructor",
+            "handleOrderCreated"
+          ],
+          "properties": [
+            "logger"
+          ],
+          "exported": true,
+          "lineCount": 22
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Controller",
+            "Logger"
+          ]
+        },
+        {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "EventPattern"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "orderCreatedSchema",
+            "parse",
+            "SchemaValidationError"
+          ]
+        },
+        {
+          "source": "./payment.types.js",
+          "specifiers": [
+            "OrderCreatedEvent"
+          ]
+        },
+        {
+          "source": "./payments.service.js",
+          "specifiers": [
+            "PaymentsService"
+          ]
+        }
+      ],
+      "exports": [
+        "ORDER_CREATED_TOPIC",
+        "OrderCreatedConsumer"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payment-result.publisher.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "contentHash": "e350631f07a1315a87a1ded9db123d00cc95e6f68fabe7d892bbde992645baed",
+      "functions": [],
+      "classes": [
+        {
+          "name": "PaymentResultPublisher",
+          "methods": [
+            "constructor",
+            "onModuleInit",
+            "onModuleDestroy",
+            "publishCaptured",
+            "publishFailed"
+          ],
+          "properties": [
+            "logger",
+            "kafka",
+            "producer"
+          ],
+          "exported": true,
+          "lineCount": 76
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable",
+            "Logger",
+            "OnModuleDestroy",
+            "OnModuleInit"
+          ]
+        },
+        {
+          "source": "node:crypto",
+          "specifiers": [
+            "randomUUID"
+          ]
+        },
+        {
+          "source": "kafkajs",
+          "specifiers": [
+            "Kafka"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "EventEnvelope",
+            "PaymentCapturedPayload",
+            "PaymentFailedPayload"
+          ]
+        }
+      ],
+      "exports": [
+        "PaymentResultPublisher"
+      ],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payment.repository.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payment.repository.spec.ts",
+      "contentHash": "b28ccccbb93366faf8bb5029acf17fc204ddd46475f8fcd1de96108216416de2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "pg",
+          "specifiers": [
+            "Pool"
+          ]
+        },
+        {
+          "source": "../database/schema.js",
+          "specifiers": [
+            "PAYMENT_SCHEMA_SQL"
+          ]
+        },
+        {
+          "source": "./payment.repository.js",
+          "specifiers": [
+            "PaymentRepository"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payment.repository.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payment.repository.ts",
+      "contentHash": "62901a9bf9b377e9d4e25808412fce2c043e83a46b9697e51591f2b0d5ecd59d",
+      "functions": [
+        {
+          "name": "toPaymentRecord",
+          "params": [
+            "row"
+          ],
+          "returnType": "PaymentRecord",
+          "exported": false,
+          "lineCount": 15
+        }
+      ],
+      "classes": [
+        {
+          "name": "PaymentRepository",
+          "methods": [
+            "constructor",
+            "insertIfAbsent",
+            "findById",
+            "findByOrderId",
+            "findByProviderReference",
+            "setProviderReference",
+            "updateStatus",
+            "applyStripeEvent",
+            "shouldApplyStatus"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 133
+        }
+      ],
+      "imports": [
+        {
+          "source": "pg",
+          "specifiers": [
+            "Pool"
+          ]
+        },
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "PaymentStatus"
+          ]
+        },
+        {
+          "source": "./payment.types.js",
+          "specifiers": [
+            "CreatePaymentInput",
+            "PaymentRecord",
+            "StripeEventApplyResult",
+            "StripeEventUpdate"
+          ]
+        }
+      ],
+      "exports": [
+        "PaymentRepository"
+      ],
+      "totalLines": 170,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payment.types.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payment.types.ts",
+      "contentHash": "20c0fa28f3e97ca5ccf7aa3e3dfece9f1140e71f6edb48d9c585efc25f9dc8c3",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@ecommerce-platform/contracts",
+          "specifiers": [
+            "EventEnvelope",
+            "OrderCreatedPayload",
+            "PaymentStatus"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payments.module.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payments.module.ts",
+      "contentHash": "f7a033c4666cb904acf38befbf4402cbb0640d642190fa9269d87a55c400785b",
+      "functions": [],
+      "classes": [
+        {
+          "name": "PaymentsModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Module"
+          ]
+        },
+        {
+          "source": "pg",
+          "specifiers": [
+            "Pool"
+          ]
+        },
+        {
+          "source": "../database/database.tokens.js",
+          "specifiers": [
+            "PG_POOL"
+          ]
+        },
+        {
+          "source": "./payment.repository.js",
+          "specifiers": [
+            "PaymentRepository"
+          ]
+        },
+        {
+          "source": "./order-created.consumer.js",
+          "specifiers": [
+            "OrderCreatedConsumer"
+          ]
+        },
+        {
+          "source": "./payment-result.publisher.js",
+          "specifiers": [
+            "PaymentResultPublisher"
+          ]
+        },
+        {
+          "source": "./payments.service.js",
+          "specifiers": [
+            "PaymentsService"
+          ]
+        },
+        {
+          "source": "./stripe-webhook.controller.js",
+          "specifiers": [
+            "StripeWebhookController"
+          ]
+        },
+        {
+          "source": "./stripe-webhook.service.js",
+          "specifiers": [
+            "StripeWebhookService"
+          ]
+        }
+      ],
+      "exports": [
+        "PaymentsModule"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payments.service.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payments.service.spec.ts",
+      "contentHash": "b6b127a40a8ae04cbbdecc8e4c77db7e142149e2c7dc7cfc5f144e46c329e853",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./payments.service.js",
+          "specifiers": [
+            "PaymentsService"
+          ]
+        },
+        {
+          "source": "./stripe/stripe.gateway.js",
+          "specifiers": [
+            "StripeGatewayError"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 245,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/payments.service.ts": {
+      "filePath": "apps/payment-service/src/app/payments/payments.service.ts",
+      "contentHash": "c25007826b26fe24cf54a548e119b2d013bb42851fa4890f2137435ab3876b97",
+      "functions": [],
+      "classes": [
+        {
+          "name": "PaymentsService",
+          "methods": [
+            "constructor",
+            "handleOrderCreated"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 68
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Inject",
+            "Injectable"
+          ]
+        },
+        {
+          "source": "node:crypto",
+          "specifiers": [
+            "randomUUID"
+          ]
+        },
+        {
+          "source": "./stripe/stripe.gateway.js",
+          "specifiers": [
+            "STRIPE_GATEWAY",
+            "StripeGatewayError"
+          ]
+        },
+        {
+          "source": "./stripe/stripe.gateway.js",
+          "specifiers": [
+            "StripeGateway"
+          ]
+        },
+        {
+          "source": "./payment.types.js",
+          "specifiers": [
+            "OrderCreatedEvent"
+          ]
+        },
+        {
+          "source": "./payment.repository.js",
+          "specifiers": [
+            "PaymentRepository"
+          ]
+        }
+      ],
+      "exports": [
+        "PaymentsService"
+      ],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts",
+      "contentHash": "73188bc76d9589f8ef14e40d63a86bfd25ce1817bf1e0cf3a51536d73f66f7fd",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "BadRequestException",
+            "InternalServerErrorException"
+          ]
+        },
+        {
+          "source": "./stripe-webhook.controller.js",
+          "specifiers": [
+            "StripeWebhookController"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 51,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe-webhook.controller.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "contentHash": "ab0a35671568657be4bdcbaa4b3f8cc24452889b03ac03dab61b64f5b637642d",
+      "functions": [],
+      "classes": [
+        {
+          "name": "StripeWebhookController",
+          "methods": [
+            "constructor",
+            "handle"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 32
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "BadRequestException",
+            "Controller",
+            "Headers",
+            "HttpCode",
+            "HttpStatus",
+            "InternalServerErrorException",
+            "Post",
+            "Req"
+          ]
+        },
+        {
+          "source": "./stripe-webhook.service.js",
+          "specifiers": [
+            "StripeWebhookService"
+          ]
+        },
+        {
+          "source": "./stripe/stripe-webhook.verifier.js",
+          "specifiers": [
+            "StripeWebhookVerifier"
+          ]
+        }
+      ],
+      "exports": [
+        "StripeWebhookController"
+      ],
+      "totalLines": 51,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts",
+      "contentHash": "152cddc57cab49d0e08d61a4fb64f67e742283a5da284e9ba811decb35017370",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./stripe-webhook.service.js",
+          "specifiers": [
+            "StripeWebhookService"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 150,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe-webhook.service.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "contentHash": "5bdb83de206eeffa941ea61be83322027fdc8f871c8182643190159a8362549a",
+      "functions": [],
+      "classes": [
+        {
+          "name": "StripeWebhookService",
+          "methods": [
+            "constructor",
+            "handle"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 90
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Injectable"
+          ]
+        },
+        {
+          "source": "./payment.types.js",
+          "specifiers": [
+            "StripeEventApplyResult"
+          ]
+        },
+        {
+          "source": "./payment.repository.js",
+          "specifiers": [
+            "PaymentRepository"
+          ]
+        },
+        {
+          "source": "./payment-result.publisher.js",
+          "specifiers": [
+            "PaymentResultPublisher"
+          ]
+        }
+      ],
+      "exports": [
+        "StripeWebhookService"
+      ],
+      "totalLines": 97,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+      "contentHash": "93b94394be6cb64aac1c088620d644ee0225355f868009617bf36dbc180bb12c",
+      "functions": [],
+      "classes": [
+        {
+          "name": "FakeStripeGateway",
+          "methods": [
+            "createPaymentIntent"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "./stripe.gateway.js",
+          "specifiers": [
+            "StripeGateway",
+            "CreatePaymentIntentInput",
+            "PaymentIntentResult"
+          ]
+        }
+      ],
+      "exports": [
+        "FakeStripeGateway"
+      ],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+      "contentHash": "92124e08660b912dc513d46c24be0ea7906bfbd4f934ccb016d0abf10e9a146e",
+      "functions": [],
+      "classes": [
+        {
+          "name": "StripeSdkGateway",
+          "methods": [
+            "constructor",
+            "createPaymentIntent"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 39
+        }
+      ],
+      "imports": [
+        {
+          "source": "./stripe.gateway.js",
+          "specifiers": [
+            "StripeGateway",
+            "StripeGatewayError",
+            "CreatePaymentIntentInput",
+            "PaymentIntentResult"
+          ]
+        }
+      ],
+      "exports": [
+        "StripeSdkGateway"
+      ],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts",
+      "contentHash": "ed7bc7f40afd0a4f19022b57d257cfdbe7584b9ebbfa80a163b076ccb70fe7ab",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "stripe",
+          "specifiers": [
+            "Stripe"
+          ]
+        },
+        {
+          "source": "./stripe-webhook.verifier.js",
+          "specifiers": [
+            "StripeWebhookVerifier"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "contentHash": "3bd1ea244e8ce49c307645d98993386a2a19a3b3e36d77672833906cc1d52b0e",
+      "functions": [],
+      "classes": [
+        {
+          "name": "StripeWebhookVerifier",
+          "methods": [
+            "constructor",
+            "verify"
+          ],
+          "properties": [
+            "secret"
+          ],
+          "exported": true,
+          "lineCount": 14
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Inject",
+            "Injectable"
+          ]
+        },
+        {
+          "source": "stripe",
+          "specifiers": [
+            "Stripe"
+          ]
+        },
+        {
+          "source": "./stripe.gateway.js",
+          "specifiers": [
+            "STRIPE_CLIENT"
+          ]
+        }
+      ],
+      "exports": [
+        "StripeWebhookVerifier"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+      "contentHash": "93dbcd4903f283f19ac059c8b24882e15a3c459316ae678af53dbf225e9340a6",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./fake-stripe.gateway.js",
+          "specifiers": [
+            "FakeStripeGateway"
+          ]
+        },
+        {
+          "source": "./stripe-sdk.gateway.js",
+          "specifiers": [
+            "StripeSdkGateway"
+          ]
+        },
+        {
+          "source": "./stripe.gateway.js",
+          "specifiers": [
+            "StripeGatewayError"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 90,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "contentHash": "fb336345753f4746b59ac0f2953570c7bc1c342097ce1b20769cb343070e8698",
+      "functions": [],
+      "classes": [
+        {
+          "name": "StripeGatewayError",
+          "methods": [
+            "constructor"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "StripeGatewayError",
+        "STRIPE_CLIENT",
+        "STRIPE_GATEWAY"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "apps/payment-service/src/app/payments/stripe/stripe.module.ts": {
+      "filePath": "apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "contentHash": "ca2b75a8ace1ed9f266e709647e7d59818a51fbaf9b76aebb472cffdb73dc990",
+      "functions": [],
+      "classes": [
+        {
+          "name": "StripeModule",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "imports": [
+        {
+          "source": "@nestjs/common",
+          "specifiers": [
+            "Global",
+            "Module"
+          ]
+        },
+        {
+          "source": "@nestjs/config",
+          "specifiers": [
+            "ConfigService"
+          ]
+        },
+        {
+          "source": "stripe",
+          "specifiers": [
+            "Stripe"
+          ]
+        },
+        {
+          "source": "./fake-stripe.gateway.js",
+          "specifiers": [
+            "FakeStripeGateway"
+          ]
+        },
+        {
+          "source": "./stripe-sdk.gateway.js",
+          "specifiers": [
+            "StripeSdkGateway"
+          ]
+        },
+        {
+          "source": "./stripe-webhook.verifier.js",
+          "specifiers": [
+            "StripeWebhookVerifier"
+          ]
+        },
+        {
+          "source": "./stripe.gateway.js",
+          "specifiers": [
+            "STRIPE_CLIENT",
+            "STRIPE_GATEWAY"
+          ]
+        }
+      ],
+      "exports": [
+        "StripeModule"
+      ],
+      "totalLines": 63,
+      "hasStructuralAnalysis": true
+    },
     "apps/payment-service/src/assets/.gitkeep": {
       "filePath": "apps/payment-service/src/assets/.gitkeep",
       "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1631,13 +3219,13 @@
     },
     "apps/payment-service/src/main.ts": {
       "filePath": "apps/payment-service/src/main.ts",
-      "contentHash": "f47116b441143046a25b2c14f4dc3235bd57f7f3b676af0b9517e0b95f60de2f",
+      "contentHash": "c7885492b6c099298b7a92753a2b47492ba3dc09309ee23fd5587a8ba0c3c19f",
       "functions": [
         {
           "name": "bootstrap",
           "params": [],
           "exported": false,
-          "lineCount": 10
+          "lineCount": 24
         }
       ],
       "classes": [],
@@ -1655,6 +3243,13 @@
           ]
         },
         {
+          "source": "@nestjs/microservices",
+          "specifiers": [
+            "MicroserviceOptions",
+            "Transport"
+          ]
+        },
+        {
           "source": "./app/app.module",
           "specifiers": [
             "AppModule"
@@ -1662,17 +3257,17 @@
         }
       ],
       "exports": [],
-      "totalLines": 22,
+      "totalLines": 37,
       "hasStructuralAnalysis": true
     },
     "apps/payment-service/tsconfig.app.json": {
       "filePath": "apps/payment-service/tsconfig.app.json",
-      "contentHash": "a796f630e8ed8b81c53a8ed0955e165594d0966784bc95377a655421861fb66b",
+      "contentHash": "a15a215c8c6f7ce0e7bab13f68bd2e5b447901e978868f04677c324422dd9b5c",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 30,
+      "totalLines": 35,
       "hasStructuralAnalysis": false
     },
     "apps/payment-service/tsconfig.json": {
@@ -2242,6 +3837,36 @@
       "exports": [],
       "totalLines": 26,
       "hasStructuralAnalysis": true
+    },
+    "docker-compose.yml": {
+      "filePath": "docker-compose.yml",
+      "contentHash": "3adf5cfdc8aa027a4d23ec7acdf2c3a761c6d42ed6e78af5cd9cc495cc5b078d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": false
+    },
+    "docs/superpowers/plans/2026-10-24-payment-service-kafka-stripe.md": {
+      "filePath": "docs/superpowers/plans/2026-10-24-payment-service-kafka-stripe.md",
+      "contentHash": "4b541db8b03aef00159782774449cbdc6a851148915fceebce12a26594397293",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 920,
+      "hasStructuralAnalysis": false
+    },
+    "docs/superpowers/specs/2026-10-24-payment-service-kafka-stripe-design.md": {
+      "filePath": "docs/superpowers/specs/2026-10-24-payment-service-kafka-stripe-design.md",
+      "contentHash": "736eb70c55eb8c8dc870b85e9a8c2a1f82ae3acc98758ac933649fe8783defac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 426,
+      "hasStructuralAnalysis": false
     },
     "eslint.config.mjs": {
       "filePath": "eslint.config.mjs",
@@ -3800,12 +5425,12 @@
     },
     "package.json": {
       "filePath": "package.json",
-      "contentHash": "33a51f0642ccc981f2affaf8794a0b3fa151f02296c51938f26c0b702d1e0ef7",
+      "contentHash": "789cdbbc1b7fec7d6feb550a3ed1950b9d995fb53098e8a217f478d7ce8fc17f",
       "functions": [],
       "classes": [],
       "imports": [],
       "exports": [],
-      "totalLines": 60,
+      "totalLines": 61,
       "hasStructuralAnalysis": false
     },
     "packages/.gitkeep": {

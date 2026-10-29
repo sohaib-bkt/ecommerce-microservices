@@ -1,0 +1,2589 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 238,
+  "totalBatches": 24,
+  "exportsByPath": {
+    ".prettierignore": [],
+    "apps/account-service-e2e/.spec.swcrc": [],
+    "apps/account-service-e2e/eslint.config.mjs": [],
+    "apps/account-service-e2e/jest.config.cts": [],
+    "apps/account-service-e2e/src/account-service/account-service.spec.ts": [],
+    "apps/account-service-e2e/src/support/global-setup.ts": [],
+    "apps/account-service-e2e/src/support/global-teardown.ts": [],
+    "apps/account-service-e2e/src/support/test-setup.ts": [],
+    "apps/account-service/.spec.swcrc": [],
+    "apps/account-service/eslint.config.mjs": [],
+    "apps/account-service/jest.config.cts": [],
+    "apps/account-service/src/app/app.controller.spec.ts": [],
+    "apps/account-service/src/app/app.controller.ts": [
+      "AppController"
+    ],
+    "apps/account-service/src/app/app.module.ts": [
+      "AppModule"
+    ],
+    "apps/account-service/src/app/app.service.spec.ts": [],
+    "apps/account-service/src/app/app.service.ts": [
+      "AppService"
+    ],
+    "apps/account-service/src/assets/.gitkeep": [],
+    "apps/account-service/src/main.ts": [],
+    "apps/account-service/webpack.config.js": [],
+    "apps/api-gateway-e2e/.spec.swcrc": [],
+    "apps/api-gateway-e2e/eslint.config.mjs": [],
+    "apps/api-gateway-e2e/jest.config.cts": [],
+    "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts": [],
+    "apps/api-gateway-e2e/src/support/global-setup.ts": [],
+    "apps/api-gateway-e2e/src/support/global-teardown.ts": [],
+    "apps/api-gateway-e2e/src/support/test-setup.ts": [],
+    "apps/api-gateway/.spec.swcrc": [],
+    "apps/api-gateway/eslint.config.mjs": [],
+    "apps/api-gateway/jest.config.cts": [],
+    "apps/api-gateway/src/app/app.controller.spec.ts": [],
+    "apps/api-gateway/src/app/app.controller.ts": [
+      "AppController"
+    ],
+    "apps/api-gateway/src/app/app.module.ts": [
+      "AppModule"
+    ],
+    "apps/api-gateway/src/app/app.service.spec.ts": [],
+    "apps/api-gateway/src/app/app.service.ts": [
+      "AppService"
+    ],
+    "apps/api-gateway/src/app/contracts-integration.spec.ts": [],
+    "apps/api-gateway/src/app/product.controller.ts": [
+      "ProductController"
+    ],
+    "apps/api-gateway/src/app/product.module.ts": [
+      "ProductModule"
+    ],
+    "apps/api-gateway/src/app/product.service.ts": [
+      "ProductClientService"
+    ],
+    "apps/api-gateway/src/assets/.gitkeep": [],
+    "apps/api-gateway/src/main.ts": [],
+    "apps/api-gateway/webpack.config.js": [],
+    "apps/order-service-e2e/.spec.swcrc": [],
+    "apps/order-service-e2e/eslint.config.mjs": [],
+    "apps/order-service-e2e/jest.config.cts": [],
+    "apps/order-service-e2e/src/order-service/order-service.spec.ts": [],
+    "apps/order-service-e2e/src/support/global-setup.ts": [],
+    "apps/order-service-e2e/src/support/global-teardown.ts": [],
+    "apps/order-service-e2e/src/support/test-setup.ts": [],
+    "apps/order-service/.spec.swcrc": [],
+    "apps/order-service/eslint.config.mjs": [],
+    "apps/order-service/jest.config.cts": [],
+    "apps/order-service/src/app/app.controller.spec.ts": [],
+    "apps/order-service/src/app/app.controller.ts": [
+      "AppController"
+    ],
+    "apps/order-service/src/app/app.module.ts": [
+      "AppModule"
+    ],
+    "apps/order-service/src/app/app.service.spec.ts": [],
+    "apps/order-service/src/app/app.service.ts": [
+      "AppService"
+    ],
+    "apps/order-service/src/app/orders/order-status.service.spec.ts": [],
+    "apps/order-service/src/app/orders/order-status.service.ts": [
+      "OrderStatusService"
+    ],
+    "apps/order-service/src/app/orders/orders.module.ts": [
+      "OrdersModule"
+    ],
+    "apps/order-service/src/app/orders/payment-result.consumer.spec.ts": [],
+    "apps/order-service/src/app/orders/payment-result.consumer.ts": [
+      "PaymentResultConsumer"
+    ],
+    "apps/order-service/src/assets/.gitkeep": [],
+    "apps/order-service/src/main.ts": [],
+    "apps/order-service/webpack.config.js": [],
+    "apps/payment-service-e2e/.spec.swcrc": [],
+    "apps/payment-service-e2e/eslint.config.mjs": [],
+    "apps/payment-service-e2e/jest.config.cts": [],
+    "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts": [],
+    "apps/payment-service-e2e/src/support/global-setup.ts": [],
+    "apps/payment-service-e2e/src/support/global-teardown.ts": [],
+    "apps/payment-service-e2e/src/support/test-setup.ts": [],
+    "apps/payment-service/.spec.swcrc": [],
+    "apps/payment-service/eslint.config.mjs": [],
+    "apps/payment-service/jest.config.cts": [],
+    "apps/payment-service/src/app/app.controller.spec.ts": [],
+    "apps/payment-service/src/app/app.controller.ts": [
+      "AppController"
+    ],
+    "apps/payment-service/src/app/app.module.ts": [
+      "AppModule"
+    ],
+    "apps/payment-service/src/app/app.service.spec.ts": [],
+    "apps/payment-service/src/app/app.service.ts": [
+      "AppService"
+    ],
+    "apps/payment-service/src/app/database/database.module.ts": [
+      "DatabaseModule"
+    ],
+    "apps/payment-service/src/app/database/database.service.ts": [
+      "DatabaseService"
+    ],
+    "apps/payment-service/src/app/database/database.tokens.ts": [
+      "PG_POOL"
+    ],
+    "apps/payment-service/src/app/database/schema.ts": [
+      "PAYMENT_SCHEMA_SQL"
+    ],
+    "apps/payment-service/src/app/payments/order-created.consumer.spec.ts": [],
+    "apps/payment-service/src/app/payments/order-created.consumer.ts": [
+      "ORDER_CREATED_TOPIC",
+      "OrderCreatedConsumer"
+    ],
+    "apps/payment-service/src/app/payments/payment-result.publisher.ts": [
+      "PaymentResultPublisher"
+    ],
+    "apps/payment-service/src/app/payments/payment.repository.spec.ts": [],
+    "apps/payment-service/src/app/payments/payment.repository.ts": [
+      "PaymentRepository"
+    ],
+    "apps/payment-service/src/app/payments/payment.types.ts": [],
+    "apps/payment-service/src/app/payments/payments.module.ts": [
+      "PaymentsModule"
+    ],
+    "apps/payment-service/src/app/payments/payments.service.spec.ts": [],
+    "apps/payment-service/src/app/payments/payments.service.ts": [
+      "PaymentsService"
+    ],
+    "apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts": [],
+    "apps/payment-service/src/app/payments/stripe-webhook.controller.ts": [
+      "StripeWebhookController"
+    ],
+    "apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts": [],
+    "apps/payment-service/src/app/payments/stripe-webhook.service.ts": [
+      "StripeWebhookService"
+    ],
+    "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts": [
+      "FakeStripeGateway"
+    ],
+    "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts": [
+      "StripeSdkGateway"
+    ],
+    "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts": [],
+    "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts": [
+      "StripeWebhookVerifier"
+    ],
+    "apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts": [],
+    "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts": [
+      "StripeGatewayError",
+      "STRIPE_CLIENT",
+      "STRIPE_GATEWAY"
+    ],
+    "apps/payment-service/src/app/payments/stripe/stripe.module.ts": [
+      "StripeModule"
+    ],
+    "apps/payment-service/src/assets/.gitkeep": [],
+    "apps/payment-service/src/main.ts": [],
+    "apps/payment-service/webpack.config.js": [],
+    "apps/product-service-e2e/.spec.swcrc": [],
+    "apps/product-service-e2e/eslint.config.mjs": [],
+    "apps/product-service-e2e/jest.config.cts": [],
+    "apps/product-service-e2e/src/product-service/product-service.spec.ts": [],
+    "apps/product-service-e2e/src/support/global-setup.ts": [],
+    "apps/product-service-e2e/src/support/global-teardown.ts": [],
+    "apps/product-service-e2e/src/support/test-setup.ts": [],
+    "apps/product-service/.spec.swcrc": [],
+    "apps/product-service/eslint.config.mjs": [],
+    "apps/product-service/jest.config.cts": [],
+    "apps/product-service/src/app/app.controller.spec.ts": [],
+    "apps/product-service/src/app/app.controller.ts": [
+      "AppController"
+    ],
+    "apps/product-service/src/app/app.module.ts": [
+      "AppModule"
+    ],
+    "apps/product-service/src/app/app.service.spec.ts": [],
+    "apps/product-service/src/app/app.service.ts": [
+      "AppService"
+    ],
+    "apps/product-service/src/app/product.controller.ts": [
+      "ProductController"
+    ],
+    "apps/product-service/src/app/product.service.ts": [
+      "ProductService"
+    ],
+    "apps/product-service/src/assets/.gitkeep": [],
+    "apps/product-service/src/main.ts": [],
+    "apps/product-service/webpack.config.js": [],
+    "eslint.config.mjs": [],
+    "jest.config.ts": [],
+    "jest.preset.js": [],
+    "libs/contracts/.spec.swcrc": [],
+    "libs/contracts/eslint.config.mjs": [],
+    "libs/contracts/jest.config.cts": [],
+    "libs/contracts/src/generated/account/v1/account.ts": [
+      "accountStatusFromJSON",
+      "accountStatusToJSON",
+      "Account",
+      "GetAccountRequest",
+      "GetAccountResponse",
+      "ListAccountsRequest",
+      "ListAccountsResponse",
+      "CreateAccountRequest",
+      "CreateAccountResponse",
+      "UpdateAccountRequest",
+      "UpdateAccountResponse",
+      "AccountServiceDefinition"
+    ],
+    "libs/contracts/src/generated/common/v1/common.ts": [
+      "Money",
+      "Address",
+      "PageRequest",
+      "PageResponse",
+      "Timestamp"
+    ],
+    "libs/contracts/src/generated/index.ecommerce.account.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.account.v1.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.common.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.common.v1.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.order.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.order.v1.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.payment.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.payment.v1.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.product.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.product.v1.ts": [],
+    "libs/contracts/src/generated/index.ecommerce.ts": [],
+    "libs/contracts/src/generated/index.ts": [],
+    "libs/contracts/src/generated/order/v1/order.ts": [
+      "orderStatusFromJSON",
+      "orderStatusToJSON",
+      "OrderItem",
+      "Order",
+      "GetOrderRequest",
+      "GetOrderResponse",
+      "ListOrdersRequest",
+      "ListOrdersResponse",
+      "CreateOrderRequest",
+      "CreateOrderResponse",
+      "UpdateOrderStatusRequest",
+      "UpdateOrderStatusResponse",
+      "CancelOrderRequest",
+      "CancelOrderResponse",
+      "OrderServiceDefinition"
+    ],
+    "libs/contracts/src/generated/payment/v1/payment.ts": [
+      "paymentStatusFromJSON",
+      "paymentStatusToJSON",
+      "paymentMethodTypeFromJSON",
+      "paymentMethodTypeToJSON",
+      "Payment",
+      "GetPaymentRequest",
+      "GetPaymentResponse",
+      "CreatePaymentRequest",
+      "CreatePaymentResponse",
+      "CapturePaymentRequest",
+      "CapturePaymentResponse",
+      "RefundPaymentRequest",
+      "RefundPaymentResponse",
+      "PaymentServiceDefinition"
+    ],
+    "libs/contracts/src/generated/product/v1/product.ts": [
+      "productStatusFromJSON",
+      "productStatusToJSON",
+      "Product",
+      "GetProductRequest",
+      "GetProductResponse",
+      "ListProductsRequest",
+      "ListProductsResponse",
+      "CreateProductRequest",
+      "CreateProductResponse",
+      "UpdateProductRequest",
+      "UpdateProductResponse",
+      "ReserveStockRequest",
+      "ReserveStockResponse",
+      "ReleaseStockRequest",
+      "ReleaseStockResponse",
+      "ProductServiceDefinition"
+    ],
+    "libs/contracts/src/index.ts": [],
+    "libs/contracts/src/lib/contracts.ts": [
+      "resolveProtoDir",
+      "loadProtoDefinitions"
+    ],
+    "libs/contracts/src/lib/events/account.events.ts": [
+      "ACCOUNT_STATUSES",
+      "accountRegisteredSchema",
+      "accountUpdatedSchema",
+      "accountSuspendedSchema",
+      "ACCOUNT_REGISTERED_EVENT",
+      "ACCOUNT_UPDATED_EVENT",
+      "ACCOUNT_SUSPENDED_EVENT",
+      "addressSchema",
+      "moneySchema"
+    ],
+    "libs/contracts/src/lib/events/envelope.ts": [
+      "envelopeSchema",
+      "moneySchema",
+      "addressSchema",
+      "Address",
+      "Money"
+    ],
+    "libs/contracts/src/lib/events/order.events.ts": [
+      "ORDER_STATUSES",
+      "orderCreatedSchema",
+      "orderConfirmedSchema",
+      "orderStatusChangedSchema",
+      "orderCancelledSchema",
+      "ORDER_CREATED_EVENT",
+      "ORDER_CONFIRMED_EVENT",
+      "ORDER_STATUS_CHANGED_EVENT",
+      "ORDER_CANCELLED_EVENT"
+    ],
+    "libs/contracts/src/lib/events/payment.events.ts": [
+      "PAYMENT_STATUSES",
+      "PAYMENT_METHOD_TYPES",
+      "paymentInitiatedSchema",
+      "paymentAuthorizedSchema",
+      "paymentCapturedSchema",
+      "paymentFailedSchema",
+      "paymentRefundedSchema",
+      "PAYMENT_INITIATED_EVENT",
+      "PAYMENT_AUTHORIZED_EVENT",
+      "PAYMENT_CAPTURED_EVENT",
+      "PAYMENT_FAILED_EVENT",
+      "PAYMENT_REFUNDED_EVENT"
+    ],
+    "libs/contracts/src/lib/events/product.events.ts": [
+      "PRODUCT_STATUSES",
+      "productCreatedSchema",
+      "productPriceChangedSchema",
+      "productStockChangedSchema",
+      "PRODUCT_CREATED_EVENT",
+      "PRODUCT_PRICE_CHANGED_EVENT",
+      "PRODUCT_STOCK_CHANGED_EVENT"
+    ],
+    "libs/contracts/src/lib/events/registry.spec.ts": [],
+    "libs/contracts/src/lib/events/registry.ts": [
+      "EVENT_SCHEMAS",
+      "EVENT_TYPES",
+      "getEventSchema",
+      "isEventType"
+    ],
+    "libs/contracts/src/lib/generated.spec.ts": [],
+    "libs/contracts/src/lib/validation/schema.spec.ts": [],
+    "libs/contracts/src/lib/validation/schema.ts": [
+      "defineSchema",
+      "defineRule",
+      "SchemaValidationError",
+      "validateObject",
+      "parse"
+    ],
+    "packages/.gitkeep": [],
+    "tools/generate-protos.mjs": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "apps/account-service-e2e/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/account-service-e2e/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/account-service/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/api-gateway-e2e/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/api-gateway/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/order-service-e2e/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/order-service/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/payment-service-e2e/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/payment-service/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/product-service-e2e/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "apps/product-service/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ],
+        "eslint.config.mjs": [],
+        "libs/contracts/eslint.config.mjs": [
+          "eslint.config.mjs"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "apps/order-service/src/app/app.controller.spec.ts",
+          "language": "typescript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/app.controller.ts",
+          "language": "typescript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/app.module.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/app.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/app.service.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/orders/order-status.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/orders/order-status.service.ts",
+          "language": "typescript",
+          "sizeLines": 63,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/orders/orders.module.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/orders/payment-result.consumer.spec.ts",
+          "language": "typescript",
+          "sizeLines": 71,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/app/orders/payment-result.consumer.ts",
+          "language": "typescript",
+          "sizeLines": 87,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/main.ts",
+          "language": "typescript",
+          "sizeLines": 29,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/order-service/src/app/app.controller.spec.ts": [
+          "apps/order-service/src/app/app.controller.ts",
+          "apps/order-service/src/app/app.service.ts",
+          "apps/order-service/src/app/orders/order-status.service.ts"
+        ],
+        "apps/order-service/src/app/app.controller.ts": [
+          "apps/order-service/src/app/app.service.ts",
+          "apps/order-service/src/app/orders/order-status.service.ts"
+        ],
+        "apps/order-service/src/app/app.module.ts": [
+          "apps/order-service/src/app/app.controller.ts",
+          "apps/order-service/src/app/app.service.ts",
+          "apps/order-service/src/app/orders/orders.module.ts"
+        ],
+        "apps/order-service/src/app/app.service.spec.ts": [
+          "apps/order-service/src/app/app.service.ts"
+        ],
+        "apps/order-service/src/app/app.service.ts": [],
+        "apps/order-service/src/app/orders/order-status.service.spec.ts": [
+          "apps/order-service/src/app/orders/order-status.service.ts"
+        ],
+        "apps/order-service/src/app/orders/order-status.service.ts": [],
+        "apps/order-service/src/app/orders/orders.module.ts": [
+          "apps/order-service/src/app/orders/order-status.service.ts",
+          "apps/order-service/src/app/orders/payment-result.consumer.ts"
+        ],
+        "apps/order-service/src/app/orders/payment-result.consumer.spec.ts": [
+          "apps/order-service/src/app/orders/payment-result.consumer.ts"
+        ],
+        "apps/order-service/src/app/orders/payment-result.consumer.ts": [
+          "apps/order-service/src/app/orders/order-status.service.ts"
+        ],
+        "apps/order-service/src/main.ts": [
+          "apps/order-service/src/app/app.module.ts"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "apps/payment-service/src/app/app.controller.spec.ts",
+          "language": "typescript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/app.controller.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/app.module.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/app.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/app.service.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/database/database.module.ts",
+          "language": "typescript",
+          "sizeLines": 26,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/database/database.service.ts",
+          "language": "typescript",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/database/database.tokens.ts",
+          "language": "typescript",
+          "sizeLines": 1,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/database/schema.ts",
+          "language": "typescript",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/payment.repository.spec.ts",
+          "language": "typescript",
+          "sizeLines": 118,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/main.ts",
+          "language": "typescript",
+          "sizeLines": 36,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/payment-service/src/app/app.controller.spec.ts": [
+          "apps/payment-service/src/app/app.controller.ts",
+          "apps/payment-service/src/app/app.service.ts"
+        ],
+        "apps/payment-service/src/app/app.controller.ts": [
+          "apps/payment-service/src/app/app.service.ts"
+        ],
+        "apps/payment-service/src/app/app.module.ts": [
+          "apps/payment-service/src/app/app.controller.ts",
+          "apps/payment-service/src/app/app.service.ts",
+          "apps/payment-service/src/app/database/database.module.ts",
+          "apps/payment-service/src/app/payments/payments.module.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe.module.ts"
+        ],
+        "apps/payment-service/src/app/app.service.spec.ts": [
+          "apps/payment-service/src/app/app.service.ts"
+        ],
+        "apps/payment-service/src/app/app.service.ts": [],
+        "apps/payment-service/src/app/database/database.module.ts": [
+          "apps/payment-service/src/app/database/database.service.ts",
+          "apps/payment-service/src/app/database/database.tokens.ts"
+        ],
+        "apps/payment-service/src/app/database/database.service.ts": [
+          "apps/payment-service/src/app/database/database.tokens.ts",
+          "apps/payment-service/src/app/database/schema.ts"
+        ],
+        "apps/payment-service/src/app/database/database.tokens.ts": [],
+        "apps/payment-service/src/app/database/schema.ts": [],
+        "apps/payment-service/src/app/payments/payment.repository.spec.ts": [
+          "apps/payment-service/src/app/database/schema.ts",
+          "apps/payment-service/src/app/payments/payment.repository.ts"
+        ],
+        "apps/payment-service/src/main.ts": [
+          "apps/payment-service/src/app/app.module.ts"
+        ]
+      },
+      "neighborMap": {
+        "apps/payment-service/src/app/app.module.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/payments.module.ts",
+            "batchIndex": 4,
+            "symbols": [
+              "PaymentsModule"
+            ]
+          },
+          {
+            "path": "apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+            "batchIndex": 7,
+            "symbols": [
+              "StripeModule"
+            ]
+          }
+        ],
+        "apps/payment-service/src/app/database/database.tokens.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/payments.module.ts",
+            "batchIndex": 4,
+            "symbols": [
+              "PaymentsModule"
+            ]
+          }
+        ],
+        "apps/payment-service/src/app/payments/payment.repository.spec.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/payment.repository.ts",
+            "batchIndex": 4,
+            "symbols": [
+              "PaymentRepository"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "apps/payment-service/src/app/payments/order-created.consumer.spec.ts",
+          "language": "typescript",
+          "sizeLines": 61,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/order-created.consumer.ts",
+          "language": "typescript",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/payment-result.publisher.ts",
+          "language": "typescript",
+          "sizeLines": 82,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/payment.repository.ts",
+          "language": "typescript",
+          "sizeLines": 169,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/payment.types.ts",
+          "language": "typescript",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/payments.module.ts",
+          "language": "typescript",
+          "sizeLines": 26,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/payments.service.ts",
+          "language": "typescript",
+          "sizeLines": 76,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts",
+          "language": "typescript",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+          "language": "typescript",
+          "sizeLines": 50,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 149,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+          "language": "typescript",
+          "sizeLines": 96,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/payment-service/src/app/payments/order-created.consumer.spec.ts": [
+          "apps/payment-service/src/app/payments/order-created.consumer.ts"
+        ],
+        "apps/payment-service/src/app/payments/order-created.consumer.ts": [
+          "apps/payment-service/src/app/payments/payment.types.ts",
+          "apps/payment-service/src/app/payments/payments.service.ts"
+        ],
+        "apps/payment-service/src/app/payments/payment-result.publisher.ts": [],
+        "apps/payment-service/src/app/payments/payment.repository.ts": [
+          "apps/payment-service/src/app/payments/payment.types.ts"
+        ],
+        "apps/payment-service/src/app/payments/payment.types.ts": [],
+        "apps/payment-service/src/app/payments/payments.module.ts": [
+          "apps/payment-service/src/app/database/database.tokens.ts",
+          "apps/payment-service/src/app/payments/order-created.consumer.ts",
+          "apps/payment-service/src/app/payments/payment-result.publisher.ts",
+          "apps/payment-service/src/app/payments/payment.repository.ts",
+          "apps/payment-service/src/app/payments/payments.service.ts",
+          "apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+          "apps/payment-service/src/app/payments/stripe-webhook.service.ts"
+        ],
+        "apps/payment-service/src/app/payments/payments.service.ts": [
+          "apps/payment-service/src/app/payments/payment.repository.ts",
+          "apps/payment-service/src/app/payments/payment.types.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts": [
+          "apps/payment-service/src/app/payments/stripe-webhook.controller.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe-webhook.controller.ts": [
+          "apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts": [
+          "apps/payment-service/src/app/payments/stripe-webhook.service.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe-webhook.service.ts": [
+          "apps/payment-service/src/app/payments/payment-result.publisher.ts",
+          "apps/payment-service/src/app/payments/payment.repository.ts",
+          "apps/payment-service/src/app/payments/payment.types.ts"
+        ]
+      },
+      "neighborMap": {
+        "apps/payment-service/src/app/payments/payment.repository.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/payment.repository.spec.ts",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "apps/payment-service/src/app/payments/payments.module.ts": [
+          {
+            "path": "apps/payment-service/src/app/database/database.tokens.ts",
+            "batchIndex": 3,
+            "symbols": [
+              "PG_POOL"
+            ]
+          },
+          {
+            "path": "apps/payment-service/src/app/app.module.ts",
+            "batchIndex": 3,
+            "symbols": [
+              "AppModule"
+            ]
+          }
+        ],
+        "apps/payment-service/src/app/payments/payments.service.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+            "batchIndex": 7,
+            "symbols": [
+              "StripeGatewayError",
+              "STRIPE_CLIENT",
+              "STRIPE_GATEWAY"
+            ]
+          },
+          {
+            "path": "apps/payment-service/src/app/payments/payments.service.spec.ts",
+            "batchIndex": 7,
+            "symbols": []
+          }
+        ],
+        "apps/payment-service/src/app/payments/stripe-webhook.controller.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+            "batchIndex": 7,
+            "symbols": [
+              "StripeWebhookVerifier"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "apps/api-gateway/src/app/app.controller.spec.ts",
+          "language": "typescript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/app.controller.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/app.module.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/app.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/app.service.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/product.controller.ts",
+          "language": "typescript",
+          "sizeLines": 105,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/product.module.ts",
+          "language": "typescript",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/app/product.service.ts",
+          "language": "typescript",
+          "sizeLines": 75,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/main.ts",
+          "language": "typescript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/api-gateway/src/app/app.controller.spec.ts": [
+          "apps/api-gateway/src/app/app.controller.ts",
+          "apps/api-gateway/src/app/app.service.ts"
+        ],
+        "apps/api-gateway/src/app/app.controller.ts": [
+          "apps/api-gateway/src/app/app.service.ts"
+        ],
+        "apps/api-gateway/src/app/app.module.ts": [
+          "apps/api-gateway/src/app/app.controller.ts",
+          "apps/api-gateway/src/app/app.service.ts",
+          "apps/api-gateway/src/app/product.module.ts"
+        ],
+        "apps/api-gateway/src/app/app.service.spec.ts": [
+          "apps/api-gateway/src/app/app.service.ts"
+        ],
+        "apps/api-gateway/src/app/app.service.ts": [],
+        "apps/api-gateway/src/app/product.controller.ts": [
+          "apps/api-gateway/src/app/product.service.ts"
+        ],
+        "apps/api-gateway/src/app/product.module.ts": [
+          "apps/api-gateway/src/app/product.controller.ts",
+          "apps/api-gateway/src/app/product.service.ts"
+        ],
+        "apps/api-gateway/src/app/product.service.ts": [],
+        "apps/api-gateway/src/main.ts": [
+          "apps/api-gateway/src/app/app.module.ts"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "libs/contracts/src/lib/events/account.events.ts",
+          "language": "typescript",
+          "sizeLines": 87,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/events/envelope.ts",
+          "language": "typescript",
+          "sizeLines": 59,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/events/order.events.ts",
+          "language": "typescript",
+          "sizeLines": 147,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/events/payment.events.ts",
+          "language": "typescript",
+          "sizeLines": 159,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/events/product.events.ts",
+          "language": "typescript",
+          "sizeLines": 91,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/events/registry.spec.ts",
+          "language": "typescript",
+          "sizeLines": 159,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/events/registry.ts",
+          "language": "typescript",
+          "sizeLines": 89,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/validation/schema.spec.ts",
+          "language": "typescript",
+          "sizeLines": 119,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/validation/schema.ts",
+          "language": "typescript",
+          "sizeLines": 279,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "libs/contracts/src/lib/events/account.events.ts": [
+          "libs/contracts/src/lib/events/envelope.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/events/envelope.ts": [
+          "libs/contracts/src/generated/common/v1/common.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/events/order.events.ts": [
+          "libs/contracts/src/lib/events/envelope.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/events/payment.events.ts": [
+          "libs/contracts/src/lib/events/envelope.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/events/product.events.ts": [
+          "libs/contracts/src/lib/events/envelope.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/events/registry.spec.ts": [
+          "libs/contracts/src/lib/events/registry.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/events/registry.ts": [
+          "libs/contracts/src/lib/events/account.events.ts",
+          "libs/contracts/src/lib/events/order.events.ts",
+          "libs/contracts/src/lib/events/payment.events.ts",
+          "libs/contracts/src/lib/events/product.events.ts",
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/validation/schema.spec.ts": [
+          "libs/contracts/src/lib/validation/schema.ts"
+        ],
+        "libs/contracts/src/lib/validation/schema.ts": []
+      },
+      "neighborMap": {
+        "libs/contracts/src/lib/events/envelope.ts": [
+          {
+            "path": "libs/contracts/src/generated/common/v1/common.ts",
+            "batchIndex": 9,
+            "symbols": [
+              "Money",
+              "Address",
+              "PageRequest",
+              "PageResponse",
+              "Timestamp"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": "apps/payment-service/src/app/payments/payments.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 244,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+          "language": "typescript",
+          "sizeLines": 41,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts",
+          "language": "typescript",
+          "sizeLines": 38,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+          "language": "typescript",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts",
+          "language": "typescript",
+          "sizeLines": 89,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+          "language": "typescript",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+          "language": "typescript",
+          "sizeLines": 62,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/payment-service/src/app/payments/payments.service.spec.ts": [
+          "apps/payment-service/src/app/payments/payments.service.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts": [
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts": [
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.spec.ts": [
+          "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts": [
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe.gateway.spec.ts": [
+          "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts": [],
+        "apps/payment-service/src/app/payments/stripe/stripe.module.ts": [
+          "apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+          "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts"
+        ]
+      },
+      "neighborMap": {
+        "apps/payment-service/src/app/payments/payments.service.spec.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/payments.service.ts",
+            "batchIndex": 4,
+            "symbols": [
+              "PaymentsService"
+            ]
+          }
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+            "batchIndex": 4,
+            "symbols": [
+              "StripeWebhookController"
+            ]
+          }
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe.gateway.ts": [
+          {
+            "path": "apps/payment-service/src/app/payments/payments.service.ts",
+            "batchIndex": 4,
+            "symbols": [
+              "PaymentsService"
+            ]
+          }
+        ],
+        "apps/payment-service/src/app/payments/stripe/stripe.module.ts": [
+          {
+            "path": "apps/payment-service/src/app/app.module.ts",
+            "batchIndex": 3,
+            "symbols": [
+              "AppModule"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": "apps/account-service/src/app/app.controller.spec.ts",
+          "language": "typescript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/src/app/app.controller.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/src/app/app.module.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/src/app/app.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/src/app/app.service.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/src/main.ts",
+          "language": "typescript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/account-service/src/app/app.controller.spec.ts": [
+          "apps/account-service/src/app/app.controller.ts",
+          "apps/account-service/src/app/app.service.ts"
+        ],
+        "apps/account-service/src/app/app.controller.ts": [
+          "apps/account-service/src/app/app.service.ts"
+        ],
+        "apps/account-service/src/app/app.module.ts": [
+          "apps/account-service/src/app/app.controller.ts",
+          "apps/account-service/src/app/app.service.ts"
+        ],
+        "apps/account-service/src/app/app.service.spec.ts": [
+          "apps/account-service/src/app/app.service.ts"
+        ],
+        "apps/account-service/src/app/app.service.ts": [],
+        "apps/account-service/src/main.ts": [
+          "apps/account-service/src/app/app.module.ts"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "libs/contracts/src/generated/account/v1/account.ts",
+          "language": "typescript",
+          "sizeLines": 1060,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/common/v1/common.ts",
+          "language": "typescript",
+          "sizeLines": 596,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/order/v1/order.ts",
+          "language": "typescript",
+          "sizeLines": 1453,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/payment/v1/payment.ts",
+          "language": "typescript",
+          "sizeLines": 1158,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/product/v1/product.ts",
+          "language": "typescript",
+          "sizeLines": 1673,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "libs/contracts/src/generated/account/v1/account.ts": [
+          "libs/contracts/src/generated/common/v1/common.ts"
+        ],
+        "libs/contracts/src/generated/common/v1/common.ts": [],
+        "libs/contracts/src/generated/order/v1/order.ts": [
+          "libs/contracts/src/generated/common/v1/common.ts"
+        ],
+        "libs/contracts/src/generated/payment/v1/payment.ts": [
+          "libs/contracts/src/generated/common/v1/common.ts"
+        ],
+        "libs/contracts/src/generated/product/v1/product.ts": [
+          "libs/contracts/src/generated/common/v1/common.ts"
+        ]
+      },
+      "neighborMap": {
+        "libs/contracts/src/generated/common/v1/common.ts": [
+          {
+            "path": "libs/contracts/src/lib/events/envelope.ts",
+            "batchIndex": 6,
+            "symbols": [
+              "envelopeSchema",
+              "moneySchema",
+              "addressSchema",
+              "Address",
+              "Money"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 10,
+      "files": [
+        {
+          "path": "apps/product-service/src/app/app.controller.spec.ts",
+          "language": "typescript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/app/app.controller.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/app/app.service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/app/app.service.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/product-service/src/app/app.controller.spec.ts": [
+          "apps/product-service/src/app/app.controller.ts",
+          "apps/product-service/src/app/app.service.ts"
+        ],
+        "apps/product-service/src/app/app.controller.ts": [
+          "apps/product-service/src/app/app.service.ts"
+        ],
+        "apps/product-service/src/app/app.service.spec.ts": [
+          "apps/product-service/src/app/app.service.ts"
+        ],
+        "apps/product-service/src/app/app.service.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 11,
+      "files": [
+        {
+          "path": "apps/product-service/src/app/app.module.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/app/product.controller.ts",
+          "language": "typescript",
+          "sizeLines": 105,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/app/product.service.ts",
+          "language": "typescript",
+          "sizeLines": 165,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/main.ts",
+          "language": "typescript",
+          "sizeLines": 60,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/product-service/src/app/app.module.ts": [
+          "apps/product-service/src/app/product.controller.ts",
+          "apps/product-service/src/app/product.service.ts"
+        ],
+        "apps/product-service/src/app/product.controller.ts": [
+          "apps/product-service/src/app/product.service.ts"
+        ],
+        "apps/product-service/src/app/product.service.ts": [],
+        "apps/product-service/src/main.ts": [
+          "apps/product-service/src/app/app.module.ts"
+        ]
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 12,
+      "files": [
+        {
+          "path": ".env.example",
+          "language": "config",
+          "sizeLines": 19,
+          "fileCategory": "config"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 110,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "docker-compose.yml",
+          "language": "yaml",
+          "sizeLines": 46,
+          "fileCategory": "infra"
+        },
+        {
+          "path": "nx.json",
+          "language": "json",
+          "sizeLines": 72,
+          "fileCategory": "config"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 60,
+          "fileCategory": "config"
+        },
+        {
+          "path": "tsconfig.base.json",
+          "language": "json",
+          "sizeLines": 21,
+          "fileCategory": "config"
+        },
+        {
+          "path": "tsconfig.json",
+          "language": "json",
+          "sizeLines": 40,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        ".env.example": [],
+        "README.md": [],
+        "docker-compose.yml": [],
+        "nx.json": [],
+        "package.json": [],
+        "tsconfig.base.json": [],
+        "tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 13,
+      "files": [
+        {
+          "path": ".ua/.trash-1792759165/assemble-review.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/assembled-graph.json",
+          "language": "json",
+          "sizeLines": 6736,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-1.json",
+          "language": "json",
+          "sizeLines": 78,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-10.json",
+          "language": "json",
+          "sizeLines": 87,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-11.json",
+          "language": "json",
+          "sizeLines": 453,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-12-part-1.json",
+          "language": "json",
+          "sizeLines": 1106,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-12-part-2.json",
+          "language": "json",
+          "sizeLines": 966,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-13.json",
+          "language": "json",
+          "sizeLines": 983,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-2.json",
+          "language": "json",
+          "sizeLines": 76,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-3.json",
+          "language": "json",
+          "sizeLines": 83,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-4.json",
+          "language": "json",
+          "sizeLines": 76,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-5.json",
+          "language": "json",
+          "sizeLines": 76,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-6.json",
+          "language": "json",
+          "sizeLines": 76,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-7.json",
+          "language": "json",
+          "sizeLines": 101,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-8.json",
+          "language": "json",
+          "sizeLines": 49,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batch-9.json",
+          "language": "json",
+          "sizeLines": 48,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/batches.json",
+          "language": "json",
+          "sizeLines": 1645,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/fingerprint-input.json",
+          "language": "json",
+          "sizeLines": 182,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/layers.json",
+          "language": "json",
+          "sizeLines": 220,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/.trash-1792759165/review.json",
+          "language": "json",
+          "sizeLines": 90,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        ".ua/.trash-1792759165/assemble-review.json": [],
+        ".ua/.trash-1792759165/assembled-graph.json": [],
+        ".ua/.trash-1792759165/batch-1.json": [],
+        ".ua/.trash-1792759165/batch-10.json": [],
+        ".ua/.trash-1792759165/batch-11.json": [],
+        ".ua/.trash-1792759165/batch-12-part-1.json": [],
+        ".ua/.trash-1792759165/batch-12-part-2.json": [],
+        ".ua/.trash-1792759165/batch-13.json": [],
+        ".ua/.trash-1792759165/batch-2.json": [],
+        ".ua/.trash-1792759165/batch-3.json": [],
+        ".ua/.trash-1792759165/batch-4.json": [],
+        ".ua/.trash-1792759165/batch-5.json": [],
+        ".ua/.trash-1792759165/batch-6.json": [],
+        ".ua/.trash-1792759165/batch-7.json": [],
+        ".ua/.trash-1792759165/batch-8.json": [],
+        ".ua/.trash-1792759165/batch-9.json": [],
+        ".ua/.trash-1792759165/batches.json": [],
+        ".ua/.trash-1792759165/fingerprint-input.json": [],
+        ".ua/.trash-1792759165/layers.json": [],
+        ".ua/.trash-1792759165/review.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 14,
+      "files": [
+        {
+          "path": ".ua/fingerprints.json",
+          "language": "json",
+          "sizeLines": 3947,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/knowledge-graph.json",
+          "language": "json",
+          "sizeLines": 6811,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/meta.json",
+          "language": "json",
+          "sizeLines": 5,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        ".ua/fingerprints.json": [],
+        ".ua/knowledge-graph.json": [],
+        ".ua/meta.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 15,
+      "files": [
+        {
+          "path": "apps/account-service/package.json",
+          "language": "json",
+          "sizeLines": 80,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/account-service/tsconfig.app.json",
+          "language": "json",
+          "sizeLines": 29,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/account-service/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/account-service/tsconfig.spec.json",
+          "language": "json",
+          "sizeLines": 21,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "apps/account-service/package.json": [],
+        "apps/account-service/tsconfig.app.json": [],
+        "apps/account-service/tsconfig.json": [],
+        "apps/account-service/tsconfig.spec.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 16,
+      "files": [
+        {
+          "path": "apps/api-gateway/package.json",
+          "language": "json",
+          "sizeLines": 80,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/api-gateway/tsconfig.app.json",
+          "language": "json",
+          "sizeLines": 34,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/api-gateway/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/api-gateway/tsconfig.spec.json",
+          "language": "json",
+          "sizeLines": 21,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "apps/api-gateway/package.json": [],
+        "apps/api-gateway/tsconfig.app.json": [],
+        "apps/api-gateway/tsconfig.json": [],
+        "apps/api-gateway/tsconfig.spec.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 17,
+      "files": [
+        {
+          "path": "apps/order-service/package.json",
+          "language": "json",
+          "sizeLines": 82,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/order-service/tsconfig.app.json",
+          "language": "json",
+          "sizeLines": 29,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/order-service/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/order-service/tsconfig.spec.json",
+          "language": "json",
+          "sizeLines": 21,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "apps/order-service/package.json": [],
+        "apps/order-service/tsconfig.app.json": [],
+        "apps/order-service/tsconfig.json": [],
+        "apps/order-service/tsconfig.spec.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 18,
+      "files": [
+        {
+          "path": "apps/payment-service/package.json",
+          "language": "json",
+          "sizeLines": 86,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/payment-service/tsconfig.app.json",
+          "language": "json",
+          "sizeLines": 34,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/payment-service/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/payment-service/tsconfig.spec.json",
+          "language": "json",
+          "sizeLines": 21,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "apps/payment-service/package.json": [],
+        "apps/payment-service/tsconfig.app.json": [],
+        "apps/payment-service/tsconfig.json": [],
+        "apps/payment-service/tsconfig.spec.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 19,
+      "files": [
+        {
+          "path": "apps/product-service/package.json",
+          "language": "json",
+          "sizeLines": 80,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/product-service/tsconfig.app.json",
+          "language": "json",
+          "sizeLines": 34,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/product-service/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/product-service/tsconfig.spec.json",
+          "language": "json",
+          "sizeLines": 21,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "apps/product-service/package.json": [],
+        "apps/product-service/tsconfig.app.json": [],
+        "apps/product-service/tsconfig.json": [],
+        "apps/product-service/tsconfig.spec.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 20,
+      "files": [
+        {
+          "path": "libs/contracts/README.md",
+          "language": "markdown",
+          "sizeLines": 131,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "libs/contracts/package.json",
+          "language": "json",
+          "sizeLines": 25,
+          "fileCategory": "config"
+        },
+        {
+          "path": "libs/contracts/project.json",
+          "language": "json",
+          "sizeLines": 62,
+          "fileCategory": "config"
+        },
+        {
+          "path": "libs/contracts/tsconfig.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "libs/contracts/tsconfig.lib.json",
+          "language": "json",
+          "sizeLines": 19,
+          "fileCategory": "config"
+        },
+        {
+          "path": "libs/contracts/tsconfig.spec.json",
+          "language": "json",
+          "sizeLines": 20,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "libs/contracts/README.md": [],
+        "libs/contracts/package.json": [],
+        "libs/contracts/project.json": [],
+        "libs/contracts/tsconfig.json": [],
+        "libs/contracts/tsconfig.lib.json": [],
+        "libs/contracts/tsconfig.spec.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 21,
+      "files": [
+        {
+          "path": ".prettierignore",
+          "language": "unknown",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".ua/.trash-1792759165/tour.json",
+          "language": "json",
+          "sizeLines": 91,
+          "fileCategory": "config"
+        },
+        {
+          "path": ".ua/intermediate/scan-result.json",
+          "language": "json",
+          "sizeLines": 1090,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/account-service-e2e/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service-e2e/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service-e2e/package.json",
+          "language": "json",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/account-service-e2e/src/account-service/account-service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service-e2e/src/support/global-setup.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service-e2e/src/support/global-teardown.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service-e2e/src/support/test-setup.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service-e2e/tsconfig.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/account-service/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/src/assets/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/account-service/webpack.config.js",
+          "language": "javascript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/package.json",
+          "language": "json",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/src/support/global-setup.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/src/support/global-teardown.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/src/support/test-setup.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway-e2e/tsconfig.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/api-gateway/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".prettierignore": [],
+        ".ua/.trash-1792759165/tour.json": [],
+        ".ua/intermediate/scan-result.json": [],
+        "apps/account-service-e2e/.spec.swcrc": [],
+        "apps/account-service-e2e/jest.config.cts": [],
+        "apps/account-service-e2e/package.json": [],
+        "apps/account-service-e2e/src/account-service/account-service.spec.ts": [],
+        "apps/account-service-e2e/src/support/global-setup.ts": [],
+        "apps/account-service-e2e/src/support/global-teardown.ts": [],
+        "apps/account-service-e2e/src/support/test-setup.ts": [],
+        "apps/account-service-e2e/tsconfig.json": [],
+        "apps/account-service/.spec.swcrc": [],
+        "apps/account-service/jest.config.cts": [],
+        "apps/account-service/src/assets/.gitkeep": [],
+        "apps/account-service/webpack.config.js": [],
+        "apps/api-gateway-e2e/.spec.swcrc": [],
+        "apps/api-gateway-e2e/jest.config.cts": [],
+        "apps/api-gateway-e2e/package.json": [],
+        "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts": [],
+        "apps/api-gateway-e2e/src/support/global-setup.ts": [],
+        "apps/api-gateway-e2e/src/support/global-teardown.ts": [],
+        "apps/api-gateway-e2e/src/support/test-setup.ts": [],
+        "apps/api-gateway-e2e/tsconfig.json": [],
+        "apps/api-gateway/.spec.swcrc": [],
+        "apps/api-gateway/jest.config.cts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 22,
+      "files": [
+        {
+          "path": "apps/api-gateway/src/app/contracts-integration.spec.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/src/assets/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/api-gateway/webpack.config.js",
+          "language": "javascript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/package.json",
+          "language": "json",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/order-service-e2e/src/order-service/order-service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/src/support/global-setup.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/src/support/global-teardown.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/src/support/test-setup.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service-e2e/tsconfig.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/order-service/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/src/assets/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/order-service/webpack.config.js",
+          "language": "javascript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/package.json",
+          "language": "json",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/src/support/global-setup.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/src/support/global-teardown.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/src/support/test-setup.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service-e2e/tsconfig.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/payment-service/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "apps/api-gateway/src/app/contracts-integration.spec.ts": [],
+        "apps/api-gateway/src/assets/.gitkeep": [],
+        "apps/api-gateway/webpack.config.js": [],
+        "apps/order-service-e2e/.spec.swcrc": [],
+        "apps/order-service-e2e/jest.config.cts": [],
+        "apps/order-service-e2e/package.json": [],
+        "apps/order-service-e2e/src/order-service/order-service.spec.ts": [],
+        "apps/order-service-e2e/src/support/global-setup.ts": [],
+        "apps/order-service-e2e/src/support/global-teardown.ts": [],
+        "apps/order-service-e2e/src/support/test-setup.ts": [],
+        "apps/order-service-e2e/tsconfig.json": [],
+        "apps/order-service/.spec.swcrc": [],
+        "apps/order-service/jest.config.cts": [],
+        "apps/order-service/src/assets/.gitkeep": [],
+        "apps/order-service/webpack.config.js": [],
+        "apps/payment-service-e2e/.spec.swcrc": [],
+        "apps/payment-service-e2e/jest.config.cts": [],
+        "apps/payment-service-e2e/package.json": [],
+        "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts": [],
+        "apps/payment-service-e2e/src/support/global-setup.ts": [],
+        "apps/payment-service-e2e/src/support/global-teardown.ts": [],
+        "apps/payment-service-e2e/src/support/test-setup.ts": [],
+        "apps/payment-service-e2e/tsconfig.json": [],
+        "apps/payment-service/.spec.swcrc": [],
+        "apps/payment-service/jest.config.cts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 23,
+      "files": [
+        {
+          "path": "apps/payment-service/src/assets/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/payment-service/webpack.config.js",
+          "language": "javascript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/package.json",
+          "language": "json",
+          "sizeLines": 26,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/product-service-e2e/src/product-service/product-service.spec.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/src/support/global-setup.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/src/support/global-teardown.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/src/support/test-setup.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service-e2e/tsconfig.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        },
+        {
+          "path": "apps/product-service/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 20,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/src/assets/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "apps/product-service/webpack.config.js",
+          "language": "javascript",
+          "sizeLines": 25,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-24-payment-service-kafka-stripe.md",
+          "language": "markdown",
+          "sizeLines": 919,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-24-payment-service-kafka-stripe-design.md",
+          "language": "markdown",
+          "sizeLines": 425,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "jest.config.ts",
+          "language": "typescript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "jest.preset.js",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/.spec.swcrc",
+          "language": "swcrc",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/jest.config.cts",
+          "language": "cts",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/proto/account/v1/account.proto",
+          "language": "protobuf",
+          "sizeLines": 79,
+          "fileCategory": "data"
+        },
+        {
+          "path": "libs/contracts/proto/common/v1/common.proto",
+          "language": "protobuf",
+          "sizeLines": 40,
+          "fileCategory": "data"
+        },
+        {
+          "path": "libs/contracts/proto/order/v1/order.proto",
+          "language": "protobuf",
+          "sizeLines": 107,
+          "fileCategory": "data"
+        },
+        {
+          "path": "libs/contracts/proto/payment/v1/payment.proto",
+          "language": "protobuf",
+          "sizeLines": 91,
+          "fileCategory": "data"
+        },
+        {
+          "path": "libs/contracts/proto/product/v1/product.proto",
+          "language": "protobuf",
+          "sizeLines": 118,
+          "fileCategory": "data"
+        }
+      ],
+      "batchImportData": {
+        "apps/payment-service/src/assets/.gitkeep": [],
+        "apps/payment-service/webpack.config.js": [],
+        "apps/product-service-e2e/.spec.swcrc": [],
+        "apps/product-service-e2e/jest.config.cts": [],
+        "apps/product-service-e2e/package.json": [],
+        "apps/product-service-e2e/src/product-service/product-service.spec.ts": [],
+        "apps/product-service-e2e/src/support/global-setup.ts": [],
+        "apps/product-service-e2e/src/support/global-teardown.ts": [],
+        "apps/product-service-e2e/src/support/test-setup.ts": [],
+        "apps/product-service-e2e/tsconfig.json": [],
+        "apps/product-service/.spec.swcrc": [],
+        "apps/product-service/jest.config.cts": [],
+        "apps/product-service/src/assets/.gitkeep": [],
+        "apps/product-service/webpack.config.js": [],
+        "docs/superpowers/plans/2026-10-24-payment-service-kafka-stripe.md": [],
+        "docs/superpowers/specs/2026-10-24-payment-service-kafka-stripe-design.md": [],
+        "jest.config.ts": [],
+        "jest.preset.js": [],
+        "libs/contracts/.spec.swcrc": [],
+        "libs/contracts/jest.config.cts": [],
+        "libs/contracts/proto/account/v1/account.proto": [],
+        "libs/contracts/proto/common/v1/common.proto": [],
+        "libs/contracts/proto/order/v1/order.proto": [],
+        "libs/contracts/proto/payment/v1/payment.proto": [],
+        "libs/contracts/proto/product/v1/product.proto": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 24,
+      "files": [
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.account.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.account.v1.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.common.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.common.v1.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.order.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.order.v1.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.payment.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.payment.v1.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.product.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.product.v1.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ecommerce.ts",
+          "language": "typescript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/generated/index.ts",
+          "language": "typescript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/index.ts",
+          "language": "typescript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/contracts.ts",
+          "language": "typescript",
+          "sizeLines": 71,
+          "fileCategory": "code"
+        },
+        {
+          "path": "libs/contracts/src/lib/generated.spec.ts",
+          "language": "typescript",
+          "sizeLines": 104,
+          "fileCategory": "code"
+        },
+        {
+          "path": "packages/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tools/generate-protos.mjs",
+          "language": "javascript",
+          "sizeLines": 193,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "libs/contracts/src/generated/index.ecommerce.account.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.account.v1.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.common.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.common.v1.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.order.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.order.v1.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.payment.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.payment.v1.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.product.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.product.v1.ts": [],
+        "libs/contracts/src/generated/index.ecommerce.ts": [],
+        "libs/contracts/src/generated/index.ts": [],
+        "libs/contracts/src/index.ts": [],
+        "libs/contracts/src/lib/contracts.ts": [],
+        "libs/contracts/src/lib/generated.spec.ts": [
+          "libs/contracts/src/generated/index.ts"
+        ],
+        "packages/.gitkeep": [],
+        "tools/generate-protos.mjs": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

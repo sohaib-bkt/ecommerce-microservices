@@ -1,0 +1,90 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the root README to understand the Nx monorepo layout, the microservices it contains, and how tasks are run. This sets the stage for the guided tour through the ecommerce platform.",
+    "nodeIds": ["document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Monorepo Configuration",
+    "description": "The root package manifest, Nx configuration, and shared TypeScript settings wire together all apps and libraries in the workspace. These files define build targets, project references, and compiler options used across every service.",
+    "nodeIds": ["config:package.json", "config:nx.json", "config:tsconfig.base.json"],
+    "languageLesson": "Nx uses project.json/tsconfig references to orchestrate builds; tsconfig.base.json centralizes strict compiler options inherited by all projects."
+  },
+  {
+    "order": 3,
+    "title": "Shared Contracts Library",
+    "description": "The contracts library is the shared language of the platform: it exposes generated gRPC types plus a runtime event envelope, registry, and schema validator. Services import these contracts instead of duplicating message definitions.",
+    "nodeIds": ["file:libs/contracts/src/index.ts", "file:libs/contracts/src/lib/events/envelope.ts", "file:libs/contracts/src/lib/events/registry.ts", "file:libs/contracts/src/lib/validation/schema.ts"]
+  },
+  {
+    "order": 4,
+    "title": "Protobuf Service Contracts",
+    "description": "Protobuf definitions declare the gRPC messages and RPCs for each domain plus shared common types. These schemas are the source of truth from which the TypeScript contracts and service stubs are generated.",
+    "nodeIds": ["schema:libs/contracts/proto/account/v1/account.proto", "schema:libs/contracts/proto/product/v1/product.proto", "schema:libs/contracts/proto/order/v1/order.proto", "schema:libs/contracts/proto/payment/v1/payment.proto", "schema:libs/contracts/proto/common/v1/common.proto"],
+    "languageLesson": "Protobuf field numbers are permanent; backward compatibility is achieved by only adding optional fields and never reusing deleted numbers."
+  },
+  {
+    "order": 5,
+    "title": "Account Service",
+    "description": "The account service is the simplest microservice and a template for the others: a NestJS bootstrap, root module, controller, and service. It exposes account data over gRPC using the shared contracts.",
+    "nodeIds": ["file:apps/account-service/src/main.ts", "file:apps/account-service/src/app/app.module.ts", "file:apps/account-service/src/app/app.controller.ts", "file:apps/account-service/src/app/app.service.ts"]
+  },
+  {
+    "order": 6,
+    "title": "Product Service",
+    "description": "The product service manages the product catalog in memory and exposes CRUD, listing, and stock-reservation operations over gRPC. The API gateway consumes these operations through a typed gRPC client.",
+    "nodeIds": ["file:apps/product-service/src/main.ts", "file:apps/product-service/src/app/app.module.ts", "file:apps/product-service/src/app/product.controller.ts", "file:apps/product-service/src/app/product.service.ts"]
+  },
+  {
+    "order": 7,
+    "title": "API Gateway",
+    "description": "The gateway is the HTTP entry point of the platform, translating REST requests into gRPC calls to downstream services. Its app module wires the product gRPC client, while product.service wraps the generated client surface.",
+    "nodeIds": ["file:apps/api-gateway/src/main.ts", "file:apps/api-gateway/src/app/app.module.ts", "file:apps/api-gateway/src/app/product.controller.ts", "file:apps/api-gateway/src/app/product.service.ts"]
+  },
+  {
+    "order": 8,
+    "title": "Order Service",
+    "description": "The order service handles order creation and tracks order status in memory, updating it from payment events. Its payment-result consumer ingests captured/failed events to keep order state consistent.",
+    "nodeIds": ["file:apps/order-service/src/main.ts", "file:apps/order-service/src/app/app.module.ts", "file:apps/order-service/src/app/orders/orders.module.ts", "file:apps/order-service/src/app/orders/order-status.service.ts", "file:apps/order-service/src/app/orders/payment-result.consumer.ts"]
+  },
+  {
+    "order": 9,
+    "title": "Payment Service Core",
+    "description": "The payment service orchestrates payment creation from order.created events, enforcing idempotency and publishing payment results. It composes repository, service, consumers, and Stripe modules together.",
+    "nodeIds": ["file:apps/payment-service/src/main.ts", "file:apps/payment-service/src/app/app.module.ts", "file:apps/payment-service/src/app/payments/payments.module.ts", "file:apps/payment-service/src/app/payments/payments.service.ts", "file:apps/payment-service/src/app/payments/payment.types.ts"]
+  },
+  {
+    "order": 10,
+    "title": "Payment Persistence",
+    "description": "Payments and Stripe webhook events are stored in PostgreSQL through a dedicated repository and schema. The database module provides a shared pg pool and runs the DDL on startup.",
+    "nodeIds": ["file:apps/payment-service/src/app/database/schema.ts", "file:apps/payment-service/src/app/database/database.module.ts", "file:apps/payment-service/src/app/database/database.service.ts", "file:apps/payment-service/src/app/database/database.tokens.ts", "file:apps/payment-service/src/app/payments/payment.repository.ts"],
+    "languageLesson": "Migrations/DDL should be idempotent; CREATE TABLE IF NOT EXISTS lets the service bootstrap safely against an existing database."
+  },
+  {
+    "order": 11,
+    "title": "Stripe Integration",
+    "description": "Stripe payments are abstracted behind a StripeGateway interface with a production SDK adapter and an in-memory fake for tests. The stripe module wires the client, gateway, and webhook verifier.",
+    "nodeIds": ["file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts", "file:apps/payment-service/src/app/payments/stripe/stripe-sdk.gateway.ts", "file:apps/payment-service/src/app/payments/stripe/fake-stripe.gateway.ts", "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts", "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts"]
+  },
+  {
+    "order": 12,
+    "title": "Event Flows",
+    "description": "Kafka connects the services: the payment service consumes order.created and publishes payment.captured/failed, while the order service reacts to those results. Stripe webhooks are verified and mapped to payment status updates.",
+    "nodeIds": ["file:apps/payment-service/src/app/payments/order-created.consumer.ts", "file:apps/payment-service/src/app/payments/payment-result.publisher.ts", "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts", "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts"]
+  },
+  {
+    "order": 13,
+    "title": "Local Infrastructure",
+    "description": "Docker Compose provisions PostgreSQL and Kafka for local development, while the example environment file documents required gRPC, database, Kafka, and Stripe settings.",
+    "nodeIds": ["service:docker-compose.yml", "config:.env.example"],
+    "languageLesson": "docker-compose service ordering and health checks ensure dependent services wait for their dependencies to be ready."
+  },
+  {
+    "order": 14,
+    "title": "Design and Implementation Plan",
+    "description": "The design spec and implementation plan capture the architecture decisions and task breakdown for the payment service's Kafka and Stripe integration. They are useful context for understanding intended behavior.",
+    "nodeIds": ["document:docs/superpowers/specs/2026-10-24-payment-service-kafka-stripe-design.md", "document:docs/superpowers/plans/2026-10-24-payment-service-kafka-stripe.md"]
+  }
+]

@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/product-service/src/app/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/product-service/src/app/app.module.ts",
+      "summary": "NestJS module wiring that registers the ProductController and ProductService providers for the product microservice.",
+      "tags": ["module", "nestjs", "configuration", "wiring"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/product-service/src/app/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/product-service/src/app/app.module.ts",
+      "lineRange": [10, 10],
+      "summary": "Root NestJS module declaring the product controller and service providers.",
+      "tags": ["nestjs", "module", "root"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/product.controller.ts",
+      "type": "file",
+      "name": "product.controller.ts",
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "summary": "gRPC controller exposing ProductService methods (get, list, create, update, reserve, release stock) and mapping domain products to protobuf messages.",
+      "tags": ["api-handler", "grpc", "controller", "product"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/product-service/src/app/product.controller.ts:ProductController",
+      "type": "class",
+      "name": "ProductController",
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "lineRange": [21, 77],
+      "summary": "NestJS controller implementing the gRPC ProductService interface with handlers for product CRUD and stock reservation/release.",
+      "tags": ["api-handler", "grpc", "controller", "product"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/product-service/src/app/product.controller.ts:toProto",
+      "type": "function",
+      "name": "toProto",
+      "filePath": "apps/product-service/src/app/product.controller.ts",
+      "lineRange": [79, 105],
+      "summary": "Maps an internal StoredProduct to the ecommerce.product.v1.Product protobuf message.",
+      "tags": ["serialization", "mapping", "protobuf"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/src/app/product.service.ts",
+      "type": "file",
+      "name": "product.service.ts",
+      "filePath": "apps/product-service/src/app/product.service.ts",
+      "summary": "In-memory product domain service managing product CRUD, listing/filtering, and stock reservation/release with seeded sample data.",
+      "tags": ["service", "business-logic", "in-memory", "product"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/product-service/src/app/product.service.ts:ProductService",
+      "type": "class",
+      "name": "ProductService",
+      "filePath": "apps/product-service/src/app/product.service.ts",
+      "lineRange": [28, 165],
+      "summary": "Injectable service storing products in a Map, seeding initial data, and implementing find, list, create, update, reserve, and release operations.",
+      "tags": ["service", "business-logic", "in-memory", "product"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/product-service/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/product-service/src/main.ts",
+      "summary": "Application bootstrap resolving protobuf paths, creating the NestJS app, and starting both gRPC and HTTP servers.",
+      "tags": ["entry-point", "bootstrap", "grpc", "microservice"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/product-service/src/main.ts:resolveProtoPaths",
+      "type": "function",
+      "name": "resolveProtoPaths",
+      "filePath": "apps/product-service/src/main.ts",
+      "lineRange": [6, 25],
+      "summary": "Resolves the product proto file path and include directory from candidate locations with a fallback.",
+      "tags": ["utility", "protobuf", "path-resolution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/product-service/src/main.ts:bootstrap",
+      "type": "function",
+      "name": "bootstrap",
+      "filePath": "apps/product-service/src/main.ts",
+      "lineRange": [27, 58],
+      "summary": "Bootstraps the NestJS application, connects the gRPC microservice, and starts the HTTP listener.",
+      "tags": ["entry-point", "bootstrap", "microservice"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/product-service/src/app/app.module.ts",
+      "target": "file:apps/product-service/src/app/product.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.module.ts",
+      "target": "file:apps/product-service/src/app/product.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "file:apps/product-service/src/app/product.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/product-service/src/main.ts",
+      "target": "file:apps/product-service/src/app/app.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.module.ts",
+      "target": "class:apps/product-service/src/app/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "class:apps/product-service/src/app/product.controller.ts:ProductController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "function:apps/product-service/src/app/product.controller.ts:toProto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.service.ts",
+      "target": "class:apps/product-service/src/app/product.service.ts:ProductService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/main.ts",
+      "target": "function:apps/product-service/src/main.ts:resolveProtoPaths",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/main.ts",
+      "target": "function:apps/product-service/src/main.ts:bootstrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/product-service/src/app/app.module.ts",
+      "target": "class:apps/product-service/src/app/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.controller.ts",
+      "target": "class:apps/product-service/src/app/product.controller.ts:ProductController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/product-service/src/app/product.service.ts",
+      "target": "class:apps/product-service/src/app/product.service.ts:ProductService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

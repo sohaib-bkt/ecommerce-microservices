@@ -1,0 +1,552 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/payment-service/src/app/payments/order-created.consumer.spec.ts",
+      "type": "file",
+      "name": "order-created.consumer.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/order-created.consumer.spec.ts",
+      "summary": "Jest tests verifying OrderCreatedConsumer drops malformed events, forwards valid payloads, and rethrows retryable failures.",
+      "tags": [
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "type": "file",
+      "name": "order-created.consumer.ts",
+      "filePath": "apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "summary": "Kafka consumer listening on order.created; validates payloads against the contract schema and delegates to PaymentsService.",
+      "tags": [
+        "event-handler",
+        "kafka",
+        "validation",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "type": "file",
+      "name": "payment-result.publisher.ts",
+      "filePath": "apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "summary": "Kafka producer publishing PaymentCaptured and PaymentFailed event envelopes to payment.* topics.",
+      "tags": [
+        "event-handler",
+        "kafka",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "type": "file",
+      "name": "payment.repository.ts",
+      "filePath": "apps/payment-service/src/app/payments/payment.repository.ts",
+      "summary": "PostgreSQL repository for payments and Stripe webhook deduplication with transactional status application and idempotent inserts.",
+      "tags": [
+        "data-model",
+        "database",
+        "repository",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/payment.types.ts",
+      "type": "file",
+      "name": "payment.types.ts",
+      "filePath": "apps/payment-service/src/app/payments/payment.types.ts",
+      "summary": "TypeScript type definitions for payment records, creation inputs, Stripe event updates, and apply results.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "type": "file",
+      "name": "payments.module.ts",
+      "filePath": "apps/payment-service/src/app/payments/payments.module.ts",
+      "summary": "NestJS module wiring payment repository, service, consumer, publisher, and Stripe webhook controller/service.",
+      "tags": [
+        "config",
+        "module",
+        "dependency-injection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "type": "file",
+      "name": "payments.service.ts",
+      "filePath": "apps/payment-service/src/app/payments/payments.service.ts",
+      "summary": "Orchestrates payment creation from OrderCreated events: idempotent insert, validation, and Stripe PaymentIntent creation.",
+      "tags": [
+        "service",
+        "business-logic",
+        "payments"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts",
+      "type": "file",
+      "name": "stripe-webhook.controller.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts",
+      "summary": "Jest tests for the Stripe webhook controller covering signature verification and dispatch.",
+      "tags": [
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "type": "file",
+      "name": "stripe-webhook.controller.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "summary": "HTTP controller receiving Stripe webhook POSTs, verifying signatures, and delegating events to StripeWebhookService.",
+      "tags": [
+        "api-handler",
+        "webhook",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts",
+      "type": "file",
+      "name": "stripe-webhook.service.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts",
+      "summary": "Jest tests for StripeWebhookService covering event handling and result publishing.",
+      "tags": [
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "type": "file",
+      "name": "stripe-webhook.service.ts",
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "summary": "Maps Stripe webhook events to payment status updates and publishes captured/failed payment results.",
+      "tags": [
+        "service",
+        "webhook",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/order-created.consumer.ts:OrderCreatedConsumer",
+      "type": "class",
+      "name": "OrderCreatedConsumer",
+      "filePath": "apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "lineRange": [
+        10,
+        31
+      ],
+      "summary": "NestJS controller consuming order.created events, validating against schema, and forwarding to PaymentsService.",
+      "tags": [
+        "event-handler",
+        "kafka",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/payment-result.publisher.ts:PaymentResultPublisher",
+      "type": "class",
+      "name": "PaymentResultPublisher",
+      "filePath": "apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "lineRange": [
+        7,
+        82
+      ],
+      "summary": "Kafka producer connecting on init and publishing captured/failed payment result events.",
+      "tags": [
+        "event-handler",
+        "kafka",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/payment-service/src/app/payments/payment.repository.ts:toPaymentRecord",
+      "type": "function",
+      "name": "toPaymentRecord",
+      "filePath": "apps/payment-service/src/app/payments/payment.repository.ts",
+      "lineRange": [
+        21,
+        35
+      ],
+      "summary": "Maps a database payment row into a PaymentRecord domain object, coercing numeric fields.",
+      "tags": [
+        "utility",
+        "serialization",
+        "data-model"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/payment.repository.ts:PaymentRepository",
+      "type": "class",
+      "name": "PaymentRepository",
+      "filePath": "apps/payment-service/src/app/payments/payment.repository.ts",
+      "lineRange": [
+        37,
+        169
+      ],
+      "summary": "PostgreSQL-backed repository providing CRUD, idempotent inserts, provider reference updates, and transactional Stripe event application.",
+      "tags": [
+        "repository",
+        "database",
+        "persistence"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/payments.module.ts:PaymentsModule",
+      "type": "class",
+      "name": "PaymentsModule",
+      "filePath": "apps/payment-service/src/app/payments/payments.module.ts",
+      "lineRange": [
+        26,
+        26
+      ],
+      "summary": "NestJS module registering payment providers and exposing payment-related services.",
+      "tags": [
+        "config",
+        "module",
+        "dependency-injection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/payments.service.ts:PaymentsService",
+      "type": "class",
+      "name": "PaymentsService",
+      "filePath": "apps/payment-service/src/app/payments/payments.service.ts",
+      "lineRange": [
+        9,
+        76
+      ],
+      "summary": "Handles OrderCreated events by creating payments, validating amounts/currency, and creating Stripe PaymentIntents.",
+      "tags": [
+        "service",
+        "business-logic",
+        "payments"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe-webhook.controller.ts:StripeWebhookController",
+      "type": "class",
+      "name": "StripeWebhookController",
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "lineRange": [
+        19,
+        50
+      ],
+      "summary": "Receives Stripe webhook POSTs, verifies signatures, and delegates to StripeWebhookService.",
+      "tags": [
+        "api-handler",
+        "webhook",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/payments/stripe-webhook.service.ts:StripeWebhookService",
+      "type": "class",
+      "name": "StripeWebhookService",
+      "filePath": "apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "lineRange": [
+        7,
+        96
+      ],
+      "summary": "Processes Stripe webhook events, updates payment status transactionally, and publishes payment results.",
+      "tags": [
+        "service",
+        "webhook",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "target": "class:apps/payment-service/src/app/payments/order-created.consumer.ts:OrderCreatedConsumer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "target": "class:apps/payment-service/src/app/payments/payment-result.publisher.ts:PaymentResultPublisher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "target": "function:apps/payment-service/src/app/payments/payment.repository.ts:toPaymentRecord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "target": "class:apps/payment-service/src/app/payments/payment.repository.ts:PaymentRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "class:apps/payment-service/src/app/payments/payments.module.ts:PaymentsModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "target": "class:apps/payment-service/src/app/payments/payments.service.ts:PaymentsService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe-webhook.controller.ts:StripeWebhookController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe-webhook.service.ts:StripeWebhookService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "target": "class:apps/payment-service/src/app/payments/order-created.consumer.ts:OrderCreatedConsumer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "target": "class:apps/payment-service/src/app/payments/payment-result.publisher.ts:PaymentResultPublisher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "target": "class:apps/payment-service/src/app/payments/payment.repository.ts:PaymentRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "class:apps/payment-service/src/app/payments/payments.module.ts:PaymentsModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "target": "class:apps/payment-service/src/app/payments/payments.service.ts:PaymentsService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe-webhook.controller.ts:StripeWebhookController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "target": "class:apps/payment-service/src/app/payments/stripe-webhook.service.ts:StripeWebhookService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/order-created.consumer.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "target": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/database/database.tokens.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payments.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.gateway.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe-webhook.verifier.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment-result.publisher.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.types.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/order-created.consumer.ts",
+      "target": "file:apps/payment-service/src/app/payments/order-created.consumer.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.controller.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/stripe-webhook.service.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe-webhook.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

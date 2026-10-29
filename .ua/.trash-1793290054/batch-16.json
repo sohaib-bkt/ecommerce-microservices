@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/api-gateway/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/api-gateway/package.json",
+      "summary": "Nx project manifest for the api-gateway app defining build/serve/test targets and NestJS runtime dependencies.",
+      "tags": ["configuration", "build-system", "nx", "package-manifest"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:apps/api-gateway/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/api-gateway/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the api-gateway application source, enabling strict checks and referencing the shared contracts library.",
+      "tags": ["configuration", "typescript", "build-system", "strict-mode"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api-gateway/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/api-gateway/tsconfig.json",
+      "summary": "Solution-style TypeScript configuration that references the app and spec build configurations for the api-gateway.",
+      "tags": ["configuration", "typescript", "build-system", "solution-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api-gateway/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/api-gateway/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for api-gateway tests, including Jest types and referencing the app configuration.",
+      "tags": ["configuration", "typescript", "testing", "jest"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/api-gateway/tsconfig.json",
+      "target": "config:apps/api-gateway/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/api-gateway/tsconfig.json",
+      "target": "config:apps/api-gateway/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/api-gateway/tsconfig.spec.json",
+      "target": "config:apps/api-gateway/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

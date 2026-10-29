@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/account-service/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/account-service/package.json",
+      "summary": "Nx project manifest for the account-service app defining build, serve, test, and prune targets plus runtime dependencies (NestJS core) and dev dependencies.",
+      "tags": ["configuration", "build-system", "dependencies", "nx", "monorepo"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:apps/account-service/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "apps/account-service/tsconfig.app.json",
+      "summary": "TypeScript compiler configuration for the account-service application source, extending the base config with strict null checks, decorator support, and src-rooted includes.",
+      "tags": ["configuration", "typescript", "compiler-options", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/account-service/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/account-service/tsconfig.json",
+      "summary": "Solution-style TypeScript project file referencing the app and spec configurations for the account-service.",
+      "tags": ["configuration", "typescript", "project-references", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/account-service/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "apps/account-service/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for account-service tests, enabling Jest and Node types with decorator metadata.",
+      "tags": ["configuration", "typescript", "testing", "jest"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/account-service/tsconfig.json",
+      "target": "config:apps/account-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/account-service/tsconfig.json",
+      "target": "config:apps/account-service/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/account-service/tsconfig.spec.json",
+      "target": "config:apps/account-service/tsconfig.app.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

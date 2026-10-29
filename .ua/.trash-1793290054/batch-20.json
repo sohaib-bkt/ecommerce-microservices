@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "document:libs/contracts/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "libs/contracts/README.md",
+      "summary": "Documentation for the @ecommerce-platform/contracts library, describing its gRPC service definitions and event schemas, project layout, code generation workflow, and usage examples for consuming services.",
+      "tags": ["documentation", "entry-point", "overview", "grpc", "events"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:libs/contracts/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "libs/contracts/package.json",
+      "summary": "NPM package manifest for @ecommerce-platform/contracts declaring module entry points, conditional exports for source and proto files, and runtime dependencies such as protobuf and gRPC libraries.",
+      "tags": ["configuration", "build-system", "dependencies", "npm"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/contracts/project.json",
+      "type": "config",
+      "name": "project.json",
+      "filePath": "libs/contracts/project.json",
+      "summary": "Nx project configuration for the contracts library defining build, test, lint, typecheck, and proto generation/check targets along with asset copying of .proto files.",
+      "tags": ["configuration", "build-system", "nx", "monorepo"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:libs/contracts/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "libs/contracts/tsconfig.json",
+      "summary": "TypeScript project references configuration that aggregates the library and spec tsconfig files for composite builds and type checking.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/contracts/tsconfig.lib.json",
+      "type": "config",
+      "name": "tsconfig.lib.json",
+      "filePath": "libs/contracts/tsconfig.lib.json",
+      "summary": "TypeScript compiler configuration for the contracts library build, setting output directory, root directory, and excluding test files.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:libs/contracts/tsconfig.spec.json",
+      "type": "config",
+      "name": "tsconfig.spec.json",
+      "filePath": "libs/contracts/tsconfig.spec.json",
+      "summary": "TypeScript compiler configuration for the contracts test suite, including Jest types and referencing the library tsconfig.",
+      "tags": ["configuration", "typescript", "testing"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:libs/contracts/tsconfig.json",
+      "target": "config:libs/contracts/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:libs/contracts/tsconfig.json",
+      "target": "config:libs/contracts/tsconfig.spec.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:libs/contracts/tsconfig.spec.json",
+      "target": "config:libs/contracts/tsconfig.lib.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

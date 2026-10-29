@@ -72,6 +72,14 @@ export class PaymentRepository {
     return result.rowCount ? toPaymentRecord(result.rows[0]) : null;
   }
 
+  async findByProviderReference(providerReference: string): Promise<PaymentRecord | null> {
+    const result = await this.pool.query<PaymentRow>(
+      'SELECT * FROM payments WHERE provider_reference = $1',
+      [providerReference],
+    );
+    return result.rowCount ? toPaymentRecord(result.rows[0]) : null;
+  }
+
   async setProviderReference(paymentId: string, providerReference: string): Promise<void> {
     await this.pool.query(
       'UPDATE payments SET provider_reference = $1, updated_at = now() WHERE id = $2',

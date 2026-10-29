@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "id": "file:.prettierignore",
+      "type": "file",
+      "name": ".prettierignore",
+      "filePath": ".prettierignore",
+      "summary": "Lists paths excluded from Prettier formatting, including build output, caches, and generated contract code.",
+      "tags": ["configuration", "formatting", "ignore-rules"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/tour.json",
+      "type": "config",
+      "name": "tour.json",
+      "filePath": ".ua/.trash-1792759165/tour.json",
+      "summary": "Stored UI tour/onboarding state for the Understand-Anything tooling.",
+      "tags": ["configuration", "tooling", "ui-tour"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/intermediate/scan-result.json",
+      "type": "config",
+      "name": "scan-result.json",
+      "filePath": ".ua/intermediate/scan-result.json",
+      "summary": "Intermediate project scan output listing files, languages, frameworks, and import relationships for the knowledge graph pipeline.",
+      "tags": ["configuration", "scan-results", "knowledge-graph"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/account-service-e2e/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/account-service-e2e/.spec.swcrc",
+      "summary": "SWC compiler configuration for transforming TypeScript spec files in the account service e2e test project.",
+      "tags": ["configuration", "swc", "test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service-e2e/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/account-service-e2e/jest.config.cts",
+      "summary": "Jest configuration for the account service e2e suite, wiring SWC transforms, global setup/teardown, and test setup.",
+      "tags": ["test", "jest", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/account-service-e2e/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/account-service-e2e/package.json",
+      "summary": "Package manifest and Nx project metadata for the account service end-to-end test app.",
+      "tags": ["configuration", "package-manifest", "nx"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service-e2e/src/account-service/account-service.spec.ts",
+      "type": "file",
+      "name": "account-service.spec.ts",
+      "filePath": "apps/account-service-e2e/src/account-service/account-service.spec.ts",
+      "summary": "End-to-end test verifying the account service GET /api endpoint returns a success message.",
+      "tags": ["test", "e2e", "api"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service-e2e/src/support/global-setup.ts",
+      "type": "file",
+      "name": "global-setup.ts",
+      "filePath": "apps/account-service-e2e/src/support/global-setup.ts",
+      "summary": "Waits for the account service port to open before running e2e tests.",
+      "tags": ["test", "setup", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service-e2e/src/support/global-teardown.ts",
+      "type": "file",
+      "name": "global-teardown.ts",
+      "filePath": "apps/account-service-e2e/src/support/global-teardown.ts",
+      "summary": "Stops the account service process after the e2e test suite finishes.",
+      "tags": ["test", "teardown", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service-e2e/src/support/test-setup.ts",
+      "type": "file",
+      "name": "test-setup.ts",
+      "filePath": "apps/account-service-e2e/src/support/test-setup.ts",
+      "summary": "Configures axios base URL for account service e2e tests based on host and port environment variables.",
+      "tags": ["test", "setup", "axios"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/account-service-e2e/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/account-service-e2e/tsconfig.json",
+      "summary": "TypeScript compiler configuration for the account service e2e project, extending the root config.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/account-service/.spec.swcrc",
+      "summary": "SWC compiler configuration for transforming TypeScript spec files in the account service.",
+      "tags": ["configuration", "swc", "test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/account-service/jest.config.cts",
+      "summary": "Jest configuration for the account service unit tests, loading SWC transform settings from .spec.swcrc.",
+      "tags": ["test", "jest", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service/src/assets/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "apps/account-service/src/assets/.gitkeep",
+      "summary": "Placeholder ensuring the assets directory is tracked by Git.",
+      "tags": ["placeholder", "assets", "git"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service/webpack.config.js",
+      "type": "file",
+      "name": "webpack.config.js",
+      "filePath": "apps/account-service/webpack.config.js",
+      "summary": "Nx webpack configuration building the account service Node entry point with source maps.",
+      "tags": ["build-system", "webpack", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/api-gateway-e2e/.spec.swcrc",
+      "summary": "SWC compiler configuration for transforming TypeScript spec files in the api gateway e2e test project.",
+      "tags": ["configuration", "swc", "test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/api-gateway-e2e/jest.config.cts",
+      "summary": "Jest configuration for the api gateway e2e suite, wiring SWC transforms, global setup/teardown, and test setup.",
+      "tags": ["test", "jest", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api-gateway-e2e/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/api-gateway-e2e/package.json",
+      "summary": "Package manifest and Nx project metadata for the api gateway end-to-end test app.",
+      "tags": ["configuration", "package-manifest", "nx"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts",
+      "type": "file",
+      "name": "api-gateway.spec.ts",
+      "filePath": "apps/api-gateway-e2e/src/api-gateway/api-gateway.spec.ts",
+      "summary": "End-to-end test verifying the api gateway GET /api endpoint returns a success message.",
+      "tags": ["test", "e2e", "api"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/src/support/global-setup.ts",
+      "type": "file",
+      "name": "global-setup.ts",
+      "filePath": "apps/api-gateway-e2e/src/support/global-setup.ts",
+      "summary": "Waits for the api gateway port to open before running e2e tests.",
+      "tags": ["test", "setup", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/src/support/global-teardown.ts",
+      "type": "file",
+      "name": "global-teardown.ts",
+      "filePath": "apps/api-gateway-e2e/src/support/global-teardown.ts",
+      "summary": "Stops the api gateway process after the e2e test suite finishes.",
+      "tags": ["test", "teardown", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/src/support/test-setup.ts",
+      "type": "file",
+      "name": "test-setup.ts",
+      "filePath": "apps/api-gateway-e2e/src/support/test-setup.ts",
+      "summary": "Configures axios base URL for api gateway e2e tests based on host and port environment variables.",
+      "tags": ["test", "setup", "axios"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api-gateway-e2e/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/api-gateway-e2e/tsconfig.json",
+      "summary": "TypeScript compiler configuration for the api gateway e2e project, extending the root config.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/api-gateway/.spec.swcrc",
+      "summary": "SWC compiler configuration for transforming TypeScript spec files in the api gateway service.",
+      "tags": ["configuration", "swc", "test"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/api-gateway/jest.config.cts",
+      "summary": "Jest configuration for the api gateway unit tests, loading SWC transform settings from .spec.swcrc.",
+      "tags": ["test", "jest", "configuration"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/account-service-e2e/jest.config.cts",
+      "target": "file:apps/account-service-e2e/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/account-service/jest.config.cts",
+      "target": "file:apps/account-service/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/api-gateway-e2e/jest.config.cts",
+      "target": "file:apps/api-gateway-e2e/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/api-gateway/jest.config.cts",
+      "target": "file:apps/api-gateway/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

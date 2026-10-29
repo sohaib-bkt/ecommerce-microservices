@@ -1,0 +1,259 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/api-gateway/src/app/contracts-integration.spec.ts",
+      "type": "file",
+      "name": "contracts-integration.spec.ts",
+      "filePath": "apps/api-gateway/src/app/contracts-integration.spec.ts",
+      "summary": "Jest spec verifying that the @ecommerce-platform/contracts package loads event types and gRPC service definitions at runtime in the api-gateway.",
+      "tags": ["test", "integration", "contracts", "grpc"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/src/assets/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "apps/api-gateway/src/assets/.gitkeep",
+      "summary": "Placeholder file keeping the api-gateway assets directory tracked in version control.",
+      "tags": ["placeholder", "assets", "gitkeep"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/webpack.config.js",
+      "type": "file",
+      "name": "webpack.config.js",
+      "filePath": "apps/api-gateway/webpack.config.js",
+      "summary": "Webpack configuration for the api-gateway NestJS app using NxAppWebpackPlugin, targeting Node with TypeScript compilation and source maps.",
+      "tags": ["build-system", "bundling", "configuration", "webpack"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/order-service-e2e/.spec.swcrc",
+      "summary": "SWC compiler configuration for order-service e2e spec files, enabling TypeScript with decorators and source maps.",
+      "tags": ["configuration", "swc", "transpilation", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/order-service-e2e/jest.config.cts",
+      "summary": "Jest configuration for the order-service e2e suite, wiring global setup/teardown, SWC transform, and Node test environment.",
+      "tags": ["configuration", "testing", "jest", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/order-service-e2e/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/order-service-e2e/package.json",
+      "summary": "NPM manifest for the order-service e2e project declaring its implicit dependency on order-service and Nx e2e target.",
+      "tags": ["configuration", "npm", "build-system", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/src/order-service/order-service.spec.ts",
+      "type": "file",
+      "name": "order-service.spec.ts",
+      "filePath": "apps/order-service-e2e/src/order-service/order-service.spec.ts",
+      "summary": "E2E test hitting GET /api of the order service and asserting a 200 response with a Hello API message.",
+      "tags": ["test", "e2e", "api", "order-service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/src/support/global-setup.ts",
+      "type": "file",
+      "name": "global-setup.ts",
+      "filePath": "apps/order-service-e2e/src/support/global-setup.ts",
+      "summary": "Jest global setup that waits for the order service (port 3003) to become available before running e2e tests.",
+      "tags": ["test", "setup", "e2e", "global"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/src/support/global-teardown.ts",
+      "type": "file",
+      "name": "global-teardown.ts",
+      "filePath": "apps/order-service-e2e/src/support/global-teardown.ts",
+      "summary": "Jest global teardown that kills the order service port (3003) after the e2e suite completes.",
+      "tags": ["test", "teardown", "e2e", "global"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/src/support/test-setup.ts",
+      "type": "file",
+      "name": "test-setup.ts",
+      "filePath": "apps/order-service-e2e/src/support/test-setup.ts",
+      "summary": "Per-test setup configuring axios baseURL to the order service host and port (3003).",
+      "tags": ["test", "setup", "axios", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/order-service-e2e/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/order-service-e2e/tsconfig.json",
+      "summary": "TypeScript compiler configuration for the order-service e2e project, extending the base config with Jest and Node types.",
+      "tags": ["configuration", "typescript", "build-system", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/order-service/.spec.swcrc",
+      "summary": "SWC compiler configuration for order-service spec files, enabling TypeScript with decorators and source maps.",
+      "tags": ["configuration", "swc", "transpilation", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/order-service/jest.config.cts",
+      "summary": "Jest configuration for the order-service unit/integration tests using SWC transform.",
+      "tags": ["configuration", "testing", "jest", "order-service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service/src/assets/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "apps/order-service/src/assets/.gitkeep",
+      "summary": "Placeholder file keeping the order-service assets directory tracked in version control.",
+      "tags": ["placeholder", "assets", "gitkeep"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service/webpack.config.js",
+      "type": "file",
+      "name": "webpack.config.js",
+      "filePath": "apps/order-service/webpack.config.js",
+      "summary": "Webpack configuration for the order-service NestJS app using NxAppWebpackPlugin with TypeScript compilation and source maps.",
+      "tags": ["build-system", "bundling", "configuration", "webpack"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/payment-service-e2e/.spec.swcrc",
+      "summary": "SWC compiler configuration for payment-service e2e spec files, enabling TypeScript with decorators and source maps.",
+      "tags": ["configuration", "swc", "transpilation", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/payment-service-e2e/jest.config.cts",
+      "summary": "Jest configuration for the payment-service e2e suite, wiring global setup/teardown, SWC transform, and Node test environment.",
+      "tags": ["configuration", "testing", "jest", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/payment-service-e2e/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/payment-service-e2e/package.json",
+      "summary": "NPM manifest for the payment-service e2e project declaring its implicit dependency on payment-service and Nx e2e target.",
+      "tags": ["configuration", "npm", "build-system", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/src/payment-service/payment-service.spec.ts",
+      "type": "file",
+      "name": "payment-service.spec.ts",
+      "filePath": "apps/payment-service-e2e/src/payment-service/payment-service.spec.ts",
+      "summary": "E2E test hitting GET /api of the payment service and asserting a 200 response with a Hello API message.",
+      "tags": ["test", "e2e", "api", "payment-service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/src/support/global-setup.ts",
+      "type": "file",
+      "name": "global-setup.ts",
+      "filePath": "apps/payment-service-e2e/src/support/global-setup.ts",
+      "summary": "Jest global setup that waits for the payment service (port 3004) to become available before running e2e tests.",
+      "tags": ["test", "setup", "e2e", "global"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/src/support/global-teardown.ts",
+      "type": "file",
+      "name": "global-teardown.ts",
+      "filePath": "apps/payment-service-e2e/src/support/global-teardown.ts",
+      "summary": "Jest global teardown that kills the payment service port (3004) after the e2e suite completes.",
+      "tags": ["test", "teardown", "e2e", "global"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/src/support/test-setup.ts",
+      "type": "file",
+      "name": "test-setup.ts",
+      "filePath": "apps/payment-service-e2e/src/support/test-setup.ts",
+      "summary": "Per-test setup configuring axios baseURL to the payment service host and port (3004).",
+      "tags": ["test", "setup", "axios", "e2e"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/payment-service-e2e/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/payment-service-e2e/tsconfig.json",
+      "summary": "TypeScript compiler configuration for the payment-service e2e project, extending the base config with Jest and Node types.",
+      "tags": ["configuration", "typescript", "build-system", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/.spec.swcrc",
+      "type": "file",
+      "name": ".spec.swcrc",
+      "filePath": "apps/payment-service/.spec.swcrc",
+      "summary": "SWC compiler configuration for payment-service spec files, enabling TypeScript with decorators and source maps.",
+      "tags": ["configuration", "swc", "transpilation", "testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/jest.config.cts",
+      "type": "file",
+      "name": "jest.config.cts",
+      "filePath": "apps/payment-service/jest.config.cts",
+      "summary": "Jest configuration for the payment-service unit/integration tests using SWC transform.",
+      "tags": ["configuration", "testing", "jest", "payment-service"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/order-service-e2e/jest.config.cts",
+      "target": "file:apps/order-service-e2e/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/order-service/jest.config.cts",
+      "target": "file:apps/order-service/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/payment-service-e2e/jest.config.cts",
+      "target": "file:apps/payment-service-e2e/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/payment-service/jest.config.cts",
+      "target": "file:apps/payment-service/.spec.swcrc",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

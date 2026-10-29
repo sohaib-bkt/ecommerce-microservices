@@ -1,0 +1,14 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge report contained no explicit Fixed/Could-not-fix sections; all 383 batch nodes and 323 edges merged without drops.",
+    "No nodes missing id, unknown types, or unknown complexity values found in batch files.",
+    "All 125 non-empty importMap relationships already have corresponding imports edges in the assembled graph; 0 cross-batch edges added.",
+    "Node IDs, complexity values, edge endpoints, and required fields all validated successfully."
+  ]
+}

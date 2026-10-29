@@ -1,0 +1,375 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/payment-service/src/app/app.controller.spec.ts",
+      "type": "file",
+      "name": "app.controller.spec.ts",
+      "filePath": "apps/payment-service/src/app/app.controller.spec.ts",
+      "summary": "Unit tests for AppController, verifying that getData returns the expected 'Hello API' message.",
+      "tags": ["test", "unit-test", "controller"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.controller.ts",
+      "type": "file",
+      "name": "app.controller.ts",
+      "filePath": "apps/payment-service/src/app/app.controller.ts",
+      "summary": "NestJS controller exposing a single GET endpoint that delegates to AppService.",
+      "tags": ["api-handler", "controller", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/app.controller.ts:AppController",
+      "type": "class",
+      "name": "AppController",
+      "filePath": "apps/payment-service/src/app/app.controller.ts",
+      "lineRange": [5, 12],
+      "summary": "Controller class wiring the root GET route to AppService.getData.",
+      "tags": ["api-handler", "controller", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/payment-service/src/app/app.module.ts",
+      "summary": "Root NestJS module composing ConfigModule, DatabaseModule, StripeModule, and PaymentsModule with AppController and AppService.",
+      "tags": ["module", "configuration", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/payment-service/src/app/app.module.ts",
+      "lineRange": [14, 14],
+      "summary": "Root application module declaring imports, controllers, and providers for the payment service.",
+      "tags": ["module", "configuration", "entry-point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.service.spec.ts",
+      "type": "file",
+      "name": "app.service.spec.ts",
+      "filePath": "apps/payment-service/src/app/app.service.spec.ts",
+      "summary": "Unit tests for AppService, verifying getData returns the expected 'Hello API' message.",
+      "tags": ["test", "unit-test", "service"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/app.service.ts",
+      "type": "file",
+      "name": "app.service.ts",
+      "filePath": "apps/payment-service/src/app/app.service.ts",
+      "summary": "Injectable service returning a simple 'Hello API' message.",
+      "tags": ["service", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/app.service.ts:AppService",
+      "type": "class",
+      "name": "AppService",
+      "filePath": "apps/payment-service/src/app/app.service.ts",
+      "lineRange": [4, 8],
+      "summary": "Service class exposing getData which returns a static greeting payload.",
+      "tags": ["service", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/database/database.module.ts",
+      "type": "file",
+      "name": "database.module.ts",
+      "filePath": "apps/payment-service/src/app/database/database.module.ts",
+      "summary": "Global NestJS module providing a pg Pool bound to PG_POOL and the DatabaseService.",
+      "tags": ["module", "database", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/database/database.module.ts:DatabaseModule",
+      "type": "class",
+      "name": "DatabaseModule",
+      "filePath": "apps/payment-service/src/app/database/database.module.ts",
+      "lineRange": [26, 26],
+      "summary": "Global module exporting the pg connection pool and DatabaseService.",
+      "tags": ["module", "database", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/database/database.service.ts",
+      "type": "file",
+      "name": "database.service.ts",
+      "filePath": "apps/payment-service/src/app/database/database.service.ts",
+      "summary": "DatabaseService that runs the payment schema on module init and closes the pool on destroy.",
+      "tags": ["service", "database", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/payment-service/src/app/database/database.service.ts:DatabaseService",
+      "type": "class",
+      "name": "DatabaseService",
+      "filePath": "apps/payment-service/src/app/database/database.service.ts",
+      "lineRange": [8, 18],
+      "summary": "Service implementing OnModuleInit/OnModuleDestroy to execute PAYMENT_SCHEMA_SQL and end the pg pool.",
+      "tags": ["service", "database", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/database/database.tokens.ts",
+      "type": "file",
+      "name": "database.tokens.ts",
+      "filePath": "apps/payment-service/src/app/database/database.tokens.ts",
+      "summary": "Defines the PG_POOL injection token used for the shared pg connection pool.",
+      "tags": ["type-definition", "database", "dependency-injection"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/database/schema.ts",
+      "type": "file",
+      "name": "schema.ts",
+      "filePath": "apps/payment-service/src/app/database/schema.ts",
+      "summary": "SQL DDL for payments and stripe_webhook_events tables plus an index on provider_reference.",
+      "tags": ["database", "schema-definition", "migration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/src/app/payments/payment.repository.spec.ts",
+      "type": "file",
+      "name": "payment.repository.spec.ts",
+      "filePath": "apps/payment-service/src/app/payments/payment.repository.spec.ts",
+      "summary": "Integration tests for PaymentRepository covering insert-if-absent, webhook application, dedupe, and rollback.",
+      "tags": ["test", "integration-test", "repository"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/payment-service/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/payment-service/src/main.ts",
+      "summary": "Application bootstrap creating the Nest app with raw body, Kafka microservice, and HTTP listener on port 3004.",
+      "tags": ["entry-point", "bootstrap", "microservice"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/payment-service/src/main.ts:bootstrap",
+      "type": "function",
+      "name": "bootstrap",
+      "filePath": "apps/payment-service/src/main.ts",
+      "lineRange": [11, 34],
+      "summary": "Bootstraps the NestJS application, connects a Kafka microservice, and starts listening on the configured port.",
+      "tags": ["entry-point", "bootstrap", "microservice"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.spec.ts",
+      "target": "file:apps/payment-service/src/app/app.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.spec.ts",
+      "target": "file:apps/payment-service/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.ts",
+      "target": "file:apps/payment-service/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "file:apps/payment-service/src/app/app.controller.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "file:apps/payment-service/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "file:apps/payment-service/src/app/database/database.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/payments.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "file:apps/payment-service/src/app/payments/stripe/stripe.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.spec.ts",
+      "target": "file:apps/payment-service/src/app/app.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.module.ts",
+      "target": "file:apps/payment-service/src/app/database/database.service.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.module.ts",
+      "target": "file:apps/payment-service/src/app/database/database.tokens.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.service.ts",
+      "target": "file:apps/payment-service/src/app/database/database.tokens.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.service.ts",
+      "target": "file:apps/payment-service/src/app/database/schema.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.spec.ts",
+      "target": "file:apps/payment-service/src/app/database/schema.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.spec.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/main.ts",
+      "target": "file:apps/payment-service/src/app/app.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.ts",
+      "target": "class:apps/payment-service/src/app/app.controller.ts:AppController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "class:apps/payment-service/src/app/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.ts",
+      "target": "class:apps/payment-service/src/app/app.service.ts:AppService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.module.ts",
+      "target": "class:apps/payment-service/src/app/database/database.module.ts:DatabaseModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.service.ts",
+      "target": "class:apps/payment-service/src/app/database/database.service.ts:DatabaseService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/main.ts",
+      "target": "function:apps/payment-service/src/main.ts:bootstrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.ts",
+      "target": "class:apps/payment-service/src/app/app.controller.ts:AppController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.module.ts",
+      "target": "class:apps/payment-service/src/app/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.ts",
+      "target": "class:apps/payment-service/src/app/app.service.ts:AppService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.module.ts",
+      "target": "class:apps/payment-service/src/app/database/database.module.ts:DatabaseModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/database/database.service.ts",
+      "target": "class:apps/payment-service/src/app/database/database.service.ts:DatabaseService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.controller.ts",
+      "target": "file:apps/payment-service/src/app/app.controller.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/app.service.ts",
+      "target": "file:apps/payment-service/src/app/app.service.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:apps/payment-service/src/app/payments/payment.repository.ts",
+      "target": "file:apps/payment-service/src/app/payments/payment.repository.spec.ts",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

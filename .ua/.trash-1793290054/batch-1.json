@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/account-service-e2e/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/account-service-e2e/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the account service e2e project that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/account-service/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/account-service/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the account service that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway-e2e/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/api-gateway-e2e/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the api gateway e2e project that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api-gateway/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/api-gateway/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the api gateway service that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service-e2e/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/order-service-e2e/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the order service e2e project that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/order-service/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/order-service/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the order service that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service-e2e/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/payment-service-e2e/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the payment service e2e project that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/payment-service/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/payment-service/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the payment service that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service-e2e/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/product-service-e2e/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the product service e2e project that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/product-service/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "apps/product-service/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the product service that re-exports the root workspace config.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "Root Nx ESLint flat configuration defining base TypeScript/JavaScript rules, module boundary enforcement, and ignore patterns for the monorepo.",
+      "tags": ["configuration", "linting", "build-system", "nx"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "libs/contracts/eslint.config.mjs",
+      "summary": "ESLint flat configuration for the contracts library that extends the root config with JSON file linting and ignores generated proto code.",
+      "tags": ["configuration", "linting", "eslint"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:apps/account-service-e2e/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/account-service/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/api-gateway-e2e/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/api-gateway/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/order-service-e2e/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/order-service/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/payment-service-e2e/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/payment-service/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/product-service-e2e/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:apps/product-service/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7},
+    {"source": "file:libs/contracts/eslint.config.mjs", "target": "file:eslint.config.mjs", "type": "imports", "direction": "forward", "weight": 0.7}
+  ]
+}

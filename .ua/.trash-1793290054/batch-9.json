@@ -1,0 +1,336 @@
+{
+  "nodes": [
+    {
+      "id": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "type": "file",
+      "name": "account.ts",
+      "filePath": "libs/contracts/src/generated/account/v1/account.ts",
+      "summary": "Protobuf-generated TypeScript contract for the Account service, defining Account and related request/response messages plus the AccountServiceDefinition and enum conversion helpers.",
+      "tags": ["protobuf", "schema-definition", "data-model", "serialization", "grpc"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/account/v1/account.ts:accountStatusFromJSON",
+      "type": "function",
+      "name": "accountStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/account/v1/account.ts",
+      "lineRange": [20, 39],
+      "summary": "Converts a string/number representation into the AccountStatus enum value used by the Account message.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/account/v1/account.ts:accountStatusToJSON",
+      "type": "function",
+      "name": "accountStatusToJSON",
+      "filePath": "libs/contracts/src/generated/account/v1/account.ts",
+      "lineRange": [41, 55],
+      "summary": "Converts an AccountStatus enum value back into its JSON string representation.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "libs/contracts/src/generated/common/v1/common.ts",
+      "summary": "Shared protobuf-generated TypeScript contract providing common messages (Money, Address, PageRequest, PageResponse, Timestamp) and the longToNumber helper used across all services.",
+      "tags": ["protobuf", "shared-types", "schema-definition", "data-model", "common"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/common/v1/common.ts:longToNumber",
+      "type": "function",
+      "name": "longToNumber",
+      "filePath": "libs/contracts/src/generated/common/v1/common.ts",
+      "lineRange": [574, 583],
+      "summary": "Converts a 64-bit integer value into a JavaScript number for the Timestamp fields.",
+      "tags": ["protobuf", "utility", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "type": "file",
+      "name": "order.ts",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "summary": "Protobuf-generated TypeScript contract for the Order service, defining Order, OrderItem and related request/response messages plus the OrderServiceDefinition and status enum helpers.",
+      "tags": ["protobuf", "schema-definition", "data-model", "serialization", "grpc"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusFromJSON",
+      "type": "function",
+      "name": "orderStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "lineRange": [24, 55],
+      "summary": "Converts a string/number representation into the OrderStatus enum value used by the Order message.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusToJSON",
+      "type": "function",
+      "name": "orderStatusToJSON",
+      "filePath": "libs/contracts/src/generated/order/v1/order.ts",
+      "lineRange": [57, 79],
+      "summary": "Converts an OrderStatus enum value back into its JSON string representation.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "type": "file",
+      "name": "payment.ts",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "summary": "Protobuf-generated TypeScript contract for the Payment service, defining Payment and related request/response messages plus the PaymentServiceDefinition and status/method enum helpers.",
+      "tags": ["protobuf", "schema-definition", "data-model", "serialization", "grpc"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusFromJSON",
+      "type": "function",
+      "name": "paymentStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [22, 47],
+      "summary": "Converts a string/number representation into the PaymentStatus enum value used by the Payment message.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusToJSON",
+      "type": "function",
+      "name": "paymentStatusToJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [49, 67],
+      "summary": "Converts a PaymentStatus enum value back into its JSON string representation.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeFromJSON",
+      "type": "function",
+      "name": "paymentMethodTypeFromJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [78, 97],
+      "summary": "Converts a string/number representation into the PaymentMethodType enum value.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeToJSON",
+      "type": "function",
+      "name": "paymentMethodTypeToJSON",
+      "filePath": "libs/contracts/src/generated/payment/v1/payment.ts",
+      "lineRange": [99, 113],
+      "summary": "Converts a PaymentMethodType enum value back into its JSON string representation.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "type": "file",
+      "name": "product.ts",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "summary": "Protobuf-generated TypeScript contract for the Product service, defining Product and related request/response messages plus the ProductServiceDefinition and status enum helpers.",
+      "tags": ["protobuf", "schema-definition", "data-model", "serialization", "grpc"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusFromJSON",
+      "type": "function",
+      "name": "productStatusFromJSON",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "lineRange": [20, 39],
+      "summary": "Converts a string/number representation into the ProductStatus enum value used by the Product message.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusToJSON",
+      "type": "function",
+      "name": "productStatusToJSON",
+      "filePath": "libs/contracts/src/generated/product/v1/product.ts",
+      "lineRange": [41, 55],
+      "summary": "Converts a ProductStatus enum value back into its JSON string representation.",
+      "tags": ["protobuf", "enum", "serialization", "type-conversion"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "target": "function:libs/contracts/src/generated/account/v1/account.ts:accountStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "target": "function:libs/contracts/src/generated/account/v1/account.ts:accountStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "target": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "target": "function:libs/contracts/src/generated/account/v1/account.ts:accountStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/account/v1/account.ts",
+      "target": "function:libs/contracts/src/generated/account/v1/account.ts:accountStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "target": "function:libs/contracts/src/generated/common/v1/common.ts:longToNumber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/order/v1/order.ts",
+      "target": "function:libs/contracts/src/generated/order/v1/order.ts:orderStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/payment/v1/payment.ts",
+      "target": "function:libs/contracts/src/generated/payment/v1/payment.ts:paymentMethodTypeToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusFromJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusToJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "file:libs/contracts/src/generated/common/v1/common.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusFromJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:libs/contracts/src/generated/product/v1/product.ts",
+      "target": "function:libs/contracts/src/generated/product/v1/product.ts:productStatusToJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

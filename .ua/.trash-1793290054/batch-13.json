@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "config:.ua/.trash-1792759165/assemble-review.json",
+      "type": "config",
+      "name": "assemble-review.json",
+      "filePath": ".ua/.trash-1792759165/assemble-review.json",
+      "summary": "Intermediate review-assembly artifact recording recovery counts (fixed sections, nodes recovered, edges restored, cross-batch edges added) and remapping notes from a prior understand-anything run.",
+      "tags": ["configuration", "intermediate", "review", "understand-anything"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/assembled-graph.json",
+      "type": "config",
+      "name": "assembled-graph.json",
+      "filePath": ".ua/.trash-1792759165/assembled-graph.json",
+      "summary": "Assembled knowledge graph artifact containing version, project metadata, nodes, edges, layers, and tour data produced by a prior understand-anything run.",
+      "tags": ["configuration", "knowledge-graph", "intermediate", "understand-anything"],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-1.json",
+      "type": "config",
+      "name": "batch-1.json",
+      "filePath": ".ua/.trash-1792759165/batch-1.json",
+      "summary": "Batch analysis fragment (batch 1) containing nodes and edges extracted from the first group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-10.json",
+      "type": "config",
+      "name": "batch-10.json",
+      "filePath": ".ua/.trash-1792759165/batch-10.json",
+      "summary": "Batch analysis fragment (batch 10) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-11.json",
+      "type": "config",
+      "name": "batch-11.json",
+      "filePath": ".ua/.trash-1792759165/batch-11.json",
+      "summary": "Batch analysis fragment (batch 11) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-12-part-1.json",
+      "type": "config",
+      "name": "batch-12-part-1.json",
+      "filePath": ".ua/.trash-1792759165/batch-12-part-1.json",
+      "summary": "First part of a split batch analysis fragment (batch 12) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-12-part-2.json",
+      "type": "config",
+      "name": "batch-12-part-2.json",
+      "filePath": ".ua/.trash-1792759165/batch-12-part-2.json",
+      "summary": "Second part of a split batch analysis fragment (batch 12) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-13.json",
+      "type": "config",
+      "name": "batch-13.json",
+      "filePath": ".ua/.trash-1792759165/batch-13.json",
+      "summary": "Batch analysis fragment (batch 13) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-2.json",
+      "type": "config",
+      "name": "batch-2.json",
+      "filePath": ".ua/.trash-1792759165/batch-2.json",
+      "summary": "Batch analysis fragment (batch 2) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-3.json",
+      "type": "config",
+      "name": "batch-3.json",
+      "filePath": ".ua/.trash-1792759165/batch-3.json",
+      "summary": "Batch analysis fragment (batch 3) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-4.json",
+      "type": "config",
+      "name": "batch-4.json",
+      "filePath": ".ua/.trash-1792759165/batch-4.json",
+      "summary": "Batch analysis fragment (batch 4) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-5.json",
+      "type": "config",
+      "name": "batch-5.json",
+      "filePath": ".ua/.trash-1792759165/batch-5.json",
+      "summary": "Batch analysis fragment (batch 5) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-6.json",
+      "type": "config",
+      "name": "batch-6.json",
+      "filePath": ".ua/.trash-1792759165/batch-6.json",
+      "summary": "Batch analysis fragment (batch 6) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-7.json",
+      "type": "config",
+      "name": "batch-7.json",
+      "filePath": ".ua/.trash-1792759165/batch-7.json",
+      "summary": "Batch analysis fragment (batch 7) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-8.json",
+      "type": "config",
+      "name": "batch-8.json",
+      "filePath": ".ua/.trash-1792759165/batch-8.json",
+      "summary": "Batch analysis fragment (batch 8) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batch-9.json",
+      "type": "config",
+      "name": "batch-9.json",
+      "filePath": ".ua/.trash-1792759165/batch-9.json",
+      "summary": "Batch analysis fragment (batch 9) containing nodes and edges extracted from a group of source files in a prior understand-anything run.",
+      "tags": ["configuration", "batch-fragment", "knowledge-graph", "intermediate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/batches.json",
+      "type": "config",
+      "name": "batches.json",
+      "filePath": ".ua/.trash-1792759165/batches.json",
+      "summary": "Batch planning artifact listing schema version, algorithm, total files/batches, exports by path, and the full batch assignment plan from a prior understand-anything run.",
+      "tags": ["configuration", "batch-plan", "intermediate", "understand-anything"],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/fingerprint-input.json",
+      "type": "config",
+      "name": "fingerprint-input.json",
+      "filePath": ".ua/.trash-1792759165/fingerprint-input.json",
+      "summary": "Fingerprinting input artifact containing project root, file paths, and git commit hash used to detect changes in a prior understand-anything run.",
+      "tags": ["configuration", "fingerprint", "intermediate", "understand-anything"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/layers.json",
+      "type": "config",
+      "name": "layers.json",
+      "filePath": ".ua/.trash-1792759165/layers.json",
+      "summary": "Layer grouping artifact defining architectural layers derived from the knowledge graph in a prior understand-anything run.",
+      "tags": ["configuration", "layers", "intermediate", "understand-anything"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/.trash-1792759165/review.json",
+      "type": "config",
+      "name": "review.json",
+      "filePath": ".ua/.trash-1792759165/review.json",
+      "summary": "Review artifact listing issues, warnings, and stats from validation of a prior understand-anything run.",
+      "tags": ["configuration", "review", "intermediate", "understand-anything"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

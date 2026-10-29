@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "Example environment configuration documenting gRPC, database, Kafka, and Stripe settings for the payment service.",
+      "tags": ["configuration", "environment", "secrets"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Nx workspace getting-started guide covering library generation, task running, versioning, CI setup, and Nx Console installation.",
+      "tags": ["documentation", "entry-point", "nx"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:docker-compose.yml",
+      "type": "service",
+      "name": "docker-compose.yml",
+      "filePath": "docker-compose.yml",
+      "summary": "Local infrastructure compose file provisioning a PostgreSQL database and a single-node Kafka broker for the payment service.",
+      "tags": ["orchestration", "infrastructure", "containerization"],
+      "complexity": "simple",
+      "languageNotes": "Defines a Postgres 16 service on port 5433 and a Kafka 3.9.0 KRaft-mode broker on port 9092 with health checks."
+    },
+    {
+      "id": "config:nx.json",
+      "type": "config",
+      "name": "nx.json",
+      "filePath": "nx.json",
+      "summary": "Nx workspace configuration enabling TypeScript, webpack, eslint, and jest plugins with named inputs and target defaults.",
+      "tags": ["configuration", "build-system", "nx"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Root package manifest declaring NestJS and Nx dependencies, workspaces, and proto generation scripts for the monorepo.",
+      "tags": ["configuration", "build-system", "dependencies"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:tsconfig.base.json",
+      "type": "config",
+      "name": "tsconfig.base.json",
+      "filePath": "tsconfig.base.json",
+      "summary": "Shared TypeScript compiler configuration enabling strict mode, nodenext module resolution, and composite project references.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "Root TypeScript solution file referencing all apps and libs for composite project builds.",
+      "tags": ["configuration", "typescript", "build-system"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:tsconfig.json",
+      "target": "config:tsconfig.base.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:nx.json",
+      "target": "config:package.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "service:docker-compose.yml",
+      "target": "config:.env.example",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}
