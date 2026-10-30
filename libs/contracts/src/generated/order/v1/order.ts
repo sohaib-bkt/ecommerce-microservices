@@ -125,9 +125,14 @@ export interface ListOrdersResponse {
 }
 
 /** CreateOrderRequest places a new order. */
+export interface CreateOrderItem {
+  productId: string;
+  quantity: number;
+}
+
 export interface CreateOrderRequest {
   accountId: string;
-  items: OrderItem[];
+  items: CreateOrderItem[];
   shippingAddress?: Address | undefined;
 }
 
@@ -880,6 +885,95 @@ export const ListOrdersResponse: MessageFns<ListOrdersResponse> = {
   },
 };
 
+function createBaseCreateOrderItem(): CreateOrderItem {
+  return { productId: "", quantity: 0 };
+}
+
+export const CreateOrderItem: MessageFns<CreateOrderItem> = {
+  encode(message: CreateOrderItem, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    if (message.productId !== "") {
+      writer.uint32(10).string(message.productId);
+    }
+    if (message.quantity !== 0) {
+      writer.uint32(16).int32(message.quantity);
+    }
+    return writer;
+  },
+
+  decode(input: BinaryReader | Uint8Array, length?: number): CreateOrderItem {
+    const reader = input instanceof BinaryReader ? input : new BinaryReader(input);
+    const previousRecursionDepth = (reader as any).__tsProtoDecodeDepth ?? 0;
+    if (previousRecursionDepth >= 100) {
+      throw new globalThis.Error("protobuf decode recursion limit exceeded");
+    }
+    (reader as any).__tsProtoDecodeDepth = previousRecursionDepth + 1;
+    try {
+      const end = length === undefined ? reader.len : reader.pos + length;
+      const message = createBaseCreateOrderItem();
+      while (reader.pos < end) {
+        const tag = reader.uint32();
+        switch (tag >>> 3) {
+          case 1: {
+            if (tag !== 10) {
+              break;
+            }
+
+            message.productId = reader.string();
+            continue;
+          }
+          case 2: {
+            if (tag !== 16) {
+              break;
+            }
+
+            message.quantity = reader.int32();
+            continue;
+          }
+        }
+        if ((tag & 7) === 4 || tag === 0) {
+          break;
+        }
+        reader.skip(tag & 7);
+      }
+      return message;
+    } finally {
+      (reader as any).__tsProtoDecodeDepth = previousRecursionDepth;
+    }
+  },
+
+  fromJSON(object: any): CreateOrderItem {
+    return {
+      productId: isSet(object.productId)
+        ? globalThis.String(object.productId)
+        : isSet(object.product_id)
+        ? globalThis.String(object.product_id)
+        : "",
+      quantity: isSet(object.quantity) ? globalThis.Number(object.quantity) : 0,
+    };
+  },
+
+  toJSON(message: CreateOrderItem): unknown {
+    const obj: any = {};
+    if (message.productId !== "") {
+      obj.productId = message.productId;
+    }
+    if (message.quantity !== 0) {
+      obj.quantity = Math.round(message.quantity);
+    }
+    return obj;
+  },
+
+  create<I extends Exact<DeepPartial<CreateOrderItem>, I>>(base?: I): CreateOrderItem {
+    return CreateOrderItem.fromPartial(base ?? ({} as any));
+  },
+  fromPartial<I extends Exact<DeepPartial<CreateOrderItem>, I>>(object: I): CreateOrderItem {
+    const message = createBaseCreateOrderItem();
+    message.productId = object.productId ?? "";
+    message.quantity = object.quantity ?? 0;
+    return message;
+  },
+};
+
 function createBaseCreateOrderRequest(): CreateOrderRequest {
   return { accountId: "", items: [], shippingAddress: undefined };
 }
@@ -890,7 +984,7 @@ export const CreateOrderRequest: MessageFns<CreateOrderRequest> = {
       writer.uint32(10).string(message.accountId);
     }
     for (const v of message.items) {
-      OrderItem.encode(v!, writer.uint32(18).fork()).join();
+      CreateOrderItem.encode(v!, writer.uint32(18).fork()).join();
     }
     if (message.shippingAddress !== undefined) {
       Address.encode(message.shippingAddress, writer.uint32(26).fork()).join();
@@ -924,7 +1018,7 @@ export const CreateOrderRequest: MessageFns<CreateOrderRequest> = {
               break;
             }
 
-            message.items.push(OrderItem.decode(reader, reader.uint32()));
+            message.items.push(CreateOrderItem.decode(reader, reader.uint32()));
             continue;
           }
           case 3: {
@@ -954,7 +1048,7 @@ export const CreateOrderRequest: MessageFns<CreateOrderRequest> = {
         : isSet(object.account_id)
         ? globalThis.String(object.account_id)
         : "",
-      items: globalThis.Array.isArray(object?.items) ? object.items.map((e: any) => OrderItem.fromJSON(e)) : [],
+      items: globalThis.Array.isArray(object?.items) ? object.items.map((e: any) => CreateOrderItem.fromJSON(e)) : [],
       shippingAddress: isSet(object.shippingAddress)
         ? Address.fromJSON(object.shippingAddress)
         : isSet(object.shipping_address)
@@ -969,7 +1063,7 @@ export const CreateOrderRequest: MessageFns<CreateOrderRequest> = {
       obj.accountId = message.accountId;
     }
     if (message.items?.length) {
-      obj.items = message.items.map((e) => OrderItem.toJSON(e));
+      obj.items = message.items.map((e) => CreateOrderItem.toJSON(e));
     }
     if (message.shippingAddress !== undefined) {
       obj.shippingAddress = Address.toJSON(message.shippingAddress);
@@ -983,7 +1077,7 @@ export const CreateOrderRequest: MessageFns<CreateOrderRequest> = {
   fromPartial<I extends Exact<DeepPartial<CreateOrderRequest>, I>>(object: I): CreateOrderRequest {
     const message = createBaseCreateOrderRequest();
     message.accountId = object.accountId ?? "";
-    message.items = object.items?.map((e) => OrderItem.fromPartial(e)) || [];
+    message.items = object.items?.map((e) => CreateOrderItem.fromPartial(e)) || [];
     message.shippingAddress = (object.shippingAddress !== undefined && object.shippingAddress !== null)
       ? Address.fromPartial(object.shippingAddress)
       : undefined;

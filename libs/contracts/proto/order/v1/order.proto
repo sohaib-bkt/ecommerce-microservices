@@ -63,9 +63,14 @@ message ListOrdersResponse {
 }
 
 // CreateOrderRequest places a new order.
+message CreateOrderItem {
+  string product_id = 1;
+  int32 quantity = 2;
+}
+
 message CreateOrderRequest {
   string account_id = 1;
-  repeated OrderItem items = 2;
+  repeated CreateOrderItem items = 2;
   ecommerce.common.v1.Address shipping_address = 3;
 }
 

@@ -1,51 +1,60 @@
-import { BadRequestException, Body, Controller, HttpCode, HttpStatus, Post } from '@nestjs/common';
-import { randomUUID } from 'node:crypto';
 import {
-  orderCreatedSchema,
-  parse,
-  SchemaValidationError,
-} from '@ecommerce-platform/contracts';
-import type { EventEnvelope, OrderCreatedPayload } from '@ecommerce-platform/contracts';
-import { OrderEventPublisher } from './order-event.publisher.js';
+  BadGatewayException,
+  BadRequestException,
+  Body,
+  ConflictException,
+  Controller,
+  InternalServerErrorException,
+  NotFoundException,
+  Post,
+  ServiceUnavailableException,
+} from '@nestjs/common';
+import { ecommerce } from '@ecommerce-platform/contracts';
+import { firstValueFrom } from 'rxjs';
+import { OrderClientService } from './order-client.service.js';
 
-type CreateOrderBody = Omit<OrderCreatedPayload, 'orderId'>;
-type OrderCreatedEvent = EventEnvelope<'OrderCreated', OrderCreatedPayload>;
+type CreateOrderBody = ecommerce.order.v1.CreateOrderRequest;
 
 @Controller('orders')
 export class OrdersController {
-  constructor(private readonly orderEventPublisher: OrderEventPublisher) {}
+  constructor(private readonly orderClient: OrderClientService) {}
 
   @Post()
-  @HttpCode(HttpStatus.ACCEPTED)
   async createOrder(@Body() body: CreateOrderBody) {
-    const event: OrderCreatedEvent = {
-      id: `evt_${randomUUID()}`,
-      type: 'OrderCreated',
-      occurredAt: Date.now(),
-      source: 'api-gateway',
-      version: 1,
-      payload: {
-        ...body,
-        orderId: randomUUID(),
-      },
-    };
-
-    let validatedEvent: OrderCreatedEvent;
     try {
-      validatedEvent = parse<OrderCreatedEvent>(event, orderCreatedSchema);
-    } catch (error) {
-      if (error instanceof SchemaValidationError) {
-        throw new BadRequestException(error.message);
+      const response = await firstValueFrom(this.orderClient.createOrder(body));
+      if (!response.order) {
+        throw new BadGatewayException('Order service returned an empty order response');
       }
-      throw error;
+      return response.order;
+    } catch (error) {
+      if (
+        error instanceof BadRequestException ||
+        error instanceof NotFoundException ||
+        error instanceof ConflictException ||
+        error instanceof ServiceUnavailableException ||
+        error instanceof BadGatewayException ||
+        error instanceof InternalServerErrorException
+      ) {
+        throw error;
+      }
+
+      const grpcError = error as { code?: number; details?: string; message?: string };
+      const message = grpcError.details ?? grpcError.message ?? 'Order service request failed';
+      switch (grpcError.code) {
+        case 3:
+          throw new BadRequestException(message);
+        case 5:
+          throw new NotFoundException(message);
+        case 9:
+          throw new ConflictException(message);
+        case 14:
+          throw new ServiceUnavailableException(message);
+        case undefined:
+          throw new ServiceUnavailableException(message);
+        default:
+          throw new InternalServerErrorException(message);
+      }
     }
-
-    await this.orderEventPublisher.publishOrderCreated(validatedEvent);
-
-    return {
-      orderId: validatedEvent.payload.orderId,
-      eventId: validatedEvent.id,
-      status: 'PENDING',
-    };
   }
 }

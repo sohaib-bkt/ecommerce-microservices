@@ -9,7 +9,10 @@ describe('AppController', () => {
   beforeAll(async () => {
     app = await Test.createTestingModule({
       controllers: [AppController],
-      providers: [AppService, OrderStatusService],
+      providers: [
+        AppService,
+        { provide: OrderStatusService, useValue: { getStatus: jest.fn() } },
+      ],
     }).compile();
   });
 
