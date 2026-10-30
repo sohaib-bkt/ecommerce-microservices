@@ -54,13 +54,13 @@ export class PaymentResultConsumer {
       if (event.type === 'PaymentCaptured') {
         const orderId = event.payload.orderId;
         // Idempotency: Kafka delivers at-least-once; skip duplicate captured events.
-        if (this.orderStatusService.isAlreadyProcessed?.(orderId, 'PAID')) {
+        if (await this.orderStatusService.isAlreadyProcessed?.(orderId, 'PAID')) {
           this.logger.log(
             `Skipping duplicate PaymentCaptured event for order ${orderId}`,
           );
           return;
         }
-        this.orderStatusService.applyPaymentCaptured(orderId, {
+        await this.orderStatusService.applyPaymentCaptured(orderId, {
           paymentId: event.payload.paymentId,
           providerReference: event.payload.providerReference,
           amount: event.payload.amount,
@@ -79,7 +79,7 @@ export class PaymentResultConsumer {
         const orderId = event.payload.orderId;
         // Idempotency: Kafka delivers at-least-once; skip duplicate failed events.
         if (
-          this.orderStatusService.isAlreadyProcessed?.(
+          await this.orderStatusService.isAlreadyProcessed?.(
             orderId,
             'PENDING',
             event.payload.paymentId,
@@ -90,7 +90,7 @@ export class PaymentResultConsumer {
           );
           return;
         }
-        this.orderStatusService.applyPaymentFailed(orderId, {
+        await this.orderStatusService.applyPaymentFailed(orderId, {
           paymentId: event.payload.paymentId,
           reason: event.payload.reason,
           retryable: event.payload.retryable,

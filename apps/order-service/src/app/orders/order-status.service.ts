@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { OrderStatusRepository } from './order-status.repository.js';
 
 export type OrderStatus = 'PENDING' | 'PAID';
 
@@ -13,36 +14,20 @@ export interface OrderStatusSnapshot {
 
 @Injectable()
 export class OrderStatusService {
-  private readonly orders = new Map<string, OrderStatusSnapshot>();
+  constructor(private readonly repository: OrderStatusRepository) {}
 
-  applyPaymentCaptured(
+  async applyPaymentCaptured(
     orderId: string,
     payload: {
       paymentId: string;
       providerReference: string;
       amount: { amount: number; currency: string };
     },
-  ): OrderStatusSnapshot {
-    // Idempotency: if the order is already PAID, do not overwrite the stored
-    // snapshot or re-trigger downstream side effects for a duplicate event.
-    const current = this.orders.get(orderId);
-    if (current?.status === 'PAID') {
-      return current;
-    }
-
-    const next: OrderStatusSnapshot = {
-      orderId,
-      status: 'PAID',
-      paymentId: payload.paymentId,
-      providerReference: payload.providerReference,
-      amount: payload.amount,
-    };
-
-    this.orders.set(orderId, next);
-    return next;
+  ): Promise<OrderStatusSnapshot> {
+    return this.repository.applyPaymentCaptured(orderId, payload);
   }
 
-  applyPaymentFailed(
+  async applyPaymentFailed(
     orderId: string,
     payload: {
       paymentId: string;
@@ -50,38 +35,15 @@ export class OrderStatusService {
       retryable: boolean;
       amount: { amount: number; currency: string };
     },
-  ): OrderStatusSnapshot {
-    // Idempotency: if the order is already PENDING with the same payment failure,
-    // do not overwrite the stored snapshot or re-trigger downstream side effects.
-    const current = this.orders.get(orderId);
-    if (current?.status === 'PENDING' && current.paymentId === payload.paymentId) {
-      return current;
-    }
-
-    const next: OrderStatusSnapshot = {
-      orderId,
-      status: 'PENDING',
-      reason: payload.reason,
-      paymentId: payload.paymentId,
-      amount: payload.amount,
-      providerReference: undefined,
-    };
-
-    this.orders.set(orderId, next);
-    return next;
+  ): Promise<OrderStatusSnapshot> {
+    return this.repository.applyPaymentFailed(orderId, payload);
   }
 
-  getStatus(orderId: string): OrderStatusSnapshot | undefined {
-    return this.orders.get(orderId);
+  async getStatus(orderId: string): Promise<OrderStatusSnapshot | undefined> {
+    return this.repository.getByOrderId(orderId);
   }
 
-  /**
-   * Idempotency check: returns true when the order already reflects the given
-   * final status, so a duplicate Kafka event can be skipped before any side
-   * effects (notifications, inventory deductions, etc.) are triggered.
-   */
-  isAlreadyProcessed(orderId: string, status: OrderStatus, paymentId?: string): boolean {
-    const current = this.orders.get(orderId);
-    return current?.status === status && (paymentId === undefined || current.paymentId === paymentId);
+  async isAlreadyProcessed(orderId: string, status: OrderStatus, paymentId?: string): Promise<boolean> {
+    return this.repository.isAlreadyProcessed(orderId, status, paymentId);
   }
 }

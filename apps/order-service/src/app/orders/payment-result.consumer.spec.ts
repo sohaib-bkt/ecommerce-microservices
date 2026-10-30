@@ -71,7 +71,29 @@ describe('PaymentResultConsumer', () => {
   });
 
   it('processes a new failed payment attempt after an earlier failure', async () => {
-    const orderStatusService = new OrderStatusService();
+    const store = new Map<string, any>();
+    const repo = {
+      getByOrderId: async (id: string) => store.get(id),
+      applyPaymentCaptured: async (orderId: string, payload: any) => {
+        const current = store.get(orderId);
+        if (current?.status === 'PAID') return current;
+        const next = { orderId, status: 'PAID', paymentId: payload.paymentId, providerReference: payload.providerReference, amount: payload.amount };
+        store.set(orderId, next);
+        return next;
+      },
+      applyPaymentFailed: async (orderId: string, payload: any) => {
+        const current = store.get(orderId);
+        if (current?.status === 'PENDING' && current.paymentId === payload.paymentId) return current;
+        const next = { orderId, status: 'PENDING', reason: payload.reason, paymentId: payload.paymentId, amount: payload.amount, providerReference: undefined };
+        store.set(orderId, next);
+        return next;
+      },
+      isAlreadyProcessed: async (orderId: string, status: string, paymentId?: string) => {
+        const current = store.get(orderId);
+        return current?.status === status && (paymentId === undefined || current.paymentId === paymentId);
+      },
+    } as any;
+    const orderStatusService = new OrderStatusService(repo);
     const consumer = new PaymentResultConsumer(orderStatusService);
     const createFailureEvent = (id: string, paymentId: string, reason: string) => ({
       id,
@@ -91,7 +113,7 @@ describe('PaymentResultConsumer', () => {
     await consumer.handlePaymentResult(createFailureEvent('evt_1', 'pay_1', 'first decline'));
     await consumer.handlePaymentResult(createFailureEvent('evt_2', 'pay_2', 'second decline'));
 
-    expect(orderStatusService.getStatus('order_retry')).toMatchObject({
+    expect(await orderStatusService.getStatus('order_retry')).toMatchObject({
       status: 'PENDING',
       paymentId: 'pay_2',
       reason: 'second decline',

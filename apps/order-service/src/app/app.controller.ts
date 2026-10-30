@@ -15,8 +15,9 @@ export class AppController {
   }
 
   @Get('orders/:orderId/status')
-  getOrderStatus(@Param('orderId') orderId: string) {
-    return this.orderStatusService.getStatus(orderId) ?? {
+  async getOrderStatus(@Param('orderId') orderId: string) {
+    const status = await this.orderStatusService.getStatus(orderId);
+    return status ?? {
       orderId,
       status: 'PENDING',
       reason: 'no payment result received yet',
