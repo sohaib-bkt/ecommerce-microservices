@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ClientsModule, Transport } from '@nestjs/microservices';
+import { Logger } from '@nestjs/common';
+import { resolveContractProtoPaths } from '@ecommerce-platform/contracts';
 import { DatabaseModule } from '../database/database.module.js';
 import { OrderCreationService } from './order-creation.service.js';
 import { OrderGrpcController } from './order.grpc.controller.js';
@@ -19,22 +21,30 @@ import { ProductClientService } from './product-client.service.js';
         name: 'ORDER_PRODUCT_PACKAGE',
         imports: [ConfigModule],
         inject: [ConfigService],
-        useFactory: (config: ConfigService) => ({
-          transport: Transport.GRPC,
-          options: {
-            package: 'ecommerce.product.v1',
-            protoPath: config.get<string>('PRODUCT_PROTO_PATH') ?? 'libs/contracts/proto/product/v1/product.proto',
-            url: config.get<string>('PRODUCT_SERVICE_URL') ?? 'localhost:50052',
-            loader: {
-              keepCase: false,
-              longs: Number,
-              enums: Number,
-              defaults: true,
-              oneofs: true,
-              includeDirs: [config.get<string>('PRODUCT_PROTO_INCLUDE_DIR') ?? 'libs/contracts/proto'],
+        useFactory: (config: ConfigService) => {
+          const paths = resolveContractProtoPaths(
+            config.get<string>('PRODUCT_PROTO_PATH') ?? 'libs/contracts/proto/product/v1/product.proto',
+            config.get<string>('PRODUCT_PROTO_INCLUDE_DIR') ?? 'libs/contracts/proto',
+            'order-service ProductService client',
+          );
+          Logger.log(`Using product-service proto: ${paths.protoPath}`);
+          return {
+            transport: Transport.GRPC,
+            options: {
+              package: 'ecommerce.product.v1',
+              protoPath: paths.protoPath,
+              url: config.get<string>('PRODUCT_SERVICE_URL') ?? 'localhost:50052',
+              loader: {
+                keepCase: false,
+                longs: Number,
+                enums: Number,
+                defaults: true,
+                oneofs: true,
+                includeDirs: [paths.includeDir],
+              },
             },
-          },
-        }),
+          };
+        },
       },
     ]),
   ],

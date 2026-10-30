@@ -6,4 +6,5 @@ export * from './lib/events/payment.events.js';
 export * from './lib/events/product.events.js';
 export * from './lib/events/registry.js';
 export * from './lib/validation/schema.js';
+export * from './lib/proto-paths.js';
 export * from './lib/contracts.js';

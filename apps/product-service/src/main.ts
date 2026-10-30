@@ -1,34 +1,19 @@
 import { Logger } from '@nestjs/common';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { NestFactory } from '@nestjs/core';
+import { resolveContractProtoPaths } from '@ecommerce-platform/contracts';
 import { AppModule } from './app/app.module.js';
-
-function resolveProtoPaths(): { protoPath: string; includeDir: string } {
-  const { existsSync } = require('node:fs');
-  const { join } = require('node:path');
-  const { cwd } = require('node:process');
-  const candidates = [
-    'libs/contracts/proto',
-    'node_modules/@ecommerce-platform/contracts/proto',
-  ];
-  for (const candidate of candidates) {
-    const full = join(cwd(), candidate, 'product/v1/product.proto');
-    if (existsSync(full)) {
-      return { protoPath: full, includeDir: join(cwd(), candidate) };
-    }
-  }
-  const fallback = join(cwd(), 'libs/contracts/proto');
-  return {
-    protoPath: join(fallback, 'product/v1/product.proto'),
-    includeDir: fallback,
-  };
-}
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const grpcPort = Number(process.env.GRPC_PORT ?? 50052);
-  const { protoPath, includeDir } = resolveProtoPaths();
+  const { protoPath, includeDir } = resolveContractProtoPaths(
+    process.env.PRODUCT_PROTO_PATH ?? 'libs/contracts/proto/product/v1/product.proto',
+    process.env.PRODUCT_PROTO_INCLUDE_DIR ?? 'libs/contracts/proto',
+    'product-service ProductService server',
+  );
+  Logger.log(`Using product-service proto: ${protoPath}`);
   app.connectMicroservice<MicroserviceOptions>({
     transport: Transport.GRPC,
     options: {

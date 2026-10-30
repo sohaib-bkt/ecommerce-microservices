@@ -1,24 +1,8 @@
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
-import { existsSync } from 'node:fs';
-import { isAbsolute, join, resolve } from 'node:path';
+import { resolveContractProtoPaths } from '@ecommerce-platform/contracts';
 import { AppModule } from './app/app.module';
-
-function resolveOrderProto(): { protoPath: string; includeDir: string } {
-  const configuredProto = process.env.ORDER_PROTO_PATH ?? 'libs/contracts/proto/order/v1/order.proto';
-  const protoPath = isAbsolute(configuredProto)
-    ? configuredProto
-    : resolve(process.cwd(), configuredProto);
-  const includeDir = process.env.ORDER_PROTO_INCLUDE_DIR
-    ? resolve(process.cwd(), process.env.ORDER_PROTO_INCLUDE_DIR)
-    : join(process.cwd(), 'libs/contracts/proto');
-
-  if (!existsSync(protoPath)) {
-    throw new Error(`Order proto not found: ${protoPath}`);
-  }
-  return { protoPath, includeDir };
-}
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -38,7 +22,12 @@ async function bootstrap() {
   });
 
   const grpcPort = Number(process.env.ORDER_GRPC_PORT ?? 50053);
-  const { protoPath, includeDir } = resolveOrderProto();
+  const { protoPath, includeDir } = resolveContractProtoPaths(
+    process.env.ORDER_PROTO_PATH ?? 'libs/contracts/proto/order/v1/order.proto',
+    process.env.ORDER_PROTO_INCLUDE_DIR ?? 'libs/contracts/proto',
+    'order-service OrderService server',
+  );
+  Logger.log(`Using order-service proto: ${protoPath}`);
   app.connectMicroservice<MicroserviceOptions>({
     transport: Transport.GRPC,
     options: {
