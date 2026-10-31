@@ -33,9 +33,11 @@ import {
   PRODUCT_CREATED_EVENT,
   PRODUCT_PRICE_CHANGED_EVENT,
   PRODUCT_STOCK_CHANGED_EVENT,
+  PRODUCT_UPDATED_EVENT,
   productCreatedSchema,
   productPriceChangedSchema,
   productStockChangedSchema,
+  productUpdatedSchema,
 } from './product.events.js';
 
 /**
@@ -49,6 +51,7 @@ export const EVENT_SCHEMAS = {
   [ACCOUNT_UPDATED_EVENT]: accountUpdatedSchema,
   [ACCOUNT_SUSPENDED_EVENT]: accountSuspendedSchema,
   [PRODUCT_CREATED_EVENT]: productCreatedSchema,
+  [PRODUCT_UPDATED_EVENT]: productUpdatedSchema,
   [PRODUCT_PRICE_CHANGED_EVENT]: productPriceChangedSchema,
   [PRODUCT_STOCK_CHANGED_EVENT]: productStockChangedSchema,
   [ORDER_CREATED_EVENT]: orderCreatedSchema,

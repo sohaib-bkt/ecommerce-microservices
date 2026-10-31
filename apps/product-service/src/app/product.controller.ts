@@ -1,7 +1,9 @@
-import { Controller } from '@nestjs/common';
+import { BadRequestException, Controller } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
 import { ecommerce } from '@ecommerce-platform/contracts';
 import { ProductService } from './product.service.js';
+import { ProductEventPublisher } from './product-event.publisher.js';
+import { ProductSearchService } from './product-search.service.js';
 
 type CreateProductRequest = ecommerce.product.v1.CreateProductRequest;
 type CreateProductResponse = ecommerce.product.v1.CreateProductResponse;
@@ -9,6 +11,8 @@ type GetProductRequest = ecommerce.product.v1.GetProductRequest;
 type GetProductResponse = ecommerce.product.v1.GetProductResponse;
 type ListProductsRequest = ecommerce.product.v1.ListProductsRequest;
 type ListProductsResponse = ecommerce.product.v1.ListProductsResponse;
+type SearchProductsRequest = ecommerce.product.v1.SearchProductsRequest;
+type SearchProductsResponse = ecommerce.product.v1.SearchProductsResponse;
 type ProductStatus = ecommerce.product.v1.ProductStatus;
 type ReserveStockRequest = ecommerce.product.v1.ReserveStockRequest;
 type ReserveStockResponse = ecommerce.product.v1.ReserveStockResponse;
@@ -19,7 +23,11 @@ type UpdateProductResponse = ecommerce.product.v1.UpdateProductResponse;
 
 @Controller()
 export class ProductController {
-  constructor(private readonly productService: ProductService) {}
+  constructor(
+    private readonly productService: ProductService,
+    private readonly productEventPublisher: ProductEventPublisher,
+    private readonly productSearchService: ProductSearchService,
+  ) {}
 
   @GrpcMethod('ProductService', 'GetProduct')
   getProduct(request: GetProductRequest): GetProductResponse {
@@ -50,18 +58,32 @@ export class ProductController {
     };
   }
 
+  @GrpcMethod('ProductService', 'SearchProducts')
+  async searchProducts(request: SearchProductsRequest): Promise<SearchProductsResponse> {
+    if (!request.query?.trim()) {
+      throw new BadRequestException('Search query is required');
+    }
+    return this.productSearchService.searchProducts(
+      request.query.trim(),
+      request.page?.page ?? 1,
+      request.page?.pageSize ?? 10,
+    );
+  }
+
   @GrpcMethod('ProductService', 'CreateProduct')
-  createProduct(request: CreateProductRequest): CreateProductResponse {
+  async createProduct(request: CreateProductRequest): Promise<CreateProductResponse> {
     const product = this.productService.create(request);
+    await this.productEventPublisher.publishCreated(product);
     return { product: toProto(product) };
   }
 
   @GrpcMethod('ProductService', 'UpdateProduct')
-  updateProduct(request: UpdateProductRequest): UpdateProductResponse {
+  async updateProduct(request: UpdateProductRequest): Promise<UpdateProductResponse> {
     const product = this.productService.update(request);
     if (!product) {
       throw new Error(`Product not found: ${request.id}`);
     }
+    await this.productEventPublisher.publishUpdated(product);
     return { product: toProto(product) };
   }
 

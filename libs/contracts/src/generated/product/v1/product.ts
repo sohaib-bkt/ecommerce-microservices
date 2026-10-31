@@ -92,6 +92,18 @@ export interface ListProductsResponse {
   page?: PageResponse | undefined;
 }
 
+/** SearchProductsRequest searches indexed products by name, SKU, or description. */
+export interface SearchProductsRequest {
+  query: string;
+  page?: PageRequest | undefined;
+}
+
+/** SearchProductsResponse carries matching products and pagination metadata. */
+export interface SearchProductsResponse {
+  products: Product[];
+  page?: PageResponse | undefined;
+}
+
 /** CreateProductRequest adds a new catalog product. */
 export interface CreateProductRequest {
   sku: string;
@@ -734,6 +746,180 @@ export const ListProductsResponse: MessageFns<ListProductsResponse> = {
   },
   fromPartial<I extends Exact<DeepPartial<ListProductsResponse>, I>>(object: I): ListProductsResponse {
     const message = createBaseListProductsResponse();
+    message.products = object.products?.map((e) => Product.fromPartial(e)) || [];
+    message.page = (object.page !== undefined && object.page !== null)
+      ? PageResponse.fromPartial(object.page)
+      : undefined;
+    return message;
+  },
+};
+
+function createBaseSearchProductsRequest(): SearchProductsRequest {
+  return { query: "", page: undefined };
+}
+
+export const SearchProductsRequest: MessageFns<SearchProductsRequest> = {
+  encode(message: SearchProductsRequest, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    if (message.query !== "") {
+      writer.uint32(10).string(message.query);
+    }
+    if (message.page !== undefined) {
+      PageRequest.encode(message.page, writer.uint32(18).fork()).join();
+    }
+    return writer;
+  },
+
+  decode(input: BinaryReader | Uint8Array, length?: number): SearchProductsRequest {
+    const reader = input instanceof BinaryReader ? input : new BinaryReader(input);
+    const previousRecursionDepth = (reader as any).__tsProtoDecodeDepth ?? 0;
+    if (previousRecursionDepth >= 100) {
+      throw new globalThis.Error("protobuf decode recursion limit exceeded");
+    }
+    (reader as any).__tsProtoDecodeDepth = previousRecursionDepth + 1;
+    try {
+      const end = length === undefined ? reader.len : reader.pos + length;
+      const message = createBaseSearchProductsRequest();
+      while (reader.pos < end) {
+        const tag = reader.uint32();
+        switch (tag >>> 3) {
+          case 1: {
+            if (tag !== 10) {
+              break;
+            }
+
+            message.query = reader.string();
+            continue;
+          }
+          case 2: {
+            if (tag !== 18) {
+              break;
+            }
+
+            message.page = PageRequest.decode(reader, reader.uint32());
+            continue;
+          }
+        }
+        if ((tag & 7) === 4 || tag === 0) {
+          break;
+        }
+        reader.skip(tag & 7);
+      }
+      return message;
+    } finally {
+      (reader as any).__tsProtoDecodeDepth = previousRecursionDepth;
+    }
+  },
+
+  fromJSON(object: any): SearchProductsRequest {
+    return {
+      query: isSet(object.query) ? globalThis.String(object.query) : "",
+      page: isSet(object.page) ? PageRequest.fromJSON(object.page) : undefined,
+    };
+  },
+
+  toJSON(message: SearchProductsRequest): unknown {
+    const obj: any = {};
+    if (message.query !== "") {
+      obj.query = message.query;
+    }
+    if (message.page !== undefined) {
+      obj.page = PageRequest.toJSON(message.page);
+    }
+    return obj;
+  },
+
+  create<I extends Exact<DeepPartial<SearchProductsRequest>, I>>(base?: I): SearchProductsRequest {
+    return SearchProductsRequest.fromPartial(base ?? ({} as any));
+  },
+  fromPartial<I extends Exact<DeepPartial<SearchProductsRequest>, I>>(object: I): SearchProductsRequest {
+    const message = createBaseSearchProductsRequest();
+    message.query = object.query ?? "";
+    message.page = (object.page !== undefined && object.page !== null)
+      ? PageRequest.fromPartial(object.page)
+      : undefined;
+    return message;
+  },
+};
+
+function createBaseSearchProductsResponse(): SearchProductsResponse {
+  return { products: [], page: undefined };
+}
+
+export const SearchProductsResponse: MessageFns<SearchProductsResponse> = {
+  encode(message: SearchProductsResponse, writer: BinaryWriter = new BinaryWriter()): BinaryWriter {
+    for (const v of message.products) {
+      Product.encode(v!, writer.uint32(10).fork()).join();
+    }
+    if (message.page !== undefined) {
+      PageResponse.encode(message.page, writer.uint32(18).fork()).join();
+    }
+    return writer;
+  },
+
+  decode(input: BinaryReader | Uint8Array, length?: number): SearchProductsResponse {
+    const reader = input instanceof BinaryReader ? input : new BinaryReader(input);
+    const previousRecursionDepth = (reader as any).__tsProtoDecodeDepth ?? 0;
+    if (previousRecursionDepth >= 100) {
+      throw new globalThis.Error("protobuf decode recursion limit exceeded");
+    }
+    (reader as any).__tsProtoDecodeDepth = previousRecursionDepth + 1;
+    try {
+      const end = length === undefined ? reader.len : reader.pos + length;
+      const message = createBaseSearchProductsResponse();
+      while (reader.pos < end) {
+        const tag = reader.uint32();
+        switch (tag >>> 3) {
+          case 1: {
+            if (tag !== 10) {
+              break;
+            }
+
+            message.products.push(Product.decode(reader, reader.uint32()));
+            continue;
+          }
+          case 2: {
+            if (tag !== 18) {
+              break;
+            }
+
+            message.page = PageResponse.decode(reader, reader.uint32());
+            continue;
+          }
+        }
+        if ((tag & 7) === 4 || tag === 0) {
+          break;
+        }
+        reader.skip(tag & 7);
+      }
+      return message;
+    } finally {
+      (reader as any).__tsProtoDecodeDepth = previousRecursionDepth;
+    }
+  },
+
+  fromJSON(object: any): SearchProductsResponse {
+    return {
+      products: globalThis.Array.isArray(object?.products) ? object.products.map((e: any) => Product.fromJSON(e)) : [],
+      page: isSet(object.page) ? PageResponse.fromJSON(object.page) : undefined,
+    };
+  },
+
+  toJSON(message: SearchProductsResponse): unknown {
+    const obj: any = {};
+    if (message.products?.length) {
+      obj.products = message.products.map((e) => Product.toJSON(e));
+    }
+    if (message.page !== undefined) {
+      obj.page = PageResponse.toJSON(message.page);
+    }
+    return obj;
+  },
+
+  create<I extends Exact<DeepPartial<SearchProductsResponse>, I>>(base?: I): SearchProductsResponse {
+    return SearchProductsResponse.fromPartial(base ?? ({} as any));
+  },
+  fromPartial<I extends Exact<DeepPartial<SearchProductsResponse>, I>>(object: I): SearchProductsResponse {
+    const message = createBaseSearchProductsResponse();
     message.products = object.products?.map((e) => Product.fromPartial(e)) || [];
     message.page = (object.page !== undefined && object.page !== null)
       ? PageResponse.fromPartial(object.page)
@@ -1609,6 +1795,14 @@ export const ProductServiceDefinition = {
       requestType: ListProductsRequest as typeof ListProductsRequest,
       requestStream: false,
       responseType: ListProductsResponse as typeof ListProductsResponse,
+      responseStream: false,
+      options: {},
+    },
+    searchProducts: {
+      name: "SearchProducts",
+      requestType: SearchProductsRequest as typeof SearchProductsRequest,
+      requestStream: false,
+      responseType: SearchProductsResponse as typeof SearchProductsResponse,
       responseStream: false,
       options: {},
     },

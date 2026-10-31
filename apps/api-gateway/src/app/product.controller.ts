@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post, Put, Query } from '@nestjs/common';
+import { BadRequestException, Body, Controller, Get, Param, Post, Put, Query } from '@nestjs/common';
 import { ecommerce } from '@ecommerce-platform/contracts';
 import { firstValueFrom } from 'rxjs';
 import { ProductClientService } from './product.service.js';
@@ -29,6 +29,21 @@ type ReleaseStockBody = Pick<
 @Controller('products')
 export class ProductController {
   constructor(private readonly productClient: ProductClientService) {}
+
+  @Get('search')
+  async searchProducts(
+    @Query('q') query?: string,
+    @Query('page') page?: string,
+    @Query('pageSize') pageSize?: string,
+  ) {
+    if (!query?.trim()) throw new BadRequestException('Search query is required');
+    return firstValueFrom(
+      this.productClient.searchProducts({
+        query: query.trim(),
+        page: { page: Number(page ?? 1), pageSize: Number(pageSize ?? 10) },
+      }),
+    );
+  }
 
   @Get(':id')
   async getProduct(@Param('id') id: string) {

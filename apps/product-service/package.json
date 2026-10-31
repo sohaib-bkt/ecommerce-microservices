@@ -67,9 +67,14 @@
     }
   },
   "dependencies": {
+    "@elastic/elasticsearch": "^8.17.0",
+    "@grpc/grpc-js": "^1.14.6",
     "@nestjs/common": "^11.0.0",
+    "@nestjs/config": "^12.0.1",
     "@nestjs/core": "^11.0.0",
+    "@nestjs/microservices": "^11.2.8",
     "@nestjs/platform-express": "^11.0.0",
+    "kafkajs": "^2.2.4",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.0",
     "tslib": "^2.3.0"

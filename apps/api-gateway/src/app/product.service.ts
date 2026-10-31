@@ -57,6 +57,10 @@ export class ProductClientService implements OnModuleInit {
     return this.productService.listProducts(request);
   }
 
+  searchProducts(request: ecommerce.product.v1.SearchProductsRequest) {
+    return this.productService.searchProducts(request);
+  }
+
   createProduct(request: ecommerce.product.v1.CreateProductRequest) {
     return this.productService.createProduct(request);
   }

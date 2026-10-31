@@ -63,6 +63,10 @@ export class ProductService {
     return this.products.get(id);
   }
 
+  allProducts(): StoredProduct[] {
+    return [...this.products.values()];
+  }
+
   list(
     pageSize: number,
     categoryId: string,
@@ -109,7 +113,7 @@ export class ProductService {
       description: request.description || existing.description,
       price: request.price ?? existing.price,
       currency: request.price?.currency ?? existing.currency,
-      status: request.status ?? existing.status,
+      status: request.status || existing.status,
       updatedAt: { epochMillis: Date.now() },
     };
     this.products.set(request.id, updated);

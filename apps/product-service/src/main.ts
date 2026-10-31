@@ -31,6 +31,19 @@ async function bootstrap() {
     },
   });
 
+  app.connectMicroservice<MicroserviceOptions>({
+    transport: Transport.KAFKA,
+    options: {
+      client: {
+        clientId: 'product-search-indexer',
+        brokers: (process.env.KAFKA_BROKERS ?? 'localhost:9092').split(','),
+      },
+      consumer: {
+        groupId: process.env.KAFKA_PRODUCT_SEARCH_GROUP_ID ?? 'product-search-indexer',
+      },
+    },
+  });
+
   const httpPort = Number(process.env.PORT ?? 3002);
   app.setGlobalPrefix('api');
   await app.startAllMicroservices();

@@ -50,6 +50,18 @@ message ListProductsResponse {
   ecommerce.common.v1.PageResponse page = 2;
 }
 
+// SearchProductsRequest searches indexed products by name, SKU, or description.
+message SearchProductsRequest {
+  string query = 1;
+  ecommerce.common.v1.PageRequest page = 2;
+}
+
+// SearchProductsResponse carries matching products and pagination metadata.
+message SearchProductsResponse {
+  repeated Product products = 1;
+  ecommerce.common.v1.PageResponse page = 2;
+}
+
 // CreateProductRequest adds a new catalog product.
 message CreateProductRequest {
   string sku = 1;
@@ -111,6 +123,7 @@ message ReleaseStockResponse {
 service ProductService {
   rpc GetProduct(GetProductRequest) returns (GetProductResponse);
   rpc ListProducts(ListProductsRequest) returns (ListProductsResponse);
+  rpc SearchProducts(SearchProductsRequest) returns (SearchProductsResponse);
   rpc CreateProduct(CreateProductRequest) returns (CreateProductResponse);
   rpc UpdateProduct(UpdateProductRequest) returns (UpdateProductResponse);
   rpc ReserveStock(ReserveStockRequest) returns (ReserveStockResponse);

@@ -22,7 +22,7 @@ describe('event registry', () => {
 
   it('covers all four service domains', () => {
     expect(EVENT_TYPES.filter((t) => t.startsWith('Account')).length).toBe(3);
-    expect(EVENT_TYPES.filter((t) => t.startsWith('Product')).length).toBe(3);
+    expect(EVENT_TYPES.filter((t) => t.startsWith('Product')).length).toBe(4);
     expect(EVENT_TYPES.filter((t) => t.startsWith('Order')).length).toBe(4);
     expect(EVENT_TYPES.filter((t) => t.startsWith('Payment')).length).toBe(5);
   });
