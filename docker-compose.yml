@@ -42,6 +42,20 @@ services:
       timeout: 10s
       retries: 12
 
+  kafka-topic-init:
+    image: apache/kafka:3.9.0
+    network_mode: service:kafka
+    depends_on:
+      kafka:
+        condition: service_healthy
+    command:
+      - /bin/sh
+      - -ec
+      - |
+        for topic in order.created payment.captured payment.failed product.created product.updated; do
+          /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --if-not-exists --topic "$$topic" --partitions 1 --replication-factor 1
+        done
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
     environment:
