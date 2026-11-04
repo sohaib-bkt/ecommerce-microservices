@@ -19,13 +19,14 @@ services:
     image: apache/kafka:3.9.0
     ports:
       - '9092:9092'
+      - '9094:9094'
     environment:
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
-      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_LISTENERS: PLAINTEXT://:9092,EXTERNAL://:9094,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094
       KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
       KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9093
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
@@ -75,6 +76,122 @@ services:
       interval: 10s
       timeout: 5s
       retries: 20
+
+  account-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_NAME: account-service
+    ports:
+      - '3001:3001'
+      - '50051:50051'
+    environment:
+      PORT: 3001
+      ACCOUNT_GRPC_PORT: 50051
+      DATABASE_URL: postgres://ecommerce:ecommerce@postgres:5432/ecommerce
+      ACCOUNT_PROTO_PATH: libs/contracts/proto/account/v1/account.proto
+      ACCOUNT_PROTO_INCLUDE_DIR: libs/contracts/proto
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  product-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_NAME: product-service
+    ports:
+      - '3002:3002'
+      - '50052:50052'
+    environment:
+      PORT: 3002
+      GRPC_PORT: 50052
+      KAFKA_BROKERS: kafka:9092
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      PRODUCT_PROTO_PATH: libs/contracts/proto/product/v1/product.proto
+      PRODUCT_PROTO_INCLUDE_DIR: libs/contracts/proto
+    depends_on:
+      kafka:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+
+  order-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_NAME: order-service
+    ports:
+      - '3003:3003'
+      - '50053:50053'
+    environment:
+      PORT: 3003
+      ORDER_GRPC_PORT: 50053
+      DATABASE_URL: postgres://ecommerce:ecommerce@postgres:5432/ecommerce
+      KAFKA_BROKERS: kafka:9092
+      PRODUCT_SERVICE_URL: product-service:50052
+      ORDER_PROTO_PATH: libs/contracts/proto/order/v1/order.proto
+      ORDER_PROTO_INCLUDE_DIR: libs/contracts/proto
+      PRODUCT_PROTO_PATH: libs/contracts/proto/product/v1/product.proto
+      PRODUCT_PROTO_INCLUDE_DIR: libs/contracts/proto
+    depends_on:
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+      product-service:
+        condition: service_started
+
+  payment-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_NAME: payment-service
+    ports:
+      - '3004:3004'
+    environment:
+      PORT: 3004
+      DATABASE_URL: postgres://ecommerce:ecommerce@postgres:5432/ecommerce
+      KAFKA_BROKERS: kafka:9092
+      KAFKA_CLIENT_ID: payment-service
+      KAFKA_ORDER_GROUP_ID: order-service
+      KAFKA_PAYMENT_GROUP_ID: payment-service
+      STRIPE_GATEWAY: fake
+      STRIPE_WEBHOOK_SECRET: whsec_test_secret
+    depends_on:
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_NAME: api-gateway
+    ports:
+      - '3000:3000'
+    environment:
+      PORT: 3000
+      PRODUCT_SERVICE_URL: product-service:50052
+      ORDER_SERVICE_URL: order-service:50053
+      ACCOUNT_SERVICE_URL: account-service:50051
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      KAFKA_BROKERS: kafka:9092
+    depends_on:
+      product-service:
+        condition: service_started
+      order-service:
+        condition: service_started
+      account-service:
+        condition: service_started
+      elasticsearch:
+        condition: service_healthy
 
 volumes:
   payment-postgres-data:

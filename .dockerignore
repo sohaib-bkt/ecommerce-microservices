@@ -1,0 +1,6 @@
+node_modules
+out-tsc
+.git
+.ua
+tmp
+*.log
