@@ -180,8 +180,4 @@ ecommerce-platform/
 
 ## License
 
-This project is licensed under the MIT License (see `package.json`).
-```
-
-Wait there is no LICENSE file. The root package.json says MIT. Should I remove license section or mention MIT without link? Better change to "This project is licensed under the MIT License." without link, or create LICENSE? Not necessary. Let's adjust to avoid broken link.<|end|><|start|>start to=edit<|channel|>analysis <|constrain|>xml<|message|><rfl:parameter name="path">
-/home/sohaibbkt/dev/ecommerce-platform/README.md
+This project is licensed under the MIT License.
